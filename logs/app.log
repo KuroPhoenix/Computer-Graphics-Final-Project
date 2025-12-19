@@ -1,0 +1,432 @@
+2025-12-19 20:55:23,361 [INFO] __main__: Starting track: midi/Inazuma.mid
+2025-12-19 20:55:23,362 [INFO] audio.midi_manager: Parsing MIDI file: midi/Inazuma.mid
+2025-12-19 20:55:23,408 [INFO] audio.midi_manager: Parsed 6370 events (duration=340502 ms, tempo events=30)
+2025-12-19 20:55:23,409 [INFO] audio.midi_manager: Initialized playback state (duration=340502 ms, tempo events=30)
+2025-12-19 21:02:34,641 [INFO] __main__: Starting track: midi/Inazuma.mid
+2025-12-19 21:02:34,641 [INFO] audio.midi_manager: Parsing MIDI file: midi/Inazuma.mid
+2025-12-19 21:02:34,691 [INFO] audio.midi_manager: Parsed 6370 events (duration=340502 ms, tempo events=30)
+2025-12-19 21:02:34,692 [INFO] audio.midi_manager: Initialized playback state (duration=340502 ms, tempo events=30)
+2025-12-19 21:02:34,731 [ERROR] audio.audio_output: Mixer backend failed (dsp: No such audio device); running without audio.
+2025-12-19 21:02:34,731 [WARNING] audio.audio_output: No audio backend configured; running silent.
+2025-12-19 21:02:34,733 [INFO] audio.midi_manager: Playback started
+2025-12-19 21:03:05,060 [INFO] __main__: Interrupted; stopping playback.
+2025-12-19 21:03:05,060 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-19 21:03:05,062 [INFO] __main__: Track finished: midi/Inazuma.mid
+2025-12-19 21:03:05,062 [INFO] __main__: Starting track: midi/Moon in one's cup.mid
+2025-12-19 21:03:05,063 [INFO] audio.midi_manager: Parsing MIDI file: midi/Moon in one's cup.mid
+2025-12-19 21:03:05,077 [INFO] audio.midi_manager: Parsed 1869 events (duration=117509 ms, tempo events=27)
+2025-12-19 21:03:05,077 [INFO] audio.midi_manager: Initialized playback state (duration=117509 ms, tempo events=27)
+2025-12-19 21:03:05,078 [ERROR] audio.audio_output: Mixer backend failed (dsp: No such audio device); running without audio.
+2025-12-19 21:03:05,078 [WARNING] audio.audio_output: No audio backend configured; running silent.
+2025-12-19 21:03:05,079 [INFO] audio.midi_manager: Playback started
+2025-12-19 21:04:57,566 [INFO] audio.midi_manager: Playback reached end of timeline
+2025-12-19 21:04:57,566 [INFO] __main__: Track finished: midi/Moon in one's cup.mid
+2025-12-19 21:07:19,020 [INFO] __main__: Starting track: midi/Inazuma.mid
+2025-12-19 21:07:19,021 [INFO] audio.midi_manager: Parsing MIDI file: midi/Inazuma.mid
+2025-12-19 21:07:19,071 [INFO] audio.midi_manager: Parsed 6370 events (duration=340502 ms, tempo events=30)
+2025-12-19 21:07:19,072 [INFO] audio.midi_manager: Initialized playback state (duration=340502 ms, tempo events=30)
+2025-12-19 21:07:19,179 [INFO] audio.audio_output: MixerAudioOutput initialized
+2025-12-19 21:07:19,181 [ERROR] audio.audio_output: Failed to play midi/Inazuma.mid via mixer: Couldn't open timidity.cfg
+2025-12-19 21:07:19,182 [INFO] audio.midi_manager: Playback started
+2025-12-19 21:07:28,367 [INFO] __main__: Interrupted; stopping playback.
+2025-12-19 21:07:28,368 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-19 21:07:28,372 [INFO] __main__: Track finished: midi/Inazuma.mid
+2025-12-19 21:25:09,006 [INFO] __main__: Starting track: midi/Inazuma.mid
+2025-12-19 21:25:09,006 [INFO] audio.midi_manager: Parsing MIDI file: midi/Inazuma.mid
+2025-12-19 21:25:09,057 [INFO] audio.midi_manager: Parsed 6370 events (duration=340502 ms, tempo events=30)
+2025-12-19 21:25:09,058 [INFO] audio.midi_manager: Initialized playback state (duration=340502 ms, tempo events=30)
+2025-12-19 21:25:09,304 [ERROR] audio.audio_output: pyfluidsynth backend failed ('Synth' object has no attribute 'set_gain'); falling back to mixer.
+2025-12-19 21:25:09,309 [INFO] audio.audio_output: MixerAudioOutput initialized
+2025-12-19 21:25:09,451 [INFO] audio.audio_output: Mixer playback started for midi/Inazuma.mid
+2025-12-19 21:25:09,452 [INFO] audio.midi_manager: Playback started
+2025-12-19 21:26:49,486 [INFO] __main__: Interrupted; stopping playback.
+2025-12-19 21:26:49,487 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-19 21:26:49,488 [INFO] __main__: Track finished: midi/Inazuma.mid
+2025-12-19 21:26:50,502 [INFO] __main__: Starting track: midi/Moon in one's cup.mid
+2025-12-19 21:26:50,503 [INFO] audio.midi_manager: Parsing MIDI file: midi/Moon in one's cup.mid
+2025-12-19 21:26:50,517 [INFO] audio.midi_manager: Parsed 1869 events (duration=117509 ms, tempo events=27)
+2025-12-19 21:26:50,517 [INFO] audio.midi_manager: Initialized playback state (duration=117509 ms, tempo events=27)
+2025-12-19 21:27:24,280 [ERROR] audio.audio_output: pyfluidsynth backend failed ('Synth' object has no attribute 'set_gain'); falling back to mixer.
+2025-12-19 21:28:23,325 [ERROR] audio.audio_output: Mixer init failed: ALSA: Couldn't open audio device: Connection refused
+2025-12-19 21:28:23,326 [INFO] audio.midi_manager: Playback started
+2025-12-19 21:30:16,601 [INFO] audio.midi_manager: Playback reached end of timeline
+2025-12-19 21:30:16,602 [INFO] __main__: Track finished: midi/Moon in one's cup.mid
+2025-12-19 21:30:17,939 [INFO] __main__: Starting track: midi/Inazuma.mid
+2025-12-19 21:30:17,939 [INFO] __main__: Starting track: midi/Inazuma.mid
+2025-12-19 21:30:17,939 [INFO] audio.midi_manager: Parsing MIDI file: midi/Inazuma.mid
+2025-12-19 21:30:17,939 [INFO] audio.midi_manager: Parsing MIDI file: midi/Inazuma.mid
+2025-12-19 21:30:17,981 [INFO] audio.midi_manager: Parsed 6370 events (duration=340502 ms, tempo events=30)
+2025-12-19 21:30:17,981 [DEBUG] audio.midi_manager: Loading timeline with 6370 events
+2025-12-19 21:30:17,982 [INFO] audio.midi_manager: Initialized playback state (duration=340502 ms, tempo events=30)
+2025-12-19 21:30:17,983 [INFO] audio.midi_manager: Parsed 6370 events (duration=340502 ms, tempo events=30)
+2025-12-19 21:30:17,984 [DEBUG] audio.midi_manager: Loading timeline with 6370 events
+2025-12-19 21:30:17,984 [INFO] audio.midi_manager: Initialized playback state (duration=340502 ms, tempo events=30)
+2025-12-19 21:30:51,533 [INFO] __main__: Starting track: midi/Inazuma.mid
+2025-12-19 21:30:51,534 [INFO] audio.midi_manager: Parsing MIDI file: midi/Inazuma.mid
+2025-12-19 21:30:51,578 [INFO] audio.midi_manager: Parsed 6370 events (duration=340502 ms, tempo events=30)
+2025-12-19 21:30:51,579 [DEBUG] audio.midi_manager: Loading timeline with 6370 events
+2025-12-19 21:30:51,579 [INFO] audio.midi_manager: Initialized playback state (duration=340502 ms, tempo events=30)
+2025-12-19 21:31:01,934 [INFO] audio.audio_output: PyFluidSynthOutput using driver='pulseaudio'
+2025-12-19 21:31:02,103 [WARNING] audio.audio_output: PyFluidSynthOutput: set_gain not available in this pyfluidsynth version
+2025-12-19 21:31:02,104 [INFO] audio.audio_output: PyFluidSynthOutput initialized with /usr/share/sounds/sf2/FluidR3_GM.sf2 (gain=0.80)
+2025-12-19 21:31:02,105 [INFO] audio.audio_output: Audio backend: pyfluidsynth
+2025-12-19 21:31:02,105 [INFO] __main__: Using audio backend: PyFluidSynthOutput
+2025-12-19 21:31:02,106 [INFO] audio.midi_manager: Playback started
+2025-12-19 21:31:02,107 [INFO] __main__: Track finished: midi/Inazuma.mid
+2025-12-19 21:31:28,905 [INFO] __main__: Interrupted; stopping playback.
+2025-12-19 21:31:28,905 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-19 21:31:28,906 [INFO] __main__: Starting track: midi/Moon in one's cup.mid
+2025-12-19 21:31:28,906 [INFO] audio.midi_manager: Parsing MIDI file: midi/Moon in one's cup.mid
+2025-12-19 21:31:28,926 [INFO] audio.midi_manager: Parsed 1869 events (duration=117509 ms, tempo events=27)
+2025-12-19 21:31:28,926 [DEBUG] audio.midi_manager: Loading timeline with 1869 events
+2025-12-19 21:31:28,927 [INFO] audio.midi_manager: Initialized playback state (duration=117509 ms, tempo events=27)
+2025-12-19 21:31:28,929 [INFO] audio.audio_output: PyFluidSynthOutput using driver='pulseaudio'
+2025-12-19 21:31:29,045 [WARNING] audio.audio_output: PyFluidSynthOutput: set_gain not available in this pyfluidsynth version
+2025-12-19 21:31:29,046 [INFO] audio.audio_output: PyFluidSynthOutput initialized with /usr/share/sounds/sf2/FluidR3_GM.sf2 (gain=0.80)
+2025-12-19 21:31:29,046 [INFO] audio.audio_output: Audio backend: pyfluidsynth
+2025-12-19 21:31:29,046 [INFO] __main__: Using audio backend: PyFluidSynthOutput
+2025-12-19 21:31:29,047 [INFO] audio.midi_manager: Playback started
+2025-12-19 21:31:29,048 [INFO] __main__: Track finished: midi/Moon in one's cup.mid
+2025-12-19 21:31:55,448 [INFO] __main__: Starting track: midi/Inazuma.mid
+2025-12-19 21:31:55,448 [INFO] audio.midi_manager: Parsing MIDI file: midi/Inazuma.mid
+2025-12-19 21:31:55,491 [INFO] audio.midi_manager: Parsed 6370 events (duration=340502 ms, tempo events=30)
+2025-12-19 21:31:55,492 [DEBUG] audio.midi_manager: Loading timeline with 6370 events
+2025-12-19 21:31:55,492 [INFO] audio.midi_manager: Initialized playback state (duration=340502 ms, tempo events=30)
+2025-12-19 21:31:55,511 [INFO] audio.audio_output: PyFluidSynthOutput using driver='pulseaudio'
+2025-12-19 21:31:55,633 [WARNING] audio.audio_output: PyFluidSynthOutput: set_gain not available in this pyfluidsynth version
+2025-12-19 21:31:55,634 [INFO] audio.audio_output: PyFluidSynthOutput initialized with /usr/share/sounds/sf2/FluidR3_GM.sf2 (gain=0.80)
+2025-12-19 21:31:55,634 [INFO] audio.audio_output: Audio backend: pyfluidsynth
+2025-12-19 21:31:55,634 [INFO] __main__: Using audio backend: PyFluidSynthOutput
+2025-12-19 21:31:55,635 [INFO] audio.midi_manager: Playback started
+2025-12-19 21:31:55,635 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=0, cursor=2/6370, status=playing
+2025-12-19 21:31:56,638 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=1003, cursor=21/6370, status=playing
+2025-12-19 21:31:57,641 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=2006, cursor=46/6370, status=playing
+2025-12-19 21:31:58,643 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=3008, cursor=81/6370, status=playing
+2025-12-19 21:31:59,645 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=4010, cursor=115/6370, status=playing
+2025-12-19 21:32:00,650 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=5015, cursor=140/6370, status=playing
+2025-12-19 21:32:01,655 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=6020, cursor=149/6370, status=playing
+2025-12-19 21:32:02,656 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=7021, cursor=152/6370, status=playing
+2025-12-19 21:32:03,658 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=8023, cursor=152/6370, status=playing
+2025-12-19 21:32:04,660 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=9025, cursor=153/6370, status=playing
+2025-12-19 21:32:05,662 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=10026, cursor=153/6370, status=playing
+2025-12-19 21:32:06,663 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=11028, cursor=155/6370, status=playing
+2025-12-19 21:32:07,666 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=12031, cursor=158/6370, status=playing
+2025-12-19 21:32:07,634 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=13033, cursor=174/6370, status=playing
+2025-12-19 21:32:08,636 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=14035, cursor=183/6370, status=playing
+2025-12-19 21:32:09,637 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=15036, cursor=188/6370, status=playing
+2025-12-19 21:32:10,640 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=16039, cursor=195/6370, status=playing
+2025-12-19 21:32:11,642 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=17040, cursor=204/6370, status=playing
+2025-12-19 21:32:12,643 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=18042, cursor=216/6370, status=playing
+2025-12-19 21:32:13,644 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=19043, cursor=220/6370, status=playing
+2025-12-19 21:32:14,646 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=20045, cursor=225/6370, status=playing
+2025-12-19 21:32:15,647 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=21046, cursor=231/6370, status=playing
+2025-12-19 21:32:16,648 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=22047, cursor=236/6370, status=playing
+2025-12-19 21:32:17,652 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=23051, cursor=248/6370, status=playing
+2025-12-19 21:32:18,656 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=24055, cursor=251/6370, status=playing
+2025-12-19 21:32:19,656 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=25055, cursor=264/6370, status=playing
+2025-12-19 21:32:20,660 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=26059, cursor=277/6370, status=playing
+2025-12-19 21:32:21,665 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=27064, cursor=284/6370, status=playing
+2025-12-19 21:32:22,669 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=28068, cursor=300/6370, status=playing
+2025-12-19 21:32:23,671 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=29070, cursor=309/6370, status=playing
+2025-12-19 21:32:24,672 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=30071, cursor=317/6370, status=playing
+2025-12-19 21:32:25,673 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=31071, cursor=330/6370, status=playing
+2025-12-19 21:32:26,673 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=32072, cursor=340/6370, status=playing
+2025-12-19 21:32:27,674 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=33073, cursor=352/6370, status=playing
+2025-12-19 21:32:28,676 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=34075, cursor=362/6370, status=playing
+2025-12-19 21:32:29,681 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=35080, cursor=374/6370, status=playing
+2025-12-19 21:32:30,685 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=36084, cursor=384/6370, status=playing
+2025-12-19 21:32:31,690 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=37088, cursor=396/6370, status=playing
+2025-12-19 21:32:32,690 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=38088, cursor=412/6370, status=playing
+2025-12-19 21:32:33,690 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=39089, cursor=420/6370, status=playing
+2025-12-19 21:32:34,692 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=40091, cursor=432/6370, status=playing
+2025-12-19 21:32:35,697 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=41096, cursor=449/6370, status=playing
+2025-12-19 21:32:36,698 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=42097, cursor=453/6370, status=playing
+2025-12-19 21:32:37,698 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=43097, cursor=468/6370, status=playing
+2025-12-19 21:32:38,703 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=44102, cursor=479/6370, status=playing
+2025-12-19 21:32:38,640 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=45106, cursor=489/6370, status=playing
+2025-12-19 21:32:39,640 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=46106, cursor=510/6370, status=playing
+2025-12-19 21:32:40,032 [INFO] __main__: Interrupted; stopping playback.
+2025-12-19 21:32:40,032 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-19 21:32:40,034 [INFO] __main__: Track finished: midi/Inazuma.mid
+2025-12-19 21:35:09,809 [INFO] __main__: Starting track: midi/Inazuma.mid
+2025-12-19 21:35:09,809 [INFO] audio.midi_manager: Parsing MIDI file: midi/Inazuma.mid
+2025-12-19 21:35:09,856 [INFO] audio.midi_manager: Parsed 6371 events (duration=340502 ms, tempo events=30)
+2025-12-19 21:35:09,857 [DEBUG] audio.midi_manager: Loading timeline with 6371 events
+2025-12-19 21:35:09,858 [INFO] audio.midi_manager: Initialized playback state (duration=340502 ms, tempo events=30)
+2025-12-19 21:35:09,868 [ERROR] audio.audio_output: pyfluidsynth backend failed (module 'fluidsynth' has no attribute 'Settings'); falling back to mixer.
+2025-12-19 21:35:09,876 [INFO] audio.audio_output: MixerAudioOutput initialized
+2025-12-19 21:35:09,876 [INFO] audio.audio_output: Audio backend: mixer
+2025-12-19 21:35:09,877 [INFO] __main__: Using audio backend: MixerAudioOutput
+2025-12-19 21:35:10,019 [INFO] audio.audio_output: Mixer playback started for midi/Inazuma.mid
+2025-12-19 21:35:10,020 [INFO] audio.midi_manager: Playback started
+2025-12-19 21:35:10,020 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=0, cursor=3/6371, status=playing
+2025-12-19 21:35:11,022 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=1002, cursor=22/6371, status=playing
+2025-12-19 21:35:12,023 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=2003, cursor=47/6371, status=playing
+2025-12-19 21:35:13,026 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=3006, cursor=82/6371, status=playing
+2025-12-19 21:35:14,028 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=4008, cursor=116/6371, status=playing
+2025-12-19 21:35:15,028 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=5008, cursor=141/6371, status=playing
+2025-12-19 21:35:16,032 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=6011, cursor=150/6371, status=playing
+2025-12-19 21:35:15,973 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=7012, cursor=153/6371, status=playing
+2025-12-19 21:35:16,975 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=8014, cursor=153/6371, status=playing
+2025-12-19 21:35:17,978 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=9017, cursor=154/6371, status=playing
+2025-12-19 21:35:18,980 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=10020, cursor=154/6371, status=playing
+2025-12-19 21:35:19,984 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=11023, cursor=156/6371, status=playing
+2025-12-19 21:35:20,985 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=12025, cursor=159/6371, status=playing
+2025-12-19 21:35:21,988 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=13027, cursor=175/6371, status=playing
+2025-12-19 21:35:22,991 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=14030, cursor=184/6371, status=playing
+2025-12-19 21:35:23,994 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=15033, cursor=189/6371, status=playing
+2025-12-19 21:35:24,999 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=16038, cursor=196/6371, status=playing
+2025-12-19 21:35:26,004 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=17043, cursor=205/6371, status=playing
+2025-12-19 21:35:27,005 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=18044, cursor=217/6371, status=playing
+2025-12-19 21:35:28,005 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=19044, cursor=221/6371, status=playing
+2025-12-19 21:35:29,005 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=20045, cursor=226/6371, status=playing
+2025-12-19 21:35:30,010 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=21050, cursor=232/6371, status=playing
+2025-12-19 21:35:31,011 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=22050, cursor=237/6371, status=playing
+2025-12-19 21:35:32,015 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=23054, cursor=249/6371, status=playing
+2025-12-19 21:35:33,016 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=24055, cursor=252/6371, status=playing
+2025-12-19 21:35:34,019 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=25058, cursor=265/6371, status=playing
+2025-12-19 21:35:35,021 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=26061, cursor=278/6371, status=playing
+2025-12-19 21:35:36,023 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=27062, cursor=285/6371, status=playing
+2025-12-19 21:35:37,023 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=28063, cursor=301/6371, status=playing
+2025-12-19 21:35:38,024 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=29064, cursor=310/6371, status=playing
+2025-12-19 21:35:39,025 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=30064, cursor=318/6371, status=playing
+2025-12-19 21:35:40,027 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=31066, cursor=331/6371, status=playing
+2025-12-19 21:35:41,027 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=32067, cursor=341/6371, status=playing
+2025-12-19 21:35:42,032 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=33071, cursor=353/6371, status=playing
+2025-12-19 21:35:43,036 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=34075, cursor=363/6371, status=playing
+2025-12-19 21:35:44,037 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=35076, cursor=375/6371, status=playing
+2025-12-19 21:35:45,042 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=36082, cursor=385/6371, status=playing
+2025-12-19 21:35:46,047 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=37086, cursor=397/6371, status=playing
+2025-12-19 21:35:47,051 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=38091, cursor=413/6371, status=playing
+2025-12-19 21:35:48,056 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=39095, cursor=421/6371, status=playing
+2025-12-19 21:35:47,968 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=40099, cursor=433/6371, status=playing
+2025-12-19 21:35:48,973 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=41104, cursor=450/6371, status=playing
+2025-12-19 21:35:49,976 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=42107, cursor=454/6371, status=playing
+2025-12-19 21:35:50,979 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=43110, cursor=469/6371, status=playing
+2025-12-19 21:35:51,984 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=44115, cursor=480/6371, status=playing
+2025-12-19 21:35:52,985 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=45116, cursor=490/6371, status=playing
+2025-12-19 21:35:53,990 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=46121, cursor=511/6371, status=playing
+2025-12-19 21:35:54,994 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=47125, cursor=523/6371, status=playing
+2025-12-19 21:35:55,998 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=48129, cursor=535/6371, status=playing
+2025-12-19 21:35:57,003 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=49134, cursor=553/6371, status=playing
+2025-12-19 21:35:58,006 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=50137, cursor=564/6371, status=playing
+2025-12-19 21:35:59,011 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=51142, cursor=566/6371, status=playing
+2025-12-19 21:36:00,015 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=52146, cursor=582/6371, status=playing
+2025-12-19 21:36:01,019 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=53150, cursor=601/6371, status=playing
+2025-12-19 21:36:01,167 [INFO] __main__: Interrupted; stopping playback.
+2025-12-19 21:36:01,168 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-19 21:36:01,173 [INFO] __main__: Track finished: midi/Inazuma.mid
+2025-12-19 21:36:01,752 [INFO] __main__: Starting track: midi/Moon in one's cup.mid
+2025-12-19 21:36:01,752 [INFO] audio.midi_manager: Parsing MIDI file: midi/Moon in one's cup.mid
+2025-12-19 21:36:01,771 [INFO] audio.midi_manager: Parsed 1877 events (duration=118076 ms, tempo events=27)
+2025-12-19 21:36:01,771 [DEBUG] audio.midi_manager: Loading timeline with 1877 events
+2025-12-19 21:36:01,771 [INFO] audio.midi_manager: Initialized playback state (duration=118076 ms, tempo events=27)
+2025-12-19 21:36:01,772 [ERROR] audio.audio_output: pyfluidsynth backend failed (module 'fluidsynth' has no attribute 'Settings'); falling back to mixer.
+2025-12-19 21:36:02,881 [INFO] audio.audio_output: MixerAudioOutput initialized
+2025-12-19 21:36:02,882 [INFO] audio.audio_output: Audio backend: mixer
+2025-12-19 21:36:02,882 [INFO] __main__: Using audio backend: MixerAudioOutput
+2025-12-19 21:36:02,977 [INFO] audio.audio_output: Mixer playback started for midi/Moon in one's cup.mid
+2025-12-19 21:36:02,978 [INFO] audio.midi_manager: Playback started
+2025-12-19 21:36:02,978 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=0, cursor=8/1877, status=playing
+2025-12-19 21:36:03,983 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=1005, cursor=9/1877, status=playing
+2025-12-19 21:36:04,987 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=2009, cursor=23/1877, status=playing
+2025-12-19 21:36:05,991 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=3012, cursor=29/1877, status=playing
+2025-12-19 21:36:06,993 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=4015, cursor=35/1877, status=playing
+2025-12-19 21:36:07,995 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=5016, cursor=51/1877, status=playing
+2025-12-19 21:36:08,997 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=6019, cursor=65/1877, status=playing
+2025-12-19 21:36:10,001 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=7022, cursor=71/1877, status=playing
+2025-12-19 21:36:11,004 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=8026, cursor=77/1877, status=playing
+2025-12-19 21:36:12,009 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=9030, cursor=91/1877, status=playing
+2025-12-19 21:36:13,013 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=10035, cursor=107/1877, status=playing
+2025-12-19 21:36:13,463 [INFO] __main__: Interrupted; stopping playback.
+2025-12-19 21:36:13,464 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-19 21:36:13,465 [INFO] __main__: Track finished: midi/Moon in one's cup.mid
+2025-12-19 21:43:43,969 [INFO] __main__: Starting track: midi/Inazuma.mid
+2025-12-19 21:43:43,970 [INFO] audio.midi_manager: Parsing MIDI file: midi/Inazuma.mid
+2025-12-19 21:43:44,019 [INFO] audio.midi_manager: Parsed 6371 events (duration=340502 ms, tempo events=30)
+2025-12-19 21:43:44,020 [DEBUG] audio.midi_manager: Loading timeline with 6371 events
+2025-12-19 21:43:44,021 [INFO] audio.midi_manager: Initialized playback state (duration=340502 ms, tempo events=30)
+2025-12-19 21:43:44,029 [WARNING] audio.audio_output: PyFluidSynthOutput: Settings not available; using default Synth settings
+2025-12-19 21:43:44,038 [INFO] audio.audio_output: PyFluidSynthOutput using driver='pulseaudio' (no Settings API)
+2025-12-19 21:43:44,184 [INFO] audio.audio_output: PyFluidSynthOutput initialized with /usr/share/sounds/sf2/FluidR3_GM.sf2
+2025-12-19 21:43:44,185 [INFO] audio.audio_output: Audio backend: pyfluidsynth
+2025-12-19 21:43:44,185 [INFO] __main__: Using audio backend: PyFluidSynthOutput
+2025-12-19 21:43:44,186 [INFO] audio.midi_manager: Playback started
+2025-12-19 21:43:44,186 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=0, cursor=3/6371, status=playing
+2025-12-19 21:43:45,189 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=1004, cursor=22/6371, status=playing
+2025-12-19 21:43:45,216 [DEBUG] __main__: Monitor: pos_ms=1030, cursor=22/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:43:46,195 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=2009, cursor=47/6371, status=playing
+2025-12-19 21:43:46,235 [DEBUG] __main__: Monitor: pos_ms=2050, cursor=50/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:43:47,199 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=3013, cursor=82/6371, status=playing
+2025-12-19 21:43:47,261 [DEBUG] __main__: Monitor: pos_ms=3076, cursor=84/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:43:48,203 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=4017, cursor=116/6371, status=playing
+2025-12-19 21:43:48,282 [DEBUG] __main__: Monitor: pos_ms=4097, cursor=118/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:43:49,207 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=5021, cursor=141/6371, status=playing
+2025-12-19 21:43:49,304 [DEBUG] __main__: Monitor: pos_ms=5118, cursor=143/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:43:50,210 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=6024, cursor=150/6371, status=playing
+2025-12-19 21:43:50,328 [DEBUG] __main__: Monitor: pos_ms=6142, cursor=150/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:43:51,214 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=7028, cursor=153/6371, status=playing
+2025-12-19 21:43:51,356 [DEBUG] __main__: Monitor: pos_ms=7171, cursor=153/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:43:52,217 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=8031, cursor=153/6371, status=playing
+2025-12-19 21:43:52,394 [DEBUG] __main__: Monitor: pos_ms=8209, cursor=153/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:43:53,220 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=9034, cursor=154/6371, status=playing
+2025-12-19 21:43:53,429 [DEBUG] __main__: Monitor: pos_ms=9244, cursor=154/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:43:54,224 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=10038, cursor=154/6371, status=playing
+2025-12-19 21:43:54,451 [DEBUG] __main__: Monitor: pos_ms=10266, cursor=156/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:43:55,227 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=11041, cursor=156/6371, status=playing
+2025-12-19 21:43:55,483 [DEBUG] __main__: Monitor: pos_ms=11297, cursor=156/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:43:56,232 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=12046, cursor=159/6371, status=playing
+2025-12-19 21:43:56,516 [DEBUG] __main__: Monitor: pos_ms=12330, cursor=161/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:43:57,235 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=13049, cursor=175/6371, status=playing
+2025-12-19 21:43:57,565 [DEBUG] __main__: Monitor: pos_ms=13379, cursor=177/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:43:58,238 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=14052, cursor=184/6371, status=playing
+2025-12-19 21:43:58,616 [DEBUG] __main__: Monitor: pos_ms=14431, cursor=189/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:43:59,240 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=15054, cursor=189/6371, status=playing
+2025-12-19 21:43:59,667 [DEBUG] __main__: Monitor: pos_ms=15482, cursor=196/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:44:00,243 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=16058, cursor=196/6371, status=playing
+2025-12-19 21:44:00,719 [DEBUG] __main__: Monitor: pos_ms=16534, cursor=200/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:44:01,246 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=17060, cursor=205/6371, status=playing
+2025-12-19 21:44:01,771 [DEBUG] __main__: Monitor: pos_ms=17585, cursor=208/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:44:02,249 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=18063, cursor=217/6371, status=playing
+2025-12-19 21:44:02,822 [DEBUG] __main__: Monitor: pos_ms=18636, cursor=221/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:44:03,251 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=19066, cursor=221/6371, status=playing
+2025-12-19 21:44:03,873 [DEBUG] __main__: Monitor: pos_ms=19688, cursor=226/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:44:04,256 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=20070, cursor=226/6371, status=playing
+2025-12-19 21:44:04,916 [DEBUG] __main__: Monitor: pos_ms=20730, cursor=232/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:44:05,259 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=21073, cursor=232/6371, status=playing
+2025-12-19 21:44:05,949 [DEBUG] __main__: Monitor: pos_ms=21764, cursor=235/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:44:06,261 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=22076, cursor=237/6371, status=playing
+2025-12-19 21:44:06,959 [DEBUG] __main__: Monitor: pos_ms=22774, cursor=242/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:44:07,264 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=23078, cursor=251/6371, status=playing
+2025-12-19 21:44:07,979 [DEBUG] __main__: Monitor: pos_ms=23794, cursor=251/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:44:08,265 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=24079, cursor=252/6371, status=playing
+2025-12-19 21:44:08,997 [DEBUG] __main__: Monitor: pos_ms=24812, cursor=263/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:44:09,266 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=25081, cursor=265/6371, status=playing
+2025-12-19 21:44:10,018 [DEBUG] __main__: Monitor: pos_ms=25833, cursor=278/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:44:10,268 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=26082, cursor=278/6371, status=playing
+2025-12-19 21:44:09,810 [DEBUG] __main__: Monitor: pos_ms=26860, cursor=282/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:44:10,037 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=27086, cursor=285/6371, status=playing
+2025-12-19 21:44:10,844 [DEBUG] __main__: Monitor: pos_ms=27893, cursor=295/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:44:11,041 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=28090, cursor=301/6371, status=playing
+2025-12-19 21:44:11,874 [DEBUG] __main__: Monitor: pos_ms=28923, cursor=307/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:44:12,045 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=29094, cursor=310/6371, status=playing
+2025-12-19 21:44:12,293 [INFO] __main__: Interrupted; stopping playback.
+2025-12-19 21:44:12,293 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-19 21:44:12,297 [INFO] __main__: Track finished: midi/Inazuma.mid
+2025-12-19 21:44:12,696 [INFO] __main__: Starting track: midi/Moon in one's cup.mid
+2025-12-19 21:44:12,697 [INFO] audio.midi_manager: Parsing MIDI file: midi/Moon in one's cup.mid
+2025-12-19 21:44:12,715 [INFO] audio.midi_manager: Parsed 1877 events (duration=118076 ms, tempo events=27)
+2025-12-19 21:44:12,716 [DEBUG] audio.midi_manager: Loading timeline with 1877 events
+2025-12-19 21:44:12,716 [INFO] audio.midi_manager: Initialized playback state (duration=118076 ms, tempo events=27)
+2025-12-19 21:44:12,716 [WARNING] audio.audio_output: PyFluidSynthOutput: Settings not available; using default Synth settings
+2025-12-19 21:44:13,231 [INFO] audio.audio_output: PyFluidSynthOutput using driver='pulseaudio' (no Settings API)
+2025-12-19 21:44:13,319 [INFO] audio.audio_output: PyFluidSynthOutput initialized with /usr/share/sounds/sf2/FluidR3_GM.sf2
+2025-12-19 21:44:13,320 [INFO] audio.audio_output: Audio backend: pyfluidsynth
+2025-12-19 21:44:13,320 [INFO] __main__: Using audio backend: PyFluidSynthOutput
+2025-12-19 21:44:13,321 [INFO] audio.midi_manager: Playback started
+2025-12-19 21:44:13,321 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=0, cursor=8/1877, status=playing
+2025-12-19 21:44:14,325 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=1004, cursor=9/1877, status=playing
+2025-12-19 21:44:14,331 [DEBUG] __main__: Monitor: pos_ms=1011, cursor=9/1877, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False}
+2025-12-19 21:44:15,330 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=2009, cursor=23/1877, status=playing
+2025-12-19 21:44:15,354 [INFO] __main__: Interrupted; stopping playback.
+2025-12-19 21:44:15,354 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-19 21:44:15,356 [INFO] __main__: Track finished: midi/Moon in one's cup.mid
+2025-12-19 21:46:27,200 [INFO] __main__: Starting track: midi/Inazuma.mid
+2025-12-19 21:46:27,201 [INFO] audio.midi_manager: Parsing MIDI file: midi/Inazuma.mid
+2025-12-19 21:46:27,247 [INFO] audio.midi_manager: Parsed 6371 events (duration=340502 ms, tempo events=30)
+2025-12-19 21:46:27,248 [DEBUG] audio.midi_manager: Loading timeline with 6371 events
+2025-12-19 21:46:27,248 [INFO] audio.midi_manager: Initialized playback state (duration=340502 ms, tempo events=30)
+2025-12-19 21:46:27,270 [INFO] audio.audio_output: PyFluidSynthOutput using driver=pulseaudio sample_rate=44100.0 period_size=256 periods=4 gain=0.80
+2025-12-19 21:46:27,447 [INFO] audio.audio_output: PyFluidSynthOutput initialized with /usr/share/sounds/sf2/FluidR3_GM.sf2
+2025-12-19 21:46:27,448 [INFO] audio.audio_output: Audio backend: pyfluidsynth
+2025-12-19 21:46:27,448 [INFO] __main__: Using audio backend: PyFluidSynthOutput
+2025-12-19 21:46:27,448 [INFO] audio.midi_manager: Playback started
+2025-12-19 21:46:27,448 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=0, cursor=3/6371, status=playing
+2025-12-19 21:46:28,450 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=1002, cursor=22/6371, status=playing
+2025-12-19 21:46:28,458 [DEBUG] __main__: Monitor: pos_ms=1010, cursor=22/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:29,452 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=2004, cursor=47/6371, status=playing
+2025-12-19 21:46:29,472 [DEBUG] __main__: Monitor: pos_ms=2024, cursor=47/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:30,456 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=3008, cursor=82/6371, status=playing
+2025-12-19 21:46:30,487 [DEBUG] __main__: Monitor: pos_ms=3039, cursor=84/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:31,461 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=4013, cursor=116/6371, status=playing
+2025-12-19 21:46:31,501 [DEBUG] __main__: Monitor: pos_ms=4053, cursor=118/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:32,463 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=5015, cursor=141/6371, status=playing
+2025-12-19 21:46:32,517 [DEBUG] __main__: Monitor: pos_ms=5069, cursor=141/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:33,464 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=6015, cursor=150/6371, status=playing
+2025-12-19 21:46:33,531 [DEBUG] __main__: Monitor: pos_ms=6083, cursor=150/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:34,466 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=7017, cursor=153/6371, status=playing
+2025-12-19 21:46:34,542 [DEBUG] __main__: Monitor: pos_ms=7094, cursor=153/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:35,470 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=8021, cursor=153/6371, status=playing
+2025-12-19 21:46:35,563 [DEBUG] __main__: Monitor: pos_ms=8115, cursor=153/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:36,475 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=9026, cursor=154/6371, status=playing
+2025-12-19 21:46:36,586 [DEBUG] __main__: Monitor: pos_ms=9138, cursor=154/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:37,476 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=10028, cursor=154/6371, status=playing
+2025-12-19 21:46:37,621 [DEBUG] __main__: Monitor: pos_ms=10173, cursor=154/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:38,479 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=11031, cursor=156/6371, status=playing
+2025-12-19 21:46:38,653 [DEBUG] __main__: Monitor: pos_ms=11205, cursor=156/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:39,484 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=12036, cursor=159/6371, status=playing
+2025-12-19 21:46:39,668 [DEBUG] __main__: Monitor: pos_ms=12220, cursor=159/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:40,486 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=13037, cursor=175/6371, status=playing
+2025-12-19 21:46:40,695 [DEBUG] __main__: Monitor: pos_ms=13247, cursor=177/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:41,489 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=14040, cursor=184/6371, status=playing
+2025-12-19 21:46:41,722 [DEBUG] __main__: Monitor: pos_ms=14274, cursor=189/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:42,490 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=15042, cursor=189/6371, status=playing
+2025-12-19 21:46:42,739 [DEBUG] __main__: Monitor: pos_ms=15291, cursor=193/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:43,491 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=16042, cursor=196/6371, status=playing
+2025-12-19 21:46:43,762 [DEBUG] __main__: Monitor: pos_ms=16314, cursor=197/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:44,494 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=17046, cursor=205/6371, status=playing
+2025-12-19 21:46:44,780 [DEBUG] __main__: Monitor: pos_ms=17332, cursor=207/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:45,495 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=18047, cursor=217/6371, status=playing
+2025-12-19 21:46:45,802 [DEBUG] __main__: Monitor: pos_ms=18354, cursor=219/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:46,496 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=19047, cursor=221/6371, status=playing
+2025-12-19 21:46:46,810 [DEBUG] __main__: Monitor: pos_ms=19362, cursor=226/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:46,321 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=20051, cursor=226/6371, status=playing
+2025-12-19 21:46:46,645 [DEBUG] __main__: Monitor: pos_ms=20375, cursor=227/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:47,325 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=21055, cursor=232/6371, status=playing
+2025-12-19 21:46:47,657 [DEBUG] __main__: Monitor: pos_ms=21388, cursor=233/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:48,329 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=22059, cursor=237/6371, status=playing
+2025-12-19 21:46:48,670 [DEBUG] __main__: Monitor: pos_ms=22401, cursor=237/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:49,333 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=23063, cursor=251/6371, status=playing
+2025-12-19 21:46:49,690 [DEBUG] __main__: Monitor: pos_ms=23421, cursor=251/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:50,333 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=24064, cursor=252/6371, status=playing
+2025-12-19 21:46:50,704 [DEBUG] __main__: Monitor: pos_ms=24435, cursor=259/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:51,335 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=25065, cursor=265/6371, status=playing
+2025-12-19 21:46:51,714 [DEBUG] __main__: Monitor: pos_ms=25445, cursor=271/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:52,336 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=26066, cursor=278/6371, status=playing
+2025-12-19 21:46:52,728 [DEBUG] __main__: Monitor: pos_ms=26459, cursor=280/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:53,337 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=27067, cursor=285/6371, status=playing
+2025-12-19 21:46:53,733 [DEBUG] __main__: Monitor: pos_ms=27464, cursor=287/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:54,342 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=28072, cursor=301/6371, status=playing
+2025-12-19 21:46:54,738 [DEBUG] __main__: Monitor: pos_ms=28468, cursor=305/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:55,342 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=29073, cursor=310/6371, status=playing
+2025-12-19 21:46:55,743 [DEBUG] __main__: Monitor: pos_ms=29473, cursor=312/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:56,343 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=30073, cursor=318/6371, status=playing
+2025-12-19 21:46:56,747 [DEBUG] __main__: Monitor: pos_ms=30478, cursor=322/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:57,343 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=31073, cursor=331/6371, status=playing
+2025-12-19 21:46:57,752 [DEBUG] __main__: Monitor: pos_ms=31483, cursor=332/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:58,348 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=32078, cursor=341/6371, status=playing
+2025-12-19 21:46:58,757 [DEBUG] __main__: Monitor: pos_ms=32488, cursor=345/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:46:59,353 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=33083, cursor=353/6371, status=playing
+2025-12-19 21:46:59,780 [DEBUG] __main__: Monitor: pos_ms=33510, cursor=357/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:47:00,358 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=34088, cursor=363/6371, status=playing
+2025-12-19 21:47:00,786 [DEBUG] __main__: Monitor: pos_ms=34516, cursor=367/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:47:01,363 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=35093, cursor=375/6371, status=playing
+2025-12-19 21:47:01,792 [DEBUG] __main__: Monitor: pos_ms=35523, cursor=379/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:47:02,367 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=36097, cursor=385/6371, status=playing
+2025-12-19 21:47:02,800 [DEBUG] __main__: Monitor: pos_ms=36531, cursor=390/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:47:03,371 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=37101, cursor=397/6371, status=playing
+2025-12-19 21:47:03,816 [DEBUG] __main__: Monitor: pos_ms=37547, cursor=405/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:47:04,373 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=38103, cursor=413/6371, status=playing
+2025-12-19 21:47:04,829 [DEBUG] __main__: Monitor: pos_ms=38560, cursor=417/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:47:05,375 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=39105, cursor=421/6371, status=playing
+2025-12-19 21:47:05,862 [DEBUG] __main__: Monitor: pos_ms=39593, cursor=427/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:47:06,377 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=40107, cursor=433/6371, status=playing
+2025-12-19 21:47:06,871 [DEBUG] __main__: Monitor: pos_ms=40602, cursor=437/6371, status=playing, audio={'backend': 'PyFluidSynthOutput', 'closed': False, 'driver': 'pulseaudio'}
+2025-12-19 21:47:06,999 [INFO] __main__: Interrupted; stopping playback.
+2025-12-19 21:47:07,000 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-19 21:47:07,005 [INFO] __main__: Track finished: midi/Inazuma.mid
+2025-12-19 21:47:07,929 [INFO] __main__: Starting track: midi/Moon in one's cup.mid
+2025-12-19 21:47:07,930 [INFO] audio.midi_manager: Parsing MIDI file: midi/Moon in one's cup.mid
+2025-12-19 21:47:07,949 [INFO] audio.midi_manager: Parsed 1877 events (duration=118076 ms, tempo events=27)
+2025-12-19 21:47:07,950 [DEBUG] audio.midi_manager: Loading timeline with 1877 events
+2025-12-19 21:47:07,950 [INFO] audio.midi_manager: Initialized playback state (duration=118076 ms, tempo events=27)
