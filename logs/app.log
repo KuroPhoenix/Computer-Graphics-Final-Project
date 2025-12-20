@@ -4797,3 +4797,124 @@
 2025-12-20 23:08:48,277 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=273819, cursor=6811/6817, status=playing
 2025-12-20 23:08:48,446 [INFO] audio.midi_manager: Playback reached end of timeline
 2025-12-20 23:08:48,446 [INFO] audio.playback_controller: Track finished: midi\tracks\natlan.mid
+2025-12-21 00:00:32,010 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-21 00:00:40,780 [INFO] audio.audio_output: PyFluidSynthOutput using driver=wasapi sample_rate=44100.0 period_size=512 periods=4 gain=0.30
+2025-12-21 00:00:40,792 [INFO] audio.audio_output: PyFluidSynthOutput initialized with midi/soundfonts/salamander.sf2
+2025-12-21 00:00:40,792 [INFO] audio.audio_output: Audio backend: pyfluidsynth
+2025-12-21 00:00:40,793 [INFO] audio.playback_controller: Audio backend: PyFluidSynthOutput (latency=46.4 ms, dispatch_ahead=46.4 ms)
+2025-12-21 00:03:39,834 [INFO] audio.midi_manager: Parsing MIDI file: midi\tracks\natlan.mid
+2025-12-21 00:03:39,880 [INFO] audio.midi_manager: Parsed 6817 events (duration=274023 ms, tempo events=3)
+2025-12-21 00:03:39,881 [DEBUG] audio.midi_manager: Loading timeline with 6817 events
+2025-12-21 00:03:39,881 [INFO] audio.midi_manager: Initialized playback state (duration=274023 ms, tempo events=3)
+2025-12-21 00:03:39,884 [INFO] audio.midi_manager: Playback started
+2025-12-21 00:03:39,884 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=0, cursor=12/6817, status=playing
+2025-12-21 00:03:41,446 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=1562, cursor=13/6817, status=playing
+2025-12-21 00:03:42,498 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=2613, cursor=18/6817, status=playing
+2025-12-21 00:03:43,564 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=3679, cursor=28/6817, status=playing
+2025-12-21 00:03:47,183 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=7299, cursor=44/6817, status=playing
+2025-12-21 00:03:48,945 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=9061, cursor=51/6817, status=playing
+2025-12-21 00:03:50,002 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=10118, cursor=56/6817, status=playing
+2025-12-21 00:03:51,088 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=11204, cursor=67/6817, status=playing
+2025-12-21 00:03:52,709 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=12825, cursor=80/6817, status=playing
+2025-12-21 00:03:54,682 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=14797, cursor=83/6817, status=playing
+2025-12-21 00:03:55,908 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=16024, cursor=95/6817, status=playing
+2025-12-21 00:03:56,972 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=17088, cursor=104/6817, status=playing
+2025-12-21 00:03:58,004 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=18120, cursor=113/6817, status=playing
+2025-12-21 00:03:59,110 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=19226, cursor=125/6817, status=playing
+2025-12-21 00:04:00,182 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=20298, cursor=136/6817, status=playing
+2025-12-21 00:04:01,223 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=21339, cursor=147/6817, status=playing
+2025-12-21 00:04:02,324 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=22439, cursor=159/6817, status=playing
+2025-12-21 00:04:03,405 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=23520, cursor=170/6817, status=playing
+2025-12-21 00:04:04,441 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=24557, cursor=181/6817, status=playing
+2025-12-21 00:04:06,518 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=26633, cursor=194/6817, status=playing
+2025-12-21 00:04:07,538 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=27653, cursor=200/6817, status=playing
+2025-12-21 00:04:08,684 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=28800, cursor=239/6817, status=playing
+2025-12-21 00:04:09,690 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=29805, cursor=265/6817, status=playing
+2025-12-21 00:04:10,693 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=30809, cursor=293/6817, status=playing
+2025-12-21 00:04:11,700 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=31815, cursor=315/6817, status=playing
+2025-12-21 00:04:12,705 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=32820, cursor=328/6817, status=playing
+2025-12-21 00:04:13,937 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=34052, cursor=355/6817, status=playing
+2025-12-21 00:04:14,950 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=35066, cursor=385/6817, status=playing
+2025-12-21 00:04:15,957 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=36073, cursor=410/6817, status=playing
+2025-12-21 00:04:17,647 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=37763, cursor=446/6817, status=playing
+2025-12-21 00:04:18,683 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=38798, cursor=463/6817, status=playing
+2025-12-21 00:04:19,697 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=39812, cursor=488/6817, status=playing
+2025-12-21 00:04:20,703 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=40819, cursor=514/6817, status=playing
+2025-12-21 00:04:21,710 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=41826, cursor=547/6817, status=playing
+2025-12-21 00:04:23,198 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=43314, cursor=576/6817, status=playing
+2025-12-21 00:04:24,207 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=44322, cursor=602/6817, status=playing
+2025-12-21 00:04:25,644 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=45759, cursor=642/6817, status=playing
+2025-12-21 00:04:26,688 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=46803, cursor=673/6817, status=playing
+2025-12-21 00:04:27,699 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=47814, cursor=711/6817, status=playing
+2025-12-21 00:04:28,711 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=48827, cursor=735/6817, status=playing
+2025-12-21 00:04:29,730 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=49845, cursor=742/6817, status=playing
+2025-12-21 00:04:30,756 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=50871, cursor=816/6817, status=playing
+2025-12-21 00:04:32,199 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=52314, cursor=885/6817, status=playing
+2025-12-21 00:04:33,205 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=53320, cursor=907/6817, status=playing
+2025-12-21 00:04:34,372 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=54487, cursor=932/6817, status=playing
+2025-12-21 00:04:35,439 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=55555, cursor=944/6817, status=playing
+2025-12-21 00:04:36,449 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=56565, cursor=969/6817, status=playing
+2025-12-21 00:04:37,676 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=57792, cursor=990/6817, status=playing
+2025-12-21 00:04:38,694 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=58810, cursor=1015/6817, status=playing
+2025-12-21 00:04:39,708 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=59823, cursor=1052/6817, status=playing
+2025-12-21 00:04:40,946 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=61062, cursor=1085/6817, status=playing
+2025-12-21 00:04:41,954 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=62070, cursor=1111/6817, status=playing
+2025-12-21 00:04:42,958 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=63074, cursor=1143/6817, status=playing
+2025-12-21 00:04:44,074 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=64190, cursor=1175/6817, status=playing
+2025-12-21 00:04:45,081 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=65196, cursor=1213/6817, status=playing
+2025-12-21 00:04:46,082 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=66198, cursor=1235/6817, status=playing
+2025-12-21 00:04:47,197 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=67313, cursor=1267/6817, status=playing
+2025-12-21 00:04:48,203 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=68318, cursor=1304/6817, status=playing
+2025-12-21 00:04:49,225 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=69341, cursor=1360/6817, status=playing
+2025-12-21 00:04:50,245 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=70360, cursor=1426/6817, status=playing
+2025-12-21 00:04:51,326 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=71442, cursor=1472/6817, status=playing
+2025-12-21 00:04:52,333 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=72449, cursor=1497/6817, status=playing
+2025-12-21 00:04:53,448 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=73564, cursor=1529/6817, status=playing
+2025-12-21 00:04:54,457 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=74573, cursor=1551/6817, status=playing
+2025-12-21 00:04:55,512 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=75627, cursor=1580/6817, status=playing
+2025-12-21 00:04:56,573 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=76689, cursor=1607/6817, status=playing
+2025-12-21 00:04:57,709 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=77825, cursor=1637/6817, status=playing
+2025-12-21 00:04:58,711 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=78826, cursor=1663/6817, status=playing
+2025-12-21 00:04:59,821 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=79937, cursor=1689/6817, status=playing
+2025-12-21 00:05:00,829 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=80945, cursor=1718/6817, status=playing
+2025-12-21 00:05:01,952 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=82067, cursor=1742/6817, status=playing
+2025-12-21 00:05:02,959 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=83075, cursor=1774/6817, status=playing
+2025-12-21 00:05:04,082 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=84198, cursor=1804/6817, status=playing
+2025-12-21 00:05:05,137 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=85253, cursor=1846/6817, status=playing
+2025-12-21 00:05:06,174 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=86290, cursor=1867/6817, status=playing
+2025-12-21 00:05:07,321 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=87437, cursor=1901/6817, status=playing
+2025-12-21 00:05:08,436 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=88551, cursor=1927/6817, status=playing
+2025-12-21 00:05:09,444 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=89559, cursor=1953/6817, status=playing
+2025-12-21 00:05:10,450 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=90565, cursor=1978/6817, status=playing
+2025-12-21 00:05:11,457 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=91573, cursor=2008/6817, status=playing
+2025-12-21 00:05:12,678 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=92794, cursor=2028/6817, status=playing
+2025-12-21 00:05:13,703 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=93819, cursor=2057/6817, status=playing
+2025-12-21 00:05:14,931 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=95047, cursor=2083/6817, status=playing
+2025-12-21 00:05:15,939 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=96055, cursor=2096/6817, status=playing
+2025-12-21 00:05:16,950 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=97066, cursor=2121/6817, status=playing
+2025-12-21 00:05:17,958 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=98074, cursor=2146/6817, status=playing
+2025-12-21 00:05:19,063 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=99179, cursor=2176/6817, status=playing
+2025-12-21 00:05:20,168 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=100283, cursor=2192/6817, status=playing
+2025-12-21 00:05:21,195 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=101310, cursor=2227/6817, status=playing
+2025-12-21 00:05:22,202 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=102318, cursor=2246/6817, status=playing
+2025-12-21 00:05:23,327 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=103443, cursor=2269/6817, status=playing
+2025-12-21 00:05:24,443 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=104558, cursor=2295/6817, status=playing
+2025-12-21 00:05:25,449 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=105564, cursor=2326/6817, status=playing
+2025-12-21 00:05:26,458 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=106573, cursor=2346/6817, status=playing
+2025-12-21 00:05:27,570 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=107685, cursor=2378/6817, status=playing
+2025-12-21 00:05:28,669 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=108784, cursor=2396/6817, status=playing
+2025-12-21 00:05:29,686 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=109802, cursor=2426/6817, status=playing
+2025-12-21 00:05:30,692 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=110807, cursor=2450/6817, status=playing
+2025-12-21 00:05:31,700 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=111816, cursor=2477/6817, status=playing
+2025-12-21 00:05:32,704 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=112819, cursor=2505/6817, status=playing
+2025-12-21 00:05:33,708 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=113823, cursor=2533/6817, status=playing
+2025-12-21 00:05:34,824 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=114940, cursor=2567/6817, status=playing
+2025-12-21 00:05:35,934 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=116050, cursor=2601/6817, status=playing
+2025-12-21 00:05:36,950 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=117065, cursor=2625/6817, status=playing
+2025-12-21 00:05:37,952 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=118067, cursor=2652/6817, status=playing
+2025-12-21 00:05:38,956 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=119072, cursor=2687/6817, status=playing
+2025-12-21 00:05:40,165 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=120281, cursor=2719/6817, status=playing
+2025-12-21 00:05:41,201 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=121317, cursor=2750/6817, status=playing
+2025-12-21 00:05:42,115 [INFO] audio.midi_manager: Playback paused at 122231 ms
+2025-12-21 00:14:27,196 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-21 00:14:27,197 [INFO] audio.playback_controller: Track finished: midi\tracks\natlan.mid

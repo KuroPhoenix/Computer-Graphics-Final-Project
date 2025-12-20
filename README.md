@@ -11,6 +11,36 @@ to both audio output and optional visual handlers (virtual piano, FX, etc).
 
 The CLI auto-scans the `midi/` folder for `.mid`/`.midi` files and presents indexed menus.
 
+## Setup
+Prerequisites:
+- Python 3.11+ (tested with 3.13)
+- Optional: FluidSynth installed (recommended for `pyfluidsynth` backend)
+
+RECOMMENDED: Python environment (Windows PowerShell):
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+```
+Note: If executed under WSL environment, desyncing/jittering issues may occur. 
+
+Python environment (macOS/Linux):
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+FluidSynth (for `pyfluidsynth` backend):
+- Install FluidSynth and make sure its DLLs/shared libs are discoverable.
+- If needed, set `FLUIDSYNTH_DLL_PATH` in `configs/config.py` to the FluidSynth `bin` folder.
+- Ensure a soundfont is available (defaults to `midi/soundfonts/salamander.sf2`).
+
+Run the CLI:
+```bash
+python -m main
+```
+
 ## CLI usage
 Key commands:
 - `menu` / `list`: show folders + track indexes
@@ -22,68 +52,109 @@ Key commands:
 - `soundfonts`, `soundfont <index|path>`
 - `analyze <index|folder:index>`: show per-track stats
 
-## Architecture
-Core modules:
-- `audio/midi_manager.py`: loads MIDI, builds the event timeline, and runs the scheduler.
-- `audio/playback_controller.py`: high-level control (load/play/pause/seek) and event routing.
-- `audio/audio_output.py`: audio backends (FluidSynth, pygame.midi, mixer).
-- `visuals/piano_sink.py`: interface for a virtual piano or other visual consumers.
-- `main.py`: CLI wrapper around `PlaybackController`.
+## AudioHandler (planned single entry point)
+Status: **planned** (not implemented yet). The goal is for all GUI code to call only
+`AudioHandler`. No other module should touch `PlaybackController` directly. This isolates
+timing, scanning, backend configuration, and note dispatch behind a single API.
 
-## Event schema
-Events are plain dicts. Common fields:
+### What AudioHandler owns
+- **Song library:** scans `midi/` (and subfolders) and returns a stable, indexed menu.
+- **Selection state:** tracks the active folder and current song index.
+- **Playback orchestration:** `load_track()` + `play()` internally, preserving auto-analysis.
+- **Event routing:** forwards note on/off to the piano renderer sink.
+- **Note reporting:** provides `Report_Note()` for UI overlays or debug panels.
+- **Thread safety:** hides scheduler thread details from the GUI.
+
+### Internal composition (data flow)
 ```
+MIDI file -> MidiManager -> event timeline -> PlaybackController -> Audio backend
+                                                  |
+                                                  +-> PianoEventSink (renderer)
+                                                  +-> NoteCaptureSink (Report_Note)
+```
+
+### Planned API (single entry point)
+```python
+from audio.audio_handler import AudioHandler
+
+handler = AudioHandler(piano_sink=MyPianoSink())
+
+songs = handler.List_Songs()
+handler.Play_Song()
+handler.Pause_Song()
+handler.Resume_Song()
+handler.Next_song()
+
+note = handler.Report_Note()
+```
+
+### List_Songs() return shape (GUI menu)
+Stable indices are required for UI selection widgets.
+```python
+[
+  {
+    "folder_index": 0,
+    "label": "tracks",
+    "path": "midi/tracks",
+    "tracks": [
+      {"track_index": 0, "name": "natlan.mid", "path": "midi/tracks/natlan.mid"},
+      {"track_index": 1, "name": "Inazuma.mid", "path": "midi/tracks/Inazuma.mid"},
+    ],
+  }
+]
+```
+
+### Selecting and playing a song
+`Play_Song()` should accept an optional selection to update the current song before playback.
+```python
+songs = handler.List_Songs()
+handler.Play_Song(selection={"folder_index": 0, "track_index": 1})
+```
+If no selection is provided, the handler plays the current song (or the first in the folder).
+
+### Report_Note() return shape
+`Report_Note()` returns the latest note event (or `None` if idle).
+```python
 {
-  "time_ms": float,
-  "type": "on" | "off" | "control_change" | "program_change" | "pitchwheel" | ...,
-  "note": int,          # for note events
-  "velocity": int,      # for note-on
-  "channel": int,
-  "control": int,       # for control_change
-  "value": int          # for control_change
+  "type": "on",
+  "note": 60,
+  "velocity": 96,
+  "channel": 0,
+  "time_ms": 1234.0,
+  "playback_time_ms": 1238.4
 }
 ```
 
-`PlaybackController` forwards note on/off events to the piano sink and forwards all MIDI events
-to the audio backend (subject to normalization rules).
-
-## Handlers (for future development)
-
-### Audio handlers
-Implement a new backend by subclassing `BaseAudioOutput` in `audio/audio_output.py`:
-```
-class MyAudioOutput(BaseAudioOutput):
-    def start_track(self, path: str) -> None: ...
-    def handle_event(self, event: dict) -> None: ...
-    def panic(self) -> None: ...
-    def close(self) -> None: ...
-    def latency_ms(self) -> float: ...
-```
-Register it in `create_audio_output()` and select it via `config.AUDIO_BACKEND`.
-
-### Piano/visual handlers
-Implement `PianoEventSink` in `visuals/piano_sink.py`:
-```
+### Piano renderer integration
+The renderer should consume note events from a thread-safe queue so it never blocks
+the scheduler thread.
+```python
 class MyPianoSink(PianoEventSink):
-    def handle_note_event(self, event: dict, playback_time_ms: float | None = None) -> None: ...
-    def close(self) -> None: ...
+    def __init__(self):
+        self.queue = collections.deque()
+        self.lock = threading.Lock()
+
+    def handle_note_event(self, event, playback_time_ms=None):
+        with self.lock:
+            self.queue.append((event, playback_time_ms))
+
+    def pop_events(self):
+        with self.lock:
+            events = list(self.queue)
+            self.queue.clear()
+        return events
 ```
-Attach it by constructing `PlaybackController(piano_sink=MyPianoSink())`
-or by updating `main.py` to use your sink.
 
-### FX handlers
-If you need separate FX routing, follow the same pattern as `PianoEventSink`:
-- Create a new interface (e.g., `FxEventSink`)
-- Route it from `PlaybackController._on_event()`
-- Keep it event-driven to stay in sync with audio
+```python
+# GUI render loop
+for event, t in piano_sink.pop_events():
+    if event["type"] == "on":
+        press_key(event["note"], event["velocity"])
+    else:
+        release_key(event["note"])
+```
 
-## Tuning / normalization
-Per-track analysis runs automatically before playback (`AUTO_PROFILE = True`). Useful knobs in
-`configs/config.py`:
-- `TARGET_AVG_VELOCITY`, `VELOCITY_SCALE_MIN/MAX`
-- `AUTO_CC7_SCALE`, `AUTO_CC11_SCALE` (volume/expression normalization)
-- `AUTO_GAIN` (caps gain based on polyphony)
-- `FILTER_CONTROL_CHANGES` + `FILTER_CONTROLS` to ignore tone-shaping CCs
-
-These settings help reduce perceived differences across MIDI files when using a single
-piano soundfont.
+### Threading and timing notes
+- The scheduler runs in a background thread; GUI code must never block it.
+- `Report_Note()` should be a lock-protected read of the latest event.
+- Renderers should drain event queues every frame to stay in sync with audio.
