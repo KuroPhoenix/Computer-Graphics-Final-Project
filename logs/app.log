@@ -430,3 +430,1098 @@
 2025-12-19 21:47:07,949 [INFO] audio.midi_manager: Parsed 1877 events (duration=118076 ms, tempo events=27)
 2025-12-19 21:47:07,950 [DEBUG] audio.midi_manager: Loading timeline with 1877 events
 2025-12-19 21:47:07,950 [INFO] audio.midi_manager: Initialized playback state (duration=118076 ms, tempo events=27)
+2025-12-20 02:17:26,256 [INFO] __main__: Starting track: midi/Inazuma.mid
+2025-12-20 02:17:26,257 [INFO] audio.midi_manager: Parsing MIDI file: midi/Inazuma.mid
+2025-12-20 02:17:26,301 [INFO] audio.midi_manager: Parsed 6371 events (duration=340502 ms, tempo events=30)
+2025-12-20 02:17:26,301 [DEBUG] audio.midi_manager: Loading timeline with 6371 events
+2025-12-20 02:17:26,302 [INFO] audio.midi_manager: Initialized playback state (duration=340502 ms, tempo events=30)
+2025-12-20 02:17:26,302 [ERROR] audio.audio_output: pyfluidsynth backend failed (pyfluidsynth not installed; pip install pyfluidsynth); falling back to mixer.
+2025-12-20 02:17:26,585 [INFO] audio.audio_output: MixerAudioOutput initialized
+2025-12-20 02:17:26,586 [INFO] audio.audio_output: Audio backend: mixer
+2025-12-20 02:17:26,586 [INFO] __main__: Using audio backend: MixerAudioOutput
+2025-12-20 02:17:26,684 [INFO] audio.audio_output: Mixer playback started for midi/Inazuma.mid
+2025-12-20 02:17:26,684 [INFO] audio.midi_manager: Playback started
+2025-12-20 02:17:26,685 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=0, cursor=3/6371, status=playing
+2025-12-20 02:17:27,688 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=1004, cursor=22/6371, status=playing
+2025-12-20 02:17:27,692 [DEBUG] __main__: Monitor: pos_ms=1008, cursor=22/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 1040}
+2025-12-20 02:17:28,694 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=2009, cursor=47/6371, status=playing
+2025-12-20 02:17:28,698 [DEBUG] __main__: Monitor: pos_ms=2014, cursor=47/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 2046}
+2025-12-20 02:17:29,697 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=3012, cursor=82/6371, status=playing
+2025-12-20 02:17:29,706 [DEBUG] __main__: Monitor: pos_ms=3022, cursor=82/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 3055}
+2025-12-20 02:17:30,700 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=4016, cursor=116/6371, status=playing
+2025-12-20 02:17:30,713 [DEBUG] __main__: Monitor: pos_ms=4029, cursor=116/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 4060}
+2025-12-20 02:17:31,704 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=5019, cursor=141/6371, status=playing
+2025-12-20 02:17:31,720 [DEBUG] __main__: Monitor: pos_ms=5036, cursor=141/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 5065}
+2025-12-20 02:17:32,707 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=6022, cursor=150/6371, status=playing
+2025-12-20 02:17:32,725 [DEBUG] __main__: Monitor: pos_ms=6041, cursor=150/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 6072}
+2025-12-20 02:17:33,710 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=7025, cursor=153/6371, status=playing
+2025-12-20 02:17:33,731 [DEBUG] __main__: Monitor: pos_ms=7047, cursor=153/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 7077}
+2025-12-20 02:17:34,714 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=8029, cursor=153/6371, status=playing
+2025-12-20 02:17:34,737 [DEBUG] __main__: Monitor: pos_ms=8053, cursor=153/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 8083}
+2025-12-20 02:17:35,714 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=9030, cursor=154/6371, status=playing
+2025-12-20 02:17:35,745 [DEBUG] __main__: Monitor: pos_ms=9061, cursor=154/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 9090}
+2025-12-20 02:17:36,717 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=10032, cursor=154/6371, status=playing
+2025-12-20 02:17:36,752 [DEBUG] __main__: Monitor: pos_ms=10068, cursor=154/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 10096}
+2025-12-20 02:17:37,721 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=11036, cursor=156/6371, status=playing
+2025-12-20 02:17:37,758 [DEBUG] __main__: Monitor: pos_ms=11074, cursor=156/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 11102}
+2025-12-20 02:17:38,725 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=12041, cursor=159/6371, status=playing
+2025-12-20 02:17:38,763 [DEBUG] __main__: Monitor: pos_ms=12079, cursor=159/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 12116}
+2025-12-20 02:17:39,731 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=13046, cursor=175/6371, status=playing
+2025-12-20 02:17:39,770 [DEBUG] __main__: Monitor: pos_ms=13086, cursor=176/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 13121}
+2025-12-20 02:17:40,733 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=14049, cursor=184/6371, status=playing
+2025-12-20 02:17:40,776 [DEBUG] __main__: Monitor: pos_ms=14092, cursor=189/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 14129}
+2025-12-20 02:17:41,734 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=15049, cursor=189/6371, status=playing
+2025-12-20 02:17:41,783 [DEBUG] __main__: Monitor: pos_ms=15099, cursor=190/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 15136}
+2025-12-20 02:17:42,739 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=16055, cursor=196/6371, status=playing
+2025-12-20 02:17:42,790 [DEBUG] __main__: Monitor: pos_ms=16106, cursor=196/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 16143}
+2025-12-20 02:17:43,742 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=17057, cursor=205/6371, status=playing
+2025-12-20 02:17:43,797 [DEBUG] __main__: Monitor: pos_ms=17113, cursor=205/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 17150}
+2025-12-20 02:17:44,742 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=18058, cursor=217/6371, status=playing
+2025-12-20 02:17:44,805 [DEBUG] __main__: Monitor: pos_ms=18120, cursor=217/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 18156}
+2025-12-20 02:17:45,744 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=19059, cursor=221/6371, status=playing
+2025-12-20 02:17:45,812 [DEBUG] __main__: Monitor: pos_ms=19128, cursor=221/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 19164}
+2025-12-20 02:17:46,749 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=20065, cursor=226/6371, status=playing
+2025-12-20 02:17:46,818 [DEBUG] __main__: Monitor: pos_ms=20133, cursor=226/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 20169}
+2025-12-20 02:17:47,750 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=21065, cursor=232/6371, status=playing
+2025-12-20 02:17:47,824 [DEBUG] __main__: Monitor: pos_ms=21140, cursor=232/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 21174}
+2025-12-20 02:17:48,752 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=22067, cursor=237/6371, status=playing
+2025-12-20 02:17:48,832 [DEBUG] __main__: Monitor: pos_ms=22147, cursor=237/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 22182}
+2025-12-20 02:17:49,753 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=23068, cursor=251/6371, status=playing
+2025-12-20 02:17:49,838 [DEBUG] __main__: Monitor: pos_ms=23154, cursor=251/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 23189}
+2025-12-20 02:17:50,757 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=24072, cursor=252/6371, status=playing
+2025-12-20 02:17:50,846 [DEBUG] __main__: Monitor: pos_ms=24162, cursor=253/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 24197}
+2025-12-20 02:17:51,762 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=25077, cursor=265/6371, status=playing
+2025-12-20 02:17:51,852 [DEBUG] __main__: Monitor: pos_ms=25168, cursor=265/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 25201}
+2025-12-20 02:17:52,763 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=26079, cursor=278/6371, status=playing
+2025-12-20 02:17:52,859 [DEBUG] __main__: Monitor: pos_ms=26174, cursor=278/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 26206}
+2025-12-20 02:17:53,768 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=27084, cursor=285/6371, status=playing
+2025-12-20 02:17:53,865 [DEBUG] __main__: Monitor: pos_ms=27181, cursor=285/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 27212}
+2025-12-20 02:17:54,773 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=28088, cursor=301/6371, status=playing
+2025-12-20 02:17:54,872 [DEBUG] __main__: Monitor: pos_ms=28188, cursor=303/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 28219}
+2025-12-20 02:17:55,774 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=29089, cursor=310/6371, status=playing
+2025-12-20 02:17:55,878 [DEBUG] __main__: Monitor: pos_ms=29194, cursor=310/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 29225}
+2025-12-20 02:17:56,778 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=30093, cursor=318/6371, status=playing
+2025-12-20 02:17:56,885 [DEBUG] __main__: Monitor: pos_ms=30201, cursor=320/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 30233}
+2025-12-20 02:17:57,783 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=31098, cursor=331/6371, status=playing
+2025-12-20 02:17:57,893 [DEBUG] __main__: Monitor: pos_ms=31209, cursor=332/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 31239}
+2025-12-20 02:17:58,784 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=32099, cursor=341/6371, status=playing
+2025-12-20 02:17:58,899 [DEBUG] __main__: Monitor: pos_ms=32215, cursor=341/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 32243}
+2025-12-20 02:17:59,786 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=33101, cursor=353/6371, status=playing
+2025-12-20 02:17:59,906 [DEBUG] __main__: Monitor: pos_ms=33221, cursor=355/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 33251}
+2025-12-20 02:18:00,787 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=34102, cursor=363/6371, status=playing
+2025-12-20 02:18:00,911 [DEBUG] __main__: Monitor: pos_ms=34227, cursor=365/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 34256}
+2025-12-20 02:18:01,789 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=35105, cursor=375/6371, status=playing
+2025-12-20 02:18:01,918 [DEBUG] __main__: Monitor: pos_ms=35233, cursor=375/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 35261}
+2025-12-20 02:18:02,794 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=36109, cursor=385/6371, status=playing
+2025-12-20 02:18:02,924 [DEBUG] __main__: Monitor: pos_ms=36239, cursor=387/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 36276}
+2025-12-20 02:18:03,796 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=37111, cursor=397/6371, status=playing
+2025-12-20 02:18:03,930 [DEBUG] __main__: Monitor: pos_ms=37246, cursor=401/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 37282}
+2025-12-20 02:18:04,799 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=38114, cursor=413/6371, status=playing
+2025-12-20 02:18:04,937 [DEBUG] __main__: Monitor: pos_ms=38253, cursor=413/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 38291}
+2025-12-20 02:18:05,804 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=39119, cursor=421/6371, status=playing
+2025-12-20 02:18:05,943 [DEBUG] __main__: Monitor: pos_ms=39259, cursor=423/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 39295}
+2025-12-20 02:18:06,805 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=40120, cursor=433/6371, status=playing
+2025-12-20 02:18:06,950 [DEBUG] __main__: Monitor: pos_ms=40266, cursor=435/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 40303}
+2025-12-20 02:18:07,809 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=41125, cursor=450/6371, status=playing
+2025-12-20 02:18:07,957 [DEBUG] __main__: Monitor: pos_ms=41273, cursor=450/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 41311}
+2025-12-20 02:18:08,813 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=42128, cursor=454/6371, status=playing
+2025-12-20 02:18:08,964 [DEBUG] __main__: Monitor: pos_ms=42280, cursor=454/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 42314}
+2025-12-20 02:18:09,813 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=43128, cursor=469/6371, status=playing
+2025-12-20 02:18:09,970 [DEBUG] __main__: Monitor: pos_ms=43286, cursor=471/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 43321}
+2025-12-20 02:18:10,815 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=44131, cursor=480/6371, status=playing
+2025-12-20 02:18:10,976 [DEBUG] __main__: Monitor: pos_ms=44291, cursor=481/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 44327}
+2025-12-20 02:18:11,816 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=45132, cursor=495/6371, status=playing
+2025-12-20 02:18:11,982 [DEBUG] __main__: Monitor: pos_ms=45298, cursor=495/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 45332}
+2025-12-20 02:18:12,820 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=46135, cursor=511/6371, status=playing
+2025-12-20 02:18:12,990 [DEBUG] __main__: Monitor: pos_ms=46305, cursor=514/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 46340}
+2025-12-20 02:18:13,825 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=47141, cursor=523/6371, status=playing
+2025-12-20 02:18:13,997 [DEBUG] __main__: Monitor: pos_ms=47313, cursor=523/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 47347}
+2025-12-20 02:18:14,828 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=48143, cursor=539/6371, status=playing
+2025-12-20 02:18:15,003 [DEBUG] __main__: Monitor: pos_ms=48319, cursor=539/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 48351}
+2025-12-20 02:18:15,829 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=49144, cursor=553/6371, status=playing
+2025-12-20 02:18:16,009 [DEBUG] __main__: Monitor: pos_ms=49325, cursor=555/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 49358}
+2025-12-20 02:18:16,833 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=50148, cursor=564/6371, status=playing
+2025-12-20 02:18:17,014 [DEBUG] __main__: Monitor: pos_ms=50330, cursor=565/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 50362}
+2025-12-20 02:18:17,837 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=51153, cursor=566/6371, status=playing
+2025-12-20 02:18:18,022 [DEBUG] __main__: Monitor: pos_ms=51338, cursor=568/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 51368}
+2025-12-20 02:18:18,843 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=52158, cursor=582/6371, status=playing
+2025-12-20 02:18:19,029 [DEBUG] __main__: Monitor: pos_ms=52345, cursor=585/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 52377}
+2025-12-20 02:18:19,847 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=53162, cursor=601/6371, status=playing
+2025-12-20 02:18:20,036 [DEBUG] __main__: Monitor: pos_ms=53351, cursor=603/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 53382}
+2025-12-20 02:18:20,850 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=54165, cursor=615/6371, status=playing
+2025-12-20 02:18:21,043 [DEBUG] __main__: Monitor: pos_ms=54359, cursor=615/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 54389}
+2025-12-20 02:18:21,855 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=55170, cursor=622/6371, status=playing
+2025-12-20 02:18:22,049 [DEBUG] __main__: Monitor: pos_ms=55365, cursor=627/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 55396}
+2025-12-20 02:18:22,858 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=56173, cursor=640/6371, status=playing
+2025-12-20 02:18:23,057 [DEBUG] __main__: Monitor: pos_ms=56373, cursor=644/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 56402}
+2025-12-20 02:18:23,863 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=57178, cursor=653/6371, status=playing
+2025-12-20 02:18:24,063 [DEBUG] __main__: Monitor: pos_ms=57379, cursor=660/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 57407}
+2025-12-20 02:18:24,864 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=58180, cursor=671/6371, status=playing
+2025-12-20 02:18:25,070 [DEBUG] __main__: Monitor: pos_ms=58386, cursor=673/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 58414}
+2025-12-20 02:18:25,867 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=59182, cursor=685/6371, status=playing
+2025-12-20 02:18:26,077 [DEBUG] __main__: Monitor: pos_ms=59393, cursor=685/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 59421}
+2025-12-20 02:18:26,870 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=60186, cursor=685/6371, status=playing
+2025-12-20 02:18:27,083 [DEBUG] __main__: Monitor: pos_ms=60399, cursor=689/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 60436}
+2025-12-20 02:18:27,873 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=61189, cursor=695/6371, status=playing
+2025-12-20 02:18:28,090 [DEBUG] __main__: Monitor: pos_ms=61406, cursor=697/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 61434}
+2025-12-20 02:18:28,873 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=62189, cursor=712/6371, status=playing
+2025-12-20 02:18:29,096 [DEBUG] __main__: Monitor: pos_ms=62412, cursor=714/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 62439}
+2025-12-20 02:18:29,874 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=63189, cursor=733/6371, status=playing
+2025-12-20 02:18:30,103 [DEBUG] __main__: Monitor: pos_ms=63419, cursor=735/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 63454}
+2025-12-20 02:18:30,878 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=64193, cursor=744/6371, status=playing
+2025-12-20 02:18:31,110 [DEBUG] __main__: Monitor: pos_ms=64426, cursor=747/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 64461}
+2025-12-20 02:18:31,881 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=65196, cursor=748/6371, status=playing
+2025-12-20 02:18:32,117 [DEBUG] __main__: Monitor: pos_ms=65433, cursor=754/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 65470}
+2025-12-20 02:18:32,884 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=66200, cursor=763/6371, status=playing
+2025-12-20 02:18:33,123 [DEBUG] __main__: Monitor: pos_ms=66439, cursor=765/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 66476}
+2025-12-20 02:18:33,888 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=67203, cursor=777/6371, status=playing
+2025-12-20 02:18:34,130 [DEBUG] __main__: Monitor: pos_ms=67446, cursor=777/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 67483}
+2025-12-20 02:18:34,890 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=68205, cursor=787/6371, status=playing
+2025-12-20 02:18:35,137 [DEBUG] __main__: Monitor: pos_ms=68453, cursor=791/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 68490}
+2025-12-20 02:18:35,894 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=69210, cursor=801/6371, status=playing
+2025-12-20 02:18:36,142 [DEBUG] __main__: Monitor: pos_ms=69458, cursor=804/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 69493}
+2025-12-20 02:18:36,561 [INFO] __main__: Interrupted; stopping playback.
+2025-12-20 02:18:36,561 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-20 02:18:36,564 [INFO] __main__: Track finished: midi/Inazuma.mid
+2025-12-20 02:18:36,721 [INFO] __main__: Starting track: midi/Moon in one's cup.mid
+2025-12-20 02:18:36,721 [INFO] audio.midi_manager: Parsing MIDI file: midi/Moon in one's cup.mid
+2025-12-20 02:18:36,733 [INFO] audio.midi_manager: Parsed 1877 events (duration=118076 ms, tempo events=27)
+2025-12-20 02:18:36,733 [DEBUG] audio.midi_manager: Loading timeline with 1877 events
+2025-12-20 02:18:36,733 [INFO] audio.midi_manager: Initialized playback state (duration=118076 ms, tempo events=27)
+2025-12-20 02:18:36,734 [ERROR] audio.audio_output: pyfluidsynth backend failed (pyfluidsynth not installed; pip install pyfluidsynth); falling back to mixer.
+2025-12-20 02:18:36,764 [INFO] audio.audio_output: MixerAudioOutput initialized
+2025-12-20 02:18:36,765 [INFO] audio.audio_output: Audio backend: mixer
+2025-12-20 02:18:36,765 [INFO] __main__: Using audio backend: MixerAudioOutput
+2025-12-20 02:18:36,847 [INFO] audio.audio_output: Mixer playback started for midi/Moon in one's cup.mid
+2025-12-20 02:18:36,848 [INFO] audio.midi_manager: Playback started
+2025-12-20 02:18:36,848 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=0, cursor=8/1877, status=playing
+2025-12-20 02:18:36,969 [INFO] __main__: Interrupted; stopping playback.
+2025-12-20 02:18:36,969 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-20 02:18:36,971 [INFO] __main__: Track finished: midi/Moon in one's cup.mid
+2025-12-20 02:22:12,112 [INFO] __main__: Starting track: midi/tracks/Inazuma.mid
+2025-12-20 02:22:12,113 [INFO] audio.midi_manager: Parsing MIDI file: midi/tracks/Inazuma.mid
+2025-12-20 02:22:12,159 [INFO] audio.midi_manager: Parsed 6371 events (duration=340502 ms, tempo events=30)
+2025-12-20 02:22:12,160 [DEBUG] audio.midi_manager: Loading timeline with 6371 events
+2025-12-20 02:22:12,161 [INFO] audio.midi_manager: Initialized playback state (duration=340502 ms, tempo events=30)
+2025-12-20 02:22:12,161 [ERROR] audio.audio_output: pyfluidsynth backend failed (pyfluidsynth not installed; pip install pyfluidsynth); falling back to mixer.
+2025-12-20 02:22:12,435 [INFO] audio.audio_output: MixerAudioOutput initialized
+2025-12-20 02:22:12,435 [INFO] audio.audio_output: Audio backend: mixer
+2025-12-20 02:22:12,435 [INFO] __main__: Using audio backend: MixerAudioOutput
+2025-12-20 02:22:12,530 [INFO] audio.audio_output: Mixer playback started for midi/tracks/Inazuma.mid
+2025-12-20 02:22:12,530 [INFO] audio.midi_manager: Playback started
+2025-12-20 02:22:12,530 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=0, cursor=3/6371, status=playing
+2025-12-20 02:22:13,533 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=1002, cursor=22/6371, status=playing
+2025-12-20 02:22:13,537 [DEBUG] __main__: Monitor: pos_ms=1008, cursor=22/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 1036}
+2025-12-20 02:22:14,535 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=2005, cursor=47/6371, status=playing
+2025-12-20 02:22:14,543 [DEBUG] __main__: Monitor: pos_ms=2013, cursor=47/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 2039}
+2025-12-20 02:22:15,537 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=3007, cursor=82/6371, status=playing
+2025-12-20 02:22:15,550 [DEBUG] __main__: Monitor: pos_ms=3020, cursor=82/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 3046}
+2025-12-20 02:22:16,538 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=4007, cursor=116/6371, status=playing
+2025-12-20 02:22:16,555 [DEBUG] __main__: Monitor: pos_ms=4025, cursor=116/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 4050}
+2025-12-20 02:22:17,542 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=5012, cursor=141/6371, status=playing
+2025-12-20 02:22:17,560 [DEBUG] __main__: Monitor: pos_ms=5030, cursor=141/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 5055}
+2025-12-20 02:22:18,548 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=6017, cursor=150/6371, status=playing
+2025-12-20 02:22:18,566 [DEBUG] __main__: Monitor: pos_ms=6036, cursor=150/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 6061}
+2025-12-20 02:22:19,551 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=7021, cursor=153/6371, status=playing
+2025-12-20 02:22:19,571 [DEBUG] __main__: Monitor: pos_ms=7041, cursor=153/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 7065}
+2025-12-20 02:22:20,553 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=8023, cursor=153/6371, status=playing
+2025-12-20 02:22:20,578 [DEBUG] __main__: Monitor: pos_ms=8048, cursor=153/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 8071}
+2025-12-20 02:22:21,558 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=9028, cursor=154/6371, status=playing
+2025-12-20 02:22:21,584 [DEBUG] __main__: Monitor: pos_ms=9054, cursor=154/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 9086}
+2025-12-20 02:22:22,561 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=10031, cursor=154/6371, status=playing
+2025-12-20 02:22:22,590 [DEBUG] __main__: Monitor: pos_ms=10060, cursor=154/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 10093}
+2025-12-20 02:22:23,562 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=11031, cursor=156/6371, status=playing
+2025-12-20 02:22:23,597 [DEBUG] __main__: Monitor: pos_ms=11067, cursor=156/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 11099}
+2025-12-20 02:22:24,565 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=12035, cursor=159/6371, status=playing
+2025-12-20 02:22:24,604 [DEBUG] __main__: Monitor: pos_ms=12074, cursor=159/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 12106}
+2025-12-20 02:22:25,570 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=13039, cursor=175/6371, status=playing
+2025-12-20 02:22:25,609 [DEBUG] __main__: Monitor: pos_ms=13079, cursor=175/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 13111}
+2025-12-20 02:22:26,571 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=14041, cursor=184/6371, status=playing
+2025-12-20 02:22:26,614 [DEBUG] __main__: Monitor: pos_ms=14084, cursor=189/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 14115}
+2025-12-20 02:22:27,573 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=15043, cursor=189/6371, status=playing
+2025-12-20 02:22:27,621 [DEBUG] __main__: Monitor: pos_ms=15091, cursor=190/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 15122}
+2025-12-20 02:22:28,578 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=16048, cursor=196/6371, status=playing
+2025-12-20 02:22:28,628 [DEBUG] __main__: Monitor: pos_ms=16098, cursor=196/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 16129}
+2025-12-20 02:22:29,583 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=17052, cursor=205/6371, status=playing
+2025-12-20 02:22:29,635 [DEBUG] __main__: Monitor: pos_ms=17105, cursor=205/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 17134}
+2025-12-20 02:22:30,585 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=18055, cursor=217/6371, status=playing
+2025-12-20 02:22:30,641 [DEBUG] __main__: Monitor: pos_ms=18111, cursor=217/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 18140}
+2025-12-20 02:22:31,589 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=19058, cursor=221/6371, status=playing
+2025-12-20 02:22:31,649 [DEBUG] __main__: Monitor: pos_ms=19119, cursor=221/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 19148}
+2025-12-20 02:22:32,593 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=20063, cursor=226/6371, status=playing
+2025-12-20 02:22:32,655 [DEBUG] __main__: Monitor: pos_ms=20125, cursor=226/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 20154}
+2025-12-20 02:22:33,597 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=21067, cursor=232/6371, status=playing
+2025-12-20 02:22:33,662 [DEBUG] __main__: Monitor: pos_ms=21132, cursor=232/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 21160}
+2025-12-20 02:22:34,599 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=22068, cursor=237/6371, status=playing
+2025-12-20 02:22:34,669 [DEBUG] __main__: Monitor: pos_ms=22139, cursor=237/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 22167}
+2025-12-20 02:22:35,600 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=23069, cursor=251/6371, status=playing
+2025-12-20 02:22:35,675 [DEBUG] __main__: Monitor: pos_ms=23145, cursor=251/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 23173}
+2025-12-20 02:22:36,600 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=24070, cursor=252/6371, status=playing
+2025-12-20 02:22:36,682 [DEBUG] __main__: Monitor: pos_ms=24153, cursor=253/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 24179}
+2025-12-20 02:22:37,605 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=25074, cursor=265/6371, status=playing
+2025-12-20 02:22:37,688 [DEBUG] __main__: Monitor: pos_ms=25158, cursor=265/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 25185}
+2025-12-20 02:22:38,609 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=26078, cursor=278/6371, status=playing
+2025-12-20 02:22:38,693 [DEBUG] __main__: Monitor: pos_ms=26163, cursor=278/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 26188}
+2025-12-20 02:22:39,611 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=27081, cursor=285/6371, status=playing
+2025-12-20 02:22:39,699 [DEBUG] __main__: Monitor: pos_ms=27170, cursor=285/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 27195}
+2025-12-20 02:22:40,612 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=28082, cursor=301/6371, status=playing
+2025-12-20 02:22:40,706 [DEBUG] __main__: Monitor: pos_ms=28176, cursor=303/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 28201}
+2025-12-20 02:22:41,617 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=29087, cursor=310/6371, status=playing
+2025-12-20 02:22:41,712 [DEBUG] __main__: Monitor: pos_ms=29182, cursor=310/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 29206}
+2025-12-20 02:22:42,620 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=30089, cursor=318/6371, status=playing
+2025-12-20 02:22:42,720 [DEBUG] __main__: Monitor: pos_ms=30190, cursor=320/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 30214}
+2025-12-20 02:22:43,622 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=31091, cursor=331/6371, status=playing
+2025-12-20 02:22:43,726 [DEBUG] __main__: Monitor: pos_ms=31197, cursor=331/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 31221}
+2025-12-20 02:22:44,623 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=32093, cursor=341/6371, status=playing
+2025-12-20 02:22:44,734 [DEBUG] __main__: Monitor: pos_ms=32204, cursor=341/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 32236}
+2025-12-20 02:22:45,626 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=33096, cursor=353/6371, status=playing
+2025-12-20 02:22:45,740 [DEBUG] __main__: Monitor: pos_ms=33210, cursor=355/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 33241}
+2025-12-20 02:22:46,628 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=34098, cursor=363/6371, status=playing
+2025-12-20 02:22:46,744 [DEBUG] __main__: Monitor: pos_ms=34214, cursor=365/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 34247}
+2025-12-20 02:22:47,628 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=35098, cursor=375/6371, status=playing
+2025-12-20 02:22:47,751 [DEBUG] __main__: Monitor: pos_ms=35221, cursor=375/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 35254}
+2025-12-20 02:22:48,633 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=36103, cursor=385/6371, status=playing
+2025-12-20 02:22:48,758 [DEBUG] __main__: Monitor: pos_ms=36228, cursor=387/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 36260}
+2025-12-20 02:22:49,637 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=37106, cursor=397/6371, status=playing
+2025-12-20 02:22:49,764 [DEBUG] __main__: Monitor: pos_ms=37234, cursor=401/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 37265}
+2025-12-20 02:22:50,641 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=38111, cursor=413/6371, status=playing
+2025-12-20 02:22:50,769 [DEBUG] __main__: Monitor: pos_ms=38239, cursor=413/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 38270}
+2025-12-20 02:22:51,646 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=39116, cursor=421/6371, status=playing
+2025-12-20 02:22:51,776 [DEBUG] __main__: Monitor: pos_ms=39246, cursor=423/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 39277}
+2025-12-20 02:22:52,651 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=40121, cursor=433/6371, status=playing
+2025-12-20 02:22:52,782 [DEBUG] __main__: Monitor: pos_ms=40252, cursor=435/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 40282}
+2025-12-20 02:22:53,654 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=41124, cursor=450/6371, status=playing
+2025-12-20 02:22:53,789 [DEBUG] __main__: Monitor: pos_ms=41259, cursor=450/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 41290}
+2025-12-20 02:22:54,656 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=42126, cursor=454/6371, status=playing
+2025-12-20 02:22:54,797 [DEBUG] __main__: Monitor: pos_ms=42267, cursor=454/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 42297}
+2025-12-20 02:22:55,659 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=43129, cursor=469/6371, status=playing
+2025-12-20 02:22:55,803 [DEBUG] __main__: Monitor: pos_ms=43273, cursor=471/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 43301}
+2025-12-20 02:22:56,660 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=44129, cursor=480/6371, status=playing
+2025-12-20 02:22:56,810 [DEBUG] __main__: Monitor: pos_ms=44280, cursor=481/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 44308}
+2025-12-20 02:22:57,664 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=45134, cursor=495/6371, status=playing
+2025-12-20 02:22:57,817 [DEBUG] __main__: Monitor: pos_ms=45287, cursor=495/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 45315}
+2025-12-20 02:22:58,668 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=46137, cursor=511/6371, status=playing
+2025-12-20 02:22:58,823 [DEBUG] __main__: Monitor: pos_ms=46294, cursor=514/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 46321}
+2025-12-20 02:22:59,669 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=47138, cursor=523/6371, status=playing
+2025-12-20 02:22:59,829 [DEBUG] __main__: Monitor: pos_ms=47299, cursor=523/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 47326}
+2025-12-20 02:23:00,673 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=48143, cursor=539/6371, status=playing
+2025-12-20 02:23:00,836 [DEBUG] __main__: Monitor: pos_ms=48306, cursor=539/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 48333}
+2025-12-20 02:23:01,678 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=49148, cursor=553/6371, status=playing
+2025-12-20 02:23:01,842 [DEBUG] __main__: Monitor: pos_ms=49312, cursor=555/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 49337}
+2025-12-20 02:23:02,680 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=50150, cursor=564/6371, status=playing
+2025-12-20 02:23:02,849 [DEBUG] __main__: Monitor: pos_ms=50320, cursor=565/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 50345}
+2025-12-20 02:23:03,682 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=51151, cursor=566/6371, status=playing
+2025-12-20 02:23:03,856 [DEBUG] __main__: Monitor: pos_ms=51326, cursor=567/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 51351}
+2025-12-20 02:23:04,682 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=52151, cursor=582/6371, status=playing
+2025-12-20 02:23:04,862 [DEBUG] __main__: Monitor: pos_ms=52332, cursor=585/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 52356}
+2025-12-20 02:23:05,687 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=53156, cursor=601/6371, status=playing
+2025-12-20 02:23:05,867 [DEBUG] __main__: Monitor: pos_ms=53338, cursor=603/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 53362}
+2025-12-20 02:23:06,688 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=54158, cursor=615/6371, status=playing
+2025-12-20 02:23:06,874 [DEBUG] __main__: Monitor: pos_ms=54344, cursor=615/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 54376}
+2025-12-20 02:23:07,689 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=55159, cursor=622/6371, status=playing
+2025-12-20 02:23:07,881 [DEBUG] __main__: Monitor: pos_ms=55351, cursor=627/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 55383}
+2025-12-20 02:23:08,690 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=56159, cursor=640/6371, status=playing
+2025-12-20 02:23:08,888 [DEBUG] __main__: Monitor: pos_ms=56358, cursor=644/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 56391}
+2025-12-20 02:23:09,692 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=57161, cursor=653/6371, status=playing
+2025-12-20 02:23:09,894 [DEBUG] __main__: Monitor: pos_ms=57364, cursor=660/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 57397}
+2025-12-20 02:23:10,694 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=58164, cursor=671/6371, status=playing
+2025-12-20 02:23:10,900 [DEBUG] __main__: Monitor: pos_ms=58370, cursor=673/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 58403}
+2025-12-20 02:23:11,694 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=59164, cursor=685/6371, status=playing
+2025-12-20 02:23:11,908 [DEBUG] __main__: Monitor: pos_ms=59378, cursor=685/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 59411}
+2025-12-20 02:23:12,697 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=60166, cursor=685/6371, status=playing
+2025-12-20 02:23:12,915 [DEBUG] __main__: Monitor: pos_ms=60385, cursor=689/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 60416}
+2025-12-20 02:23:13,702 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=61172, cursor=695/6371, status=playing
+2025-12-20 02:23:13,921 [DEBUG] __main__: Monitor: pos_ms=61391, cursor=697/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 61423}
+2025-12-20 02:23:14,705 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=62174, cursor=712/6371, status=playing
+2025-12-20 02:23:14,929 [DEBUG] __main__: Monitor: pos_ms=62399, cursor=714/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 62430}
+2025-12-20 02:23:15,706 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=63175, cursor=733/6371, status=playing
+2025-12-20 02:23:15,936 [DEBUG] __main__: Monitor: pos_ms=63406, cursor=735/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 63437}
+2025-12-20 02:23:16,709 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=64179, cursor=742/6371, status=playing
+2025-12-20 02:23:16,942 [DEBUG] __main__: Monitor: pos_ms=64412, cursor=747/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 64443}
+2025-12-20 02:23:17,711 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=65180, cursor=748/6371, status=playing
+2025-12-20 02:23:17,949 [DEBUG] __main__: Monitor: pos_ms=65420, cursor=751/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 65449}
+2025-12-20 02:23:18,715 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=66185, cursor=763/6371, status=playing
+2025-12-20 02:23:18,957 [DEBUG] __main__: Monitor: pos_ms=66427, cursor=765/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 66457}
+2025-12-20 02:23:19,719 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=67189, cursor=777/6371, status=playing
+2025-12-20 02:23:19,963 [DEBUG] __main__: Monitor: pos_ms=67433, cursor=777/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 67461}
+2025-12-20 02:23:20,722 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=68192, cursor=787/6371, status=playing
+2025-12-20 02:23:20,970 [DEBUG] __main__: Monitor: pos_ms=68440, cursor=791/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 68469}
+2025-12-20 02:23:21,727 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=69197, cursor=801/6371, status=playing
+2025-12-20 02:23:21,975 [DEBUG] __main__: Monitor: pos_ms=69446, cursor=804/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 69475}
+2025-12-20 02:23:22,728 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=70198, cursor=804/6371, status=playing
+2025-12-20 02:23:22,981 [DEBUG] __main__: Monitor: pos_ms=70451, cursor=804/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 70478}
+2025-12-20 02:23:23,730 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=71199, cursor=812/6371, status=playing
+2025-12-20 02:23:23,988 [DEBUG] __main__: Monitor: pos_ms=71458, cursor=814/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 71486}
+2025-12-20 02:23:24,733 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=72203, cursor=822/6371, status=playing
+2025-12-20 02:23:24,996 [DEBUG] __main__: Monitor: pos_ms=72466, cursor=825/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 72493}
+2025-12-20 02:23:25,737 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=73206, cursor=831/6371, status=playing
+2025-12-20 02:23:26,002 [DEBUG] __main__: Monitor: pos_ms=73472, cursor=833/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 73498}
+2025-12-20 02:23:26,741 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=74211, cursor=843/6371, status=playing
+2025-12-20 02:23:27,008 [DEBUG] __main__: Monitor: pos_ms=74478, cursor=845/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 74504}
+2025-12-20 02:23:27,743 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=75212, cursor=853/6371, status=playing
+2025-12-20 02:23:28,014 [DEBUG] __main__: Monitor: pos_ms=75484, cursor=855/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 75508}
+2025-12-20 02:23:28,746 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=76216, cursor=863/6371, status=playing
+2025-12-20 02:23:29,021 [DEBUG] __main__: Monitor: pos_ms=76491, cursor=865/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 76515}
+2025-12-20 02:23:29,752 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=77221, cursor=873/6371, status=playing
+2025-12-20 02:23:30,028 [DEBUG] __main__: Monitor: pos_ms=77498, cursor=879/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 77522}
+2025-12-20 02:23:30,753 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=78223, cursor=885/6371, status=playing
+2025-12-20 02:23:31,034 [DEBUG] __main__: Monitor: pos_ms=78504, cursor=889/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 78537}
+2025-12-20 02:23:31,756 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=79226, cursor=901/6371, status=playing
+2025-12-20 02:23:32,041 [DEBUG] __main__: Monitor: pos_ms=79511, cursor=903/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 79544}
+2025-12-20 02:23:32,760 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=80229, cursor=909/6371, status=playing
+2025-12-20 02:23:33,047 [DEBUG] __main__: Monitor: pos_ms=80517, cursor=913/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 80541}
+2025-12-20 02:23:33,763 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=81232, cursor=920/6371, status=playing
+2025-12-20 02:23:34,056 [DEBUG] __main__: Monitor: pos_ms=81526, cursor=922/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 81549}
+2025-12-20 02:23:34,767 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=82236, cursor=930/6371, status=playing
+2025-12-20 02:23:35,062 [DEBUG] __main__: Monitor: pos_ms=82532, cursor=932/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 82563}
+2025-12-20 02:23:35,769 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=83239, cursor=941/6371, status=playing
+2025-12-20 02:23:36,069 [DEBUG] __main__: Monitor: pos_ms=83540, cursor=945/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 83572}
+2025-12-20 02:23:36,771 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=84240, cursor=955/6371, status=playing
+2025-12-20 02:23:37,076 [DEBUG] __main__: Monitor: pos_ms=84546, cursor=957/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 84578}
+2025-12-20 02:23:37,772 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=85241, cursor=965/6371, status=playing
+2025-12-20 02:23:38,082 [DEBUG] __main__: Monitor: pos_ms=85552, cursor=967/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 85584}
+2025-12-20 02:23:38,772 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=86242, cursor=977/6371, status=playing
+2025-12-20 02:23:39,091 [DEBUG] __main__: Monitor: pos_ms=86561, cursor=983/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 86593}
+2025-12-20 02:23:39,774 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=87244, cursor=991/6371, status=playing
+2025-12-20 02:23:40,096 [DEBUG] __main__: Monitor: pos_ms=87566, cursor=995/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 87599}
+2025-12-20 02:23:40,780 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=88249, cursor=1003/6371, status=playing
+2025-12-20 02:23:41,101 [DEBUG] __main__: Monitor: pos_ms=88572, cursor=1005/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 88602}
+2025-12-20 02:23:41,783 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=89252, cursor=1015/6371, status=playing
+2025-12-20 02:23:42,104 [DEBUG] __main__: Monitor: pos_ms=89574, cursor=1019/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 89603}
+2025-12-20 02:23:42,785 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=90255, cursor=1023/6371, status=playing
+2025-12-20 02:23:43,109 [DEBUG] __main__: Monitor: pos_ms=90579, cursor=1023/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 90608}
+2025-12-20 02:23:43,787 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=91257, cursor=1034/6371, status=playing
+2025-12-20 02:23:44,116 [DEBUG] __main__: Monitor: pos_ms=91586, cursor=1048/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 91615}
+2025-12-20 02:23:44,792 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=92262, cursor=1078/6371, status=playing
+2025-12-20 02:23:45,123 [DEBUG] __main__: Monitor: pos_ms=92593, cursor=1094/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 92620}
+2025-12-20 02:23:45,792 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=93262, cursor=1120/6371, status=playing
+2025-12-20 02:23:46,130 [DEBUG] __main__: Monitor: pos_ms=93600, cursor=1134/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 93627}
+2025-12-20 02:23:46,795 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=94265, cursor=1171/6371, status=playing
+2025-12-20 02:23:47,136 [DEBUG] __main__: Monitor: pos_ms=94606, cursor=1184/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 94633}
+2025-12-20 02:23:47,798 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=95268, cursor=1216/6371, status=playing
+2025-12-20 02:23:48,143 [DEBUG] __main__: Monitor: pos_ms=95613, cursor=1229/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 95639}
+2025-12-20 02:23:48,801 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=96271, cursor=1251/6371, status=playing
+2025-12-20 02:23:49,149 [DEBUG] __main__: Monitor: pos_ms=96619, cursor=1265/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 96645}
+2025-12-20 02:23:49,805 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=97274, cursor=1289/6371, status=playing
+2025-12-20 02:23:50,155 [DEBUG] __main__: Monitor: pos_ms=97625, cursor=1301/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 97652}
+2025-12-20 02:23:50,809 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=98278, cursor=1305/6371, status=playing
+2025-12-20 02:23:51,162 [DEBUG] __main__: Monitor: pos_ms=98632, cursor=1305/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 98657}
+2025-12-20 02:23:51,809 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=99279, cursor=1313/6371, status=playing
+2025-12-20 02:23:52,169 [DEBUG] __main__: Monitor: pos_ms=99639, cursor=1322/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 99664}
+2025-12-20 02:23:52,810 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=100279, cursor=1330/6371, status=playing
+2025-12-20 02:23:53,176 [DEBUG] __main__: Monitor: pos_ms=100646, cursor=1340/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 100671}
+2025-12-20 02:23:53,815 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=101284, cursor=1346/6371, status=playing
+2025-12-20 02:23:54,184 [DEBUG] __main__: Monitor: pos_ms=101654, cursor=1352/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 101677}
+2025-12-20 02:23:54,817 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=102287, cursor=1364/6371, status=playing
+2025-12-20 02:23:55,192 [DEBUG] __main__: Monitor: pos_ms=102662, cursor=1366/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 102685}
+2025-12-20 02:23:55,818 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=103287, cursor=1382/6371, status=playing
+2025-12-20 02:23:56,199 [DEBUG] __main__: Monitor: pos_ms=103669, cursor=1388/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 103692}
+2025-12-20 02:23:56,819 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=104289, cursor=1394/6371, status=playing
+2025-12-20 02:23:57,205 [DEBUG] __main__: Monitor: pos_ms=104676, cursor=1402/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 104699}
+2025-12-20 02:23:57,825 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=105294, cursor=1412/6371, status=playing
+2025-12-20 02:23:58,211 [DEBUG] __main__: Monitor: pos_ms=105681, cursor=1417/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 105714}
+2025-12-20 02:23:58,825 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=106295, cursor=1427/6371, status=playing
+2025-12-20 02:23:59,217 [DEBUG] __main__: Monitor: pos_ms=106687, cursor=1439/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 106719}
+2025-12-20 02:23:59,829 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=107299, cursor=1447/6371, status=playing
+2025-12-20 02:24:00,224 [DEBUG] __main__: Monitor: pos_ms=107694, cursor=1451/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 107726}
+2025-12-20 02:24:00,830 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=108300, cursor=1459/6371, status=playing
+2025-12-20 02:24:01,232 [DEBUG] __main__: Monitor: pos_ms=108702, cursor=1469/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 108734}
+2025-12-20 02:24:01,831 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=109301, cursor=1482/6371, status=playing
+2025-12-20 02:24:02,238 [DEBUG] __main__: Monitor: pos_ms=109708, cursor=1490/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 109741}
+2025-12-20 02:24:02,834 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=110303, cursor=1498/6371, status=playing
+2025-12-20 02:24:03,244 [DEBUG] __main__: Monitor: pos_ms=110715, cursor=1506/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 110745}
+2025-12-20 02:24:03,838 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=111308, cursor=1516/6371, status=playing
+2025-12-20 02:24:04,250 [DEBUG] __main__: Monitor: pos_ms=111720, cursor=1524/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 111751}
+2025-12-20 02:24:04,841 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=112310, cursor=1538/6371, status=playing
+2025-12-20 02:24:05,258 [DEBUG] __main__: Monitor: pos_ms=112728, cursor=1546/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 112759}
+2025-12-20 02:24:05,843 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=113313, cursor=1552/6371, status=playing
+2025-12-20 02:24:06,265 [DEBUG] __main__: Monitor: pos_ms=113735, cursor=1564/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 113766}
+2025-12-20 02:24:06,843 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=114313, cursor=1572/6371, status=playing
+2025-12-20 02:24:07,272 [DEBUG] __main__: Monitor: pos_ms=114742, cursor=1579/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 114771}
+2025-12-20 02:24:07,846 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=115315, cursor=1594/6371, status=playing
+2025-12-20 02:24:08,275 [DEBUG] __main__: Monitor: pos_ms=115746, cursor=1599/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 115775}
+2025-12-20 02:24:08,848 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=116318, cursor=1611/6371, status=playing
+2025-12-20 02:24:09,282 [DEBUG] __main__: Monitor: pos_ms=116752, cursor=1620/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 116780}
+2025-12-20 02:24:09,853 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=117323, cursor=1631/6371, status=playing
+2025-12-20 02:24:10,289 [DEBUG] __main__: Monitor: pos_ms=117759, cursor=1638/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 117787}
+2025-12-20 02:24:10,855 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=118324, cursor=1652/6371, status=playing
+2025-12-20 02:24:11,295 [DEBUG] __main__: Monitor: pos_ms=118765, cursor=1664/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 118791}
+2025-12-20 02:24:11,859 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=119328, cursor=1668/6371, status=playing
+2025-12-20 02:24:12,301 [DEBUG] __main__: Monitor: pos_ms=119771, cursor=1677/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 119797}
+2025-12-20 02:24:12,863 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=120333, cursor=1679/6371, status=playing
+2025-12-20 02:24:13,308 [DEBUG] __main__: Monitor: pos_ms=120778, cursor=1681/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 120804}
+2025-12-20 02:24:13,869 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=121338, cursor=1684/6371, status=playing
+2025-12-20 02:24:14,315 [DEBUG] __main__: Monitor: pos_ms=121785, cursor=1690/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 121810}
+2025-12-20 02:24:14,871 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=122341, cursor=1700/6371, status=playing
+2025-12-20 02:24:15,323 [DEBUG] __main__: Monitor: pos_ms=122793, cursor=1700/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 122818}
+2025-12-20 02:24:15,873 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=123343, cursor=1706/6371, status=playing
+2025-12-20 02:24:16,329 [DEBUG] __main__: Monitor: pos_ms=123800, cursor=1708/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 123825}
+2025-12-20 02:24:16,875 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=124344, cursor=1710/6371, status=playing
+2025-12-20 02:24:17,337 [DEBUG] __main__: Monitor: pos_ms=124807, cursor=1720/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 124832}
+2025-12-20 02:24:17,877 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=125347, cursor=1720/6371, status=playing
+2025-12-20 02:24:18,343 [DEBUG] __main__: Monitor: pos_ms=125814, cursor=1725/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 125837}
+2025-12-20 02:24:18,879 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=126349, cursor=1729/6371, status=playing
+2025-12-20 02:24:19,350 [DEBUG] __main__: Monitor: pos_ms=126820, cursor=1729/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 126844}
+2025-12-20 02:24:19,884 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=127353, cursor=1747/6371, status=playing
+2025-12-20 02:24:20,357 [DEBUG] __main__: Monitor: pos_ms=127827, cursor=1747/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 127851}
+2025-12-20 02:24:20,885 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=128355, cursor=1747/6371, status=playing
+2025-12-20 02:24:21,363 [DEBUG] __main__: Monitor: pos_ms=128833, cursor=1752/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 128865}
+2025-12-20 02:24:21,886 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=129355, cursor=1764/6371, status=playing
+2025-12-20 02:24:22,370 [DEBUG] __main__: Monitor: pos_ms=129840, cursor=1777/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 129872}
+2025-12-20 02:24:22,888 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=130358, cursor=1777/6371, status=playing
+2025-12-20 02:24:23,377 [DEBUG] __main__: Monitor: pos_ms=130847, cursor=1788/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 130879}
+2025-12-20 02:24:23,892 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=131361, cursor=1800/6371, status=playing
+2025-12-20 02:24:24,384 [DEBUG] __main__: Monitor: pos_ms=131854, cursor=1806/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 131886}
+2025-12-20 02:24:24,896 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=132365, cursor=1828/6371, status=playing
+2025-12-20 02:24:25,390 [DEBUG] __main__: Monitor: pos_ms=132860, cursor=1835/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 132893}
+2025-12-20 02:24:25,899 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=133369, cursor=1848/6371, status=playing
+2025-12-20 02:24:26,398 [DEBUG] __main__: Monitor: pos_ms=133869, cursor=1860/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 133901}
+2025-12-20 02:24:26,900 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=134370, cursor=1860/6371, status=playing
+2025-12-20 02:24:27,405 [DEBUG] __main__: Monitor: pos_ms=134875, cursor=1867/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 134906}
+2025-12-20 02:24:27,901 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=135370, cursor=1888/6371, status=playing
+2025-12-20 02:24:28,412 [DEBUG] __main__: Monitor: pos_ms=135882, cursor=1914/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 135913}
+2025-12-20 02:24:28,902 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=136371, cursor=1940/6371, status=playing
+2025-12-20 02:24:29,419 [DEBUG] __main__: Monitor: pos_ms=136889, cursor=1970/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 136920}
+2025-12-20 02:24:29,905 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=137375, cursor=1984/6371, status=playing
+2025-12-20 02:24:30,425 [DEBUG] __main__: Monitor: pos_ms=137896, cursor=1992/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 137927}
+2025-12-20 02:24:30,911 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=138380, cursor=1992/6371, status=playing
+2025-12-20 02:24:31,431 [DEBUG] __main__: Monitor: pos_ms=138901, cursor=1992/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 138931}
+2025-12-20 02:24:31,914 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=139383, cursor=1992/6371, status=playing
+2025-12-20 02:24:32,439 [DEBUG] __main__: Monitor: pos_ms=139909, cursor=1997/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 139939}
+2025-12-20 02:24:32,915 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=140385, cursor=2003/6371, status=playing
+2025-12-20 02:24:33,445 [DEBUG] __main__: Monitor: pos_ms=140915, cursor=2011/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 140945}
+2025-12-20 02:24:33,920 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=141390, cursor=2023/6371, status=playing
+2025-12-20 02:24:34,450 [DEBUG] __main__: Monitor: pos_ms=141920, cursor=2031/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 141949}
+2025-12-20 02:24:34,925 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=142394, cursor=2041/6371, status=playing
+2025-12-20 02:24:35,453 [DEBUG] __main__: Monitor: pos_ms=142923, cursor=2055/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 142951}
+2025-12-20 02:24:35,925 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=143395, cursor=2063/6371, status=playing
+2025-12-20 02:24:36,460 [DEBUG] __main__: Monitor: pos_ms=143930, cursor=2075/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 143957}
+2025-12-20 02:24:36,930 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=144399, cursor=2083/6371, status=playing
+2025-12-20 02:24:37,467 [DEBUG] __main__: Monitor: pos_ms=144938, cursor=2089/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 144965}
+2025-12-20 02:24:37,934 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=145403, cursor=2095/6371, status=playing
+2025-12-20 02:24:38,474 [DEBUG] __main__: Monitor: pos_ms=145944, cursor=2107/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 145969}
+2025-12-20 02:24:38,937 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=146407, cursor=2115/6371, status=playing
+2025-12-20 02:24:39,480 [DEBUG] __main__: Monitor: pos_ms=146950, cursor=2127/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 146975}
+2025-12-20 02:24:39,939 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=147408, cursor=2133/6371, status=playing
+2025-12-20 02:24:40,487 [DEBUG] __main__: Monitor: pos_ms=147957, cursor=2139/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 147982}
+2025-12-20 02:24:40,942 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=148412, cursor=2147/6371, status=playing
+2025-12-20 02:24:41,494 [DEBUG] __main__: Monitor: pos_ms=148964, cursor=2159/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 148988}
+2025-12-20 02:24:41,943 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=149412, cursor=2167/6371, status=playing
+2025-12-20 02:24:42,501 [DEBUG] __main__: Monitor: pos_ms=149971, cursor=2179/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 149995}
+2025-12-20 02:24:42,948 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=150418, cursor=2187/6371, status=playing
+2025-12-20 02:24:43,507 [DEBUG] __main__: Monitor: pos_ms=150977, cursor=2195/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 151001}
+2025-12-20 02:24:43,951 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=151421, cursor=2207/6371, status=playing
+2025-12-20 02:24:44,515 [DEBUG] __main__: Monitor: pos_ms=151985, cursor=2215/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 152017}
+2025-12-20 02:24:44,955 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=152425, cursor=2223/6371, status=playing
+2025-12-20 02:24:45,520 [DEBUG] __main__: Monitor: pos_ms=152990, cursor=2231/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 153022}
+2025-12-20 02:24:45,957 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=153426, cursor=2239/6371, status=playing
+2025-12-20 02:24:46,525 [DEBUG] __main__: Monitor: pos_ms=153996, cursor=2251/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 154028}
+2025-12-20 02:24:46,958 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=154428, cursor=2259/6371, status=playing
+2025-12-20 02:24:47,531 [DEBUG] __main__: Monitor: pos_ms=155001, cursor=2267/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 155035}
+2025-12-20 02:24:47,959 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=155429, cursor=2279/6371, status=playing
+2025-12-20 02:24:48,537 [DEBUG] __main__: Monitor: pos_ms=156008, cursor=2291/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 156041}
+2025-12-20 02:24:48,962 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=156431, cursor=2299/6371, status=playing
+2025-12-20 02:24:49,544 [DEBUG] __main__: Monitor: pos_ms=157014, cursor=2311/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 157045}
+2025-12-20 02:24:49,965 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=157434, cursor=2319/6371, status=playing
+2025-12-20 02:24:50,549 [DEBUG] __main__: Monitor: pos_ms=158019, cursor=2323/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 158051}
+2025-12-20 02:24:50,969 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=158439, cursor=2331/6371, status=playing
+2025-12-20 02:24:51,556 [DEBUG] __main__: Monitor: pos_ms=159026, cursor=2343/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 159057}
+2025-12-20 02:24:51,969 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=159439, cursor=2343/6371, status=playing
+2025-12-20 02:24:52,562 [DEBUG] __main__: Monitor: pos_ms=160032, cursor=2343/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 160062}
+2025-12-20 02:24:52,975 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=160444, cursor=2346/6371, status=playing
+2025-12-20 02:24:53,568 [DEBUG] __main__: Monitor: pos_ms=161038, cursor=2352/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 161068}
+2025-12-20 02:24:53,976 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=161446, cursor=2356/6371, status=playing
+2025-12-20 02:24:54,573 [DEBUG] __main__: Monitor: pos_ms=162044, cursor=2362/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 162072}
+2025-12-20 02:24:54,977 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=162447, cursor=2366/6371, status=playing
+2025-12-20 02:24:55,579 [DEBUG] __main__: Monitor: pos_ms=163049, cursor=2374/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 163077}
+2025-12-20 02:24:55,978 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=163448, cursor=2382/6371, status=playing
+2025-12-20 02:24:56,586 [DEBUG] __main__: Monitor: pos_ms=164056, cursor=2386/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 164084}
+2025-12-20 02:24:56,979 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=164449, cursor=2395/6371, status=playing
+2025-12-20 02:24:57,592 [DEBUG] __main__: Monitor: pos_ms=165062, cursor=2403/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 165089}
+2025-12-20 02:24:57,980 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=165450, cursor=2409/6371, status=playing
+2025-12-20 02:24:58,599 [DEBUG] __main__: Monitor: pos_ms=166069, cursor=2418/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 166096}
+2025-12-20 02:24:58,981 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=166450, cursor=2424/6371, status=playing
+2025-12-20 02:24:59,605 [DEBUG] __main__: Monitor: pos_ms=167075, cursor=2434/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 167102}
+2025-12-20 02:24:59,983 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=167452, cursor=2436/6371, status=playing
+2025-12-20 02:25:00,612 [DEBUG] __main__: Monitor: pos_ms=168082, cursor=2442/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 168108}
+2025-12-20 02:25:00,988 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=168457, cursor=2448/6371, status=playing
+2025-12-20 02:25:01,618 [DEBUG] __main__: Monitor: pos_ms=169088, cursor=2454/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 169114}
+2025-12-20 02:25:01,989 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=169459, cursor=2458/6371, status=playing
+2025-12-20 02:25:02,626 [DEBUG] __main__: Monitor: pos_ms=170096, cursor=2464/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 170121}
+2025-12-20 02:25:02,991 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=170461, cursor=2467/6371, status=playing
+2025-12-20 02:25:03,633 [DEBUG] __main__: Monitor: pos_ms=171103, cursor=2481/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 171127}
+2025-12-20 02:25:03,996 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=171465, cursor=2485/6371, status=playing
+2025-12-20 02:25:04,639 [DEBUG] __main__: Monitor: pos_ms=172110, cursor=2491/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 172134}
+2025-12-20 02:25:04,997 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=172466, cursor=2495/6371, status=playing
+2025-12-20 02:25:05,646 [DEBUG] __main__: Monitor: pos_ms=173117, cursor=2501/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 173141}
+2025-12-20 02:25:05,998 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=173467, cursor=2507/6371, status=playing
+2025-12-20 02:25:06,653 [DEBUG] __main__: Monitor: pos_ms=174123, cursor=2515/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 174156}
+2025-12-20 02:25:06,999 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=174469, cursor=2519/6371, status=playing
+2025-12-20 02:25:07,659 [DEBUG] __main__: Monitor: pos_ms=175129, cursor=2531/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 175162}
+2025-12-20 02:25:08,004 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=175473, cursor=2535/6371, status=playing
+2025-12-20 02:25:08,665 [DEBUG] __main__: Monitor: pos_ms=176135, cursor=2546/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 176168}
+2025-12-20 02:25:09,008 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=176478, cursor=2550/6371, status=playing
+2025-12-20 02:25:09,672 [DEBUG] __main__: Monitor: pos_ms=177142, cursor=2560/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 177175}
+2025-12-20 02:25:10,012 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=177481, cursor=2564/6371, status=playing
+2025-12-20 02:25:10,678 [DEBUG] __main__: Monitor: pos_ms=178148, cursor=2570/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 178182}
+2025-12-20 02:25:11,013 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=178482, cursor=2574/6371, status=playing
+2025-12-20 02:25:11,686 [DEBUG] __main__: Monitor: pos_ms=179156, cursor=2582/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 179187}
+2025-12-20 02:25:12,016 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=179485, cursor=2584/6371, status=playing
+2025-12-20 02:25:12,692 [DEBUG] __main__: Monitor: pos_ms=180162, cursor=2594/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 180194}
+2025-12-20 02:25:13,019 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=180488, cursor=2596/6371, status=playing
+2025-12-20 02:25:13,699 [DEBUG] __main__: Monitor: pos_ms=181170, cursor=2603/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 181201}
+2025-12-20 02:25:14,020 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=181489, cursor=2609/6371, status=playing
+2025-12-20 02:25:14,707 [DEBUG] __main__: Monitor: pos_ms=182177, cursor=2621/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 182208}
+2025-12-20 02:25:15,020 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=182489, cursor=2629/6371, status=playing
+2025-12-20 02:25:15,715 [DEBUG] __main__: Monitor: pos_ms=183185, cursor=2641/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 183215}
+2025-12-20 02:25:16,022 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=183492, cursor=2645/6371, status=playing
+2025-12-20 02:25:16,722 [DEBUG] __main__: Monitor: pos_ms=184192, cursor=2659/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 184222}
+2025-12-20 02:25:17,025 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=184494, cursor=2663/6371, status=playing
+2025-12-20 02:25:17,728 [DEBUG] __main__: Monitor: pos_ms=185198, cursor=2676/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 185228}
+2025-12-20 02:25:18,025 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=185494, cursor=2684/6371, status=playing
+2025-12-20 02:25:18,734 [DEBUG] __main__: Monitor: pos_ms=186204, cursor=2694/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 186233}
+2025-12-20 02:25:19,029 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=186498, cursor=2699/6371, status=playing
+2025-12-20 02:25:19,741 [DEBUG] __main__: Monitor: pos_ms=187211, cursor=2709/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 187240}
+2025-12-20 02:25:20,033 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=187503, cursor=2711/6371, status=playing
+2025-12-20 02:25:20,748 [DEBUG] __main__: Monitor: pos_ms=188218, cursor=2720/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 188247}
+2025-12-20 02:25:21,035 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=188505, cursor=2724/6371, status=playing
+2025-12-20 02:25:21,754 [DEBUG] __main__: Monitor: pos_ms=189224, cursor=2733/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 189251}
+2025-12-20 02:25:22,036 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=189506, cursor=2737/6371, status=playing
+2025-12-20 02:25:22,762 [DEBUG] __main__: Monitor: pos_ms=190232, cursor=2753/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 190259}
+2025-12-20 02:25:23,041 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=190511, cursor=2757/6371, status=playing
+2025-12-20 02:25:23,768 [DEBUG] __main__: Monitor: pos_ms=191238, cursor=2769/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 191265}
+2025-12-20 02:25:24,045 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=191515, cursor=2775/6371, status=playing
+2025-12-20 02:25:24,774 [DEBUG] __main__: Monitor: pos_ms=192244, cursor=2785/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 192270}
+2025-12-20 02:25:25,048 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=192517, cursor=2787/6371, status=playing
+2025-12-20 02:25:25,781 [DEBUG] __main__: Monitor: pos_ms=193251, cursor=2795/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 193277}
+2025-12-20 02:25:26,052 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=193522, cursor=2797/6371, status=playing
+2025-12-20 02:25:26,788 [DEBUG] __main__: Monitor: pos_ms=194258, cursor=2804/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 194285}
+2025-12-20 02:25:27,056 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=194525, cursor=2808/6371, status=playing
+2025-12-20 02:25:27,795 [DEBUG] __main__: Monitor: pos_ms=195265, cursor=2814/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 195291}
+2025-12-20 02:25:28,060 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=195530, cursor=2817/6371, status=playing
+2025-12-20 02:25:28,802 [DEBUG] __main__: Monitor: pos_ms=196272, cursor=2827/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 196297}
+2025-12-20 02:25:29,064 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=196534, cursor=2829/6371, status=playing
+2025-12-20 02:25:29,809 [DEBUG] __main__: Monitor: pos_ms=197279, cursor=2843/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 197303}
+2025-12-20 02:25:30,068 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=197538, cursor=2847/6371, status=playing
+2025-12-20 02:25:30,817 [DEBUG] __main__: Monitor: pos_ms=198287, cursor=2861/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 198313}
+2025-12-20 02:25:31,069 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=198538, cursor=2865/6371, status=playing
+2025-12-20 02:25:31,824 [DEBUG] __main__: Monitor: pos_ms=199294, cursor=2884/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 199317}
+2025-12-20 02:25:32,073 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=199543, cursor=2891/6371, status=playing
+2025-12-20 02:25:32,830 [DEBUG] __main__: Monitor: pos_ms=200300, cursor=2907/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 200323}
+2025-12-20 02:25:33,077 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=200546, cursor=2914/6371, status=playing
+2025-12-20 02:25:33,836 [DEBUG] __main__: Monitor: pos_ms=201306, cursor=2924/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 201330}
+2025-12-20 02:25:34,079 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=201549, cursor=2928/6371, status=playing
+2025-12-20 02:25:34,844 [DEBUG] __main__: Monitor: pos_ms=202314, cursor=2946/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 202346}
+2025-12-20 02:25:35,084 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=202554, cursor=2950/6371, status=playing
+2025-12-20 02:25:35,850 [DEBUG] __main__: Monitor: pos_ms=203320, cursor=2968/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 203353}
+2025-12-20 02:25:36,087 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=203557, cursor=2974/6371, status=playing
+2025-12-20 02:25:36,857 [DEBUG] __main__: Monitor: pos_ms=204327, cursor=2985/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 204359}
+2025-12-20 02:25:37,092 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=204562, cursor=2992/6371, status=playing
+2025-12-20 02:25:37,863 [DEBUG] __main__: Monitor: pos_ms=205333, cursor=3002/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 205365}
+2025-12-20 02:25:38,094 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=205564, cursor=3004/6371, status=playing
+2025-12-20 02:25:38,870 [DEBUG] __main__: Monitor: pos_ms=206340, cursor=3028/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 206372}
+2025-12-20 02:25:39,098 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=206567, cursor=3030/6371, status=playing
+2025-12-20 02:25:39,875 [DEBUG] __main__: Monitor: pos_ms=207345, cursor=3041/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 207375}
+2025-12-20 02:25:40,099 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=207569, cursor=3046/6371, status=playing
+2025-12-20 02:25:40,880 [DEBUG] __main__: Monitor: pos_ms=208350, cursor=3058/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 208381}
+2025-12-20 02:25:41,101 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=208570, cursor=3064/6371, status=playing
+2025-12-20 02:25:41,887 [DEBUG] __main__: Monitor: pos_ms=209357, cursor=3081/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 209387}
+2025-12-20 02:25:42,106 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=209575, cursor=3085/6371, status=playing
+2025-12-20 02:25:42,894 [DEBUG] __main__: Monitor: pos_ms=210364, cursor=3098/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 210393}
+2025-12-20 02:25:43,111 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=210581, cursor=3101/6371, status=playing
+2025-12-20 02:25:43,901 [DEBUG] __main__: Monitor: pos_ms=211371, cursor=3117/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 211400}
+2025-12-20 02:25:44,111 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=211581, cursor=3122/6371, status=playing
+2025-12-20 02:25:44,908 [DEBUG] __main__: Monitor: pos_ms=212378, cursor=3142/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 212407}
+2025-12-20 02:25:45,113 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=212583, cursor=3144/6371, status=playing
+2025-12-20 02:25:45,914 [DEBUG] __main__: Monitor: pos_ms=213384, cursor=3161/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 213411}
+2025-12-20 02:25:46,115 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=213584, cursor=3168/6371, status=playing
+2025-12-20 02:25:46,921 [DEBUG] __main__: Monitor: pos_ms=214391, cursor=3183/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 214419}
+2025-12-20 02:25:47,118 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=214587, cursor=3188/6371, status=playing
+2025-12-20 02:25:47,926 [DEBUG] __main__: Monitor: pos_ms=215397, cursor=3209/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 215425}
+2025-12-20 02:25:48,122 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=215591, cursor=3215/6371, status=playing
+2025-12-20 02:25:48,933 [DEBUG] __main__: Monitor: pos_ms=216403, cursor=3237/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 216429}
+2025-12-20 02:25:49,127 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=216596, cursor=3242/6371, status=playing
+2025-12-20 02:25:49,941 [DEBUG] __main__: Monitor: pos_ms=217411, cursor=3261/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 217437}
+2025-12-20 02:25:50,130 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=217599, cursor=3266/6371, status=playing
+2025-12-20 02:25:50,947 [DEBUG] __main__: Monitor: pos_ms=218417, cursor=3295/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 218443}
+2025-12-20 02:25:51,133 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=218603, cursor=3305/6371, status=playing
+2025-12-20 02:25:51,953 [DEBUG] __main__: Monitor: pos_ms=219423, cursor=3340/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 219448}
+2025-12-20 02:25:52,137 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=219607, cursor=3346/6371, status=playing
+2025-12-20 02:25:52,958 [DEBUG] __main__: Monitor: pos_ms=220428, cursor=3369/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 220454}
+2025-12-20 02:25:53,140 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=220610, cursor=3369/6371, status=playing
+2025-12-20 02:25:53,965 [DEBUG] __main__: Monitor: pos_ms=221435, cursor=3392/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 221460}
+2025-12-20 02:25:54,145 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=221615, cursor=3398/6371, status=playing
+2025-12-20 02:25:54,971 [DEBUG] __main__: Monitor: pos_ms=222442, cursor=3423/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 222465}
+2025-12-20 02:25:55,149 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=222618, cursor=3428/6371, status=playing
+2025-12-20 02:25:55,979 [DEBUG] __main__: Monitor: pos_ms=223450, cursor=3453/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 223473}
+2025-12-20 02:25:56,152 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=223622, cursor=3455/6371, status=playing
+2025-12-20 02:25:56,987 [DEBUG] __main__: Monitor: pos_ms=224457, cursor=3480/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 224481}
+2025-12-20 02:25:57,155 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=224624, cursor=3486/6371, status=playing
+2025-12-20 02:25:57,992 [DEBUG] __main__: Monitor: pos_ms=225462, cursor=3500/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 225494}
+2025-12-20 02:25:58,159 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=225628, cursor=3503/6371, status=playing
+2025-12-20 02:25:58,998 [DEBUG] __main__: Monitor: pos_ms=226468, cursor=3521/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 226500}
+2025-12-20 02:25:59,164 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=226634, cursor=3524/6371, status=playing
+2025-12-20 02:26:00,004 [DEBUG] __main__: Monitor: pos_ms=227474, cursor=3534/6371, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 227506}
+2025-12-20 02:26:00,166 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=227635, cursor=3541/6371, status=playing
+2025-12-20 02:26:00,685 [INFO] __main__: Interrupted; stopping playback.
+2025-12-20 02:26:00,686 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-20 02:26:00,691 [INFO] __main__: Track finished: midi/tracks/Inazuma.mid
+2025-12-20 02:26:00,831 [INFO] __main__: Starting track: midi/tracks/Moon in one's cup.mid
+2025-12-20 02:26:00,831 [INFO] audio.midi_manager: Parsing MIDI file: midi/tracks/Moon in one's cup.mid
+2025-12-20 02:26:00,843 [INFO] audio.midi_manager: Parsed 1877 events (duration=118076 ms, tempo events=27)
+2025-12-20 02:26:00,843 [DEBUG] audio.midi_manager: Loading timeline with 1877 events
+2025-12-20 02:26:00,843 [INFO] audio.midi_manager: Initialized playback state (duration=118076 ms, tempo events=27)
+2025-12-20 02:26:00,844 [ERROR] audio.audio_output: pyfluidsynth backend failed (pyfluidsynth not installed; pip install pyfluidsynth); falling back to mixer.
+2025-12-20 02:26:00,879 [INFO] audio.audio_output: MixerAudioOutput initialized
+2025-12-20 02:26:00,879 [INFO] audio.audio_output: Audio backend: mixer
+2025-12-20 02:26:00,879 [INFO] __main__: Using audio backend: MixerAudioOutput
+2025-12-20 02:26:00,964 [INFO] audio.audio_output: Mixer playback started for midi/tracks/Moon in one's cup.mid
+2025-12-20 02:26:00,964 [INFO] audio.midi_manager: Playback started
+2025-12-20 02:26:00,964 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=0, cursor=8/1877, status=playing
+2025-12-20 02:26:01,969 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=1004, cursor=9/1877, status=playing
+2025-12-20 02:26:01,971 [DEBUG] __main__: Monitor: pos_ms=1007, cursor=9/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 1040}
+2025-12-20 02:26:02,972 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=2008, cursor=23/1877, status=playing
+2025-12-20 02:26:02,977 [DEBUG] __main__: Monitor: pos_ms=2013, cursor=23/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 2045}
+2025-12-20 02:26:03,975 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=3011, cursor=29/1877, status=playing
+2025-12-20 02:26:03,983 [DEBUG] __main__: Monitor: pos_ms=3019, cursor=29/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 3049}
+2025-12-20 02:26:04,978 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=4013, cursor=35/1877, status=playing
+2025-12-20 02:26:04,989 [DEBUG] __main__: Monitor: pos_ms=4025, cursor=35/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 4055}
+2025-12-20 02:26:05,981 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=5017, cursor=51/1877, status=playing
+2025-12-20 02:26:05,996 [DEBUG] __main__: Monitor: pos_ms=5032, cursor=51/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 5063}
+2025-12-20 02:26:06,985 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=6020, cursor=65/1877, status=playing
+2025-12-20 02:26:07,002 [DEBUG] __main__: Monitor: pos_ms=6038, cursor=65/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 6067}
+2025-12-20 02:26:07,989 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=7025, cursor=71/1877, status=playing
+2025-12-20 02:26:08,007 [DEBUG] __main__: Monitor: pos_ms=7043, cursor=71/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 7073}
+2025-12-20 02:26:08,990 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=8026, cursor=77/1877, status=playing
+2025-12-20 02:26:09,014 [DEBUG] __main__: Monitor: pos_ms=8050, cursor=77/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 8087}
+2025-12-20 02:26:09,992 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=9028, cursor=91/1877, status=playing
+2025-12-20 02:26:10,021 [DEBUG] __main__: Monitor: pos_ms=9057, cursor=93/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 9096}
+2025-12-20 02:26:10,994 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=10029, cursor=107/1877, status=playing
+2025-12-20 02:26:11,028 [DEBUG] __main__: Monitor: pos_ms=10064, cursor=107/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 10102}
+2025-12-20 02:26:11,996 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=11031, cursor=121/1877, status=playing
+2025-12-20 02:26:12,034 [DEBUG] __main__: Monitor: pos_ms=11070, cursor=121/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 11108}
+2025-12-20 02:26:12,997 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=12032, cursor=135/1877, status=playing
+2025-12-20 02:26:13,040 [DEBUG] __main__: Monitor: pos_ms=12076, cursor=135/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 12114}
+2025-12-20 02:26:14,000 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=13035, cursor=147/1877, status=playing
+2025-12-20 02:26:14,047 [DEBUG] __main__: Monitor: pos_ms=13083, cursor=147/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 13121}
+2025-12-20 02:26:15,001 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=14036, cursor=167/1877, status=playing
+2025-12-20 02:26:15,054 [DEBUG] __main__: Monitor: pos_ms=14090, cursor=169/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 14126}
+2025-12-20 02:26:16,006 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=15041, cursor=195/1877, status=playing
+2025-12-20 02:26:16,061 [DEBUG] __main__: Monitor: pos_ms=15097, cursor=199/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 15133}
+2025-12-20 02:26:17,007 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=16042, cursor=223/1877, status=playing
+2025-12-20 02:26:17,067 [DEBUG] __main__: Monitor: pos_ms=16103, cursor=223/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 16139}
+2025-12-20 02:26:18,008 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=17044, cursor=231/1877, status=playing
+2025-12-20 02:26:18,074 [DEBUG] __main__: Monitor: pos_ms=17110, cursor=233/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 17145}
+2025-12-20 02:26:19,012 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=18047, cursor=253/1877, status=playing
+2025-12-20 02:26:19,081 [DEBUG] __main__: Monitor: pos_ms=18117, cursor=257/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 18152}
+2025-12-20 02:26:20,014 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=19050, cursor=278/1877, status=playing
+2025-12-20 02:26:20,087 [DEBUG] __main__: Monitor: pos_ms=19122, cursor=282/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 19158}
+2025-12-20 02:26:21,017 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=20053, cursor=303/1877, status=playing
+2025-12-20 02:26:21,094 [DEBUG] __main__: Monitor: pos_ms=20130, cursor=307/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 20163}
+2025-12-20 02:26:22,018 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=21053, cursor=328/1877, status=playing
+2025-12-20 02:26:22,100 [DEBUG] __main__: Monitor: pos_ms=21136, cursor=328/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 21170}
+2025-12-20 02:26:23,020 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=22056, cursor=351/1877, status=playing
+2025-12-20 02:26:23,108 [DEBUG] __main__: Monitor: pos_ms=22144, cursor=351/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 22178}
+2025-12-20 02:26:24,022 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=23057, cursor=376/1877, status=playing
+2025-12-20 02:26:24,114 [DEBUG] __main__: Monitor: pos_ms=23150, cursor=376/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 23182}
+2025-12-20 02:26:25,026 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=24061, cursor=401/1877, status=playing
+2025-12-20 02:26:25,120 [DEBUG] __main__: Monitor: pos_ms=24156, cursor=401/1877, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 24188}
+2025-12-20 02:26:25,599 [INFO] __main__: Interrupted; stopping playback.
+2025-12-20 02:26:25,599 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-20 02:26:25,599 [INFO] __main__: Track finished: midi/tracks/Moon in one's cup.mid
+2025-12-20 02:38:43,757 [INFO] __main__: Starting track: midi/tracks/natlan.mid
+2025-12-20 02:38:43,757 [INFO] audio.midi_manager: Parsing MIDI file: midi/tracks/natlan.mid
+2025-12-20 02:38:43,803 [INFO] audio.midi_manager: Parsed 6580 events (duration=274022 ms, tempo events=3)
+2025-12-20 02:38:43,804 [DEBUG] audio.midi_manager: Loading timeline with 6580 events
+2025-12-20 02:38:43,804 [INFO] audio.midi_manager: Initialized playback state (duration=274022 ms, tempo events=3)
+2025-12-20 02:38:43,805 [ERROR] audio.audio_output: pyfluidsynth backend failed (pyfluidsynth not installed; pip install pyfluidsynth); falling back to mixer.
+2025-12-20 02:38:43,977 [INFO] audio.audio_output: MixerAudioOutput initialized
+2025-12-20 02:38:43,977 [INFO] audio.audio_output: Audio backend: mixer
+2025-12-20 02:38:43,977 [INFO] __main__: Using audio backend: MixerAudioOutput
+2025-12-20 02:38:44,068 [INFO] audio.audio_output: Mixer playback started for midi/tracks/natlan.mid
+2025-12-20 02:38:44,069 [INFO] audio.midi_manager: Playback started
+2025-12-20 02:38:44,069 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=0, cursor=6/6580, status=playing
+2025-12-20 02:38:45,074 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=1005, cursor=6/6580, status=playing
+2025-12-20 02:38:45,075 [DEBUG] __main__: Monitor: pos_ms=1007, cursor=6/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 1019}
+2025-12-20 02:38:46,078 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=2009, cursor=9/6580, status=playing
+2025-12-20 02:38:46,081 [DEBUG] __main__: Monitor: pos_ms=2013, cursor=9/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 2025}
+2025-12-20 02:38:47,082 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=3013, cursor=15/6580, status=playing
+2025-12-20 02:38:47,088 [DEBUG] __main__: Monitor: pos_ms=3019, cursor=15/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 3031}
+2025-12-20 02:38:48,085 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=4015, cursor=23/6580, status=playing
+2025-12-20 02:38:48,094 [DEBUG] __main__: Monitor: pos_ms=4025, cursor=23/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 4034}
+2025-12-20 02:38:49,087 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=5018, cursor=32/6580, status=playing
+2025-12-20 02:38:49,102 [DEBUG] __main__: Monitor: pos_ms=5033, cursor=32/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 5043}
+2025-12-20 02:38:50,087 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=6018, cursor=32/6580, status=playing
+2025-12-20 02:38:50,108 [DEBUG] __main__: Monitor: pos_ms=6040, cursor=32/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 6048}
+2025-12-20 02:38:51,088 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=7019, cursor=32/6580, status=playing
+2025-12-20 02:38:51,115 [DEBUG] __main__: Monitor: pos_ms=7046, cursor=32/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 7065}
+2025-12-20 02:38:51,871 [INFO] __main__: Interrupted; stopping playback.
+2025-12-20 02:38:51,871 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-20 02:38:51,873 [INFO] __main__: Track finished: midi/tracks/natlan.mid
+2025-12-20 02:39:07,090 [INFO] __main__: Starting track: midi/tracks/natlan.mid
+2025-12-20 02:39:07,091 [INFO] audio.midi_manager: Parsing MIDI file: midi/tracks/natlan.mid
+2025-12-20 02:39:07,140 [INFO] audio.midi_manager: Parsed 6580 events (duration=274022 ms, tempo events=3)
+2025-12-20 02:39:07,141 [DEBUG] audio.midi_manager: Loading timeline with 6580 events
+2025-12-20 02:39:07,141 [INFO] audio.midi_manager: Initialized playback state (duration=274022 ms, tempo events=3)
+2025-12-20 02:39:07,142 [ERROR] audio.audio_output: pyfluidsynth backend failed (pyfluidsynth not installed; pip install pyfluidsynth); falling back to mixer.
+2025-12-20 02:39:07,311 [INFO] audio.audio_output: MixerAudioOutput initialized
+2025-12-20 02:39:07,311 [INFO] audio.audio_output: Audio backend: mixer
+2025-12-20 02:39:07,312 [INFO] __main__: Using audio backend: MixerAudioOutput
+2025-12-20 02:39:07,402 [INFO] audio.audio_output: Mixer playback started for midi/tracks/natlan.mid
+2025-12-20 02:39:07,403 [INFO] audio.midi_manager: Playback started
+2025-12-20 02:39:07,403 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=0, cursor=6/6580, status=playing
+2025-12-20 02:39:08,403 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=1000, cursor=6/6580, status=playing
+2025-12-20 02:39:08,408 [DEBUG] __main__: Monitor: pos_ms=1005, cursor=6/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 1027}
+2025-12-20 02:39:09,406 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=2003, cursor=9/6580, status=playing
+2025-12-20 02:39:09,414 [DEBUG] __main__: Monitor: pos_ms=2012, cursor=9/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 2033}
+2025-12-20 02:39:10,407 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=3004, cursor=15/6580, status=playing
+2025-12-20 02:39:10,421 [DEBUG] __main__: Monitor: pos_ms=3019, cursor=15/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 3039}
+2025-12-20 02:39:11,410 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=4007, cursor=23/6580, status=playing
+2025-12-20 02:39:11,428 [DEBUG] __main__: Monitor: pos_ms=4025, cursor=23/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 4046}
+2025-12-20 02:39:12,412 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=5008, cursor=32/6580, status=playing
+2025-12-20 02:39:12,435 [DEBUG] __main__: Monitor: pos_ms=5032, cursor=32/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 5052}
+2025-12-20 02:39:13,413 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=6010, cursor=32/6580, status=playing
+2025-12-20 02:39:13,442 [DEBUG] __main__: Monitor: pos_ms=6039, cursor=32/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 6057}
+2025-12-20 02:39:14,417 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=7014, cursor=32/6580, status=playing
+2025-12-20 02:39:14,447 [DEBUG] __main__: Monitor: pos_ms=7044, cursor=32/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 7062}
+2025-12-20 02:39:15,418 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=8014, cursor=40/6580, status=playing
+2025-12-20 02:39:15,452 [DEBUG] __main__: Monitor: pos_ms=8050, cursor=40/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 8069}
+2025-12-20 02:39:16,421 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=9018, cursor=40/6580, status=playing
+2025-12-20 02:39:16,460 [DEBUG] __main__: Monitor: pos_ms=9057, cursor=40/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 9084}
+2025-12-20 02:39:17,425 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=10022, cursor=45/6580, status=playing
+2025-12-20 02:39:17,467 [DEBUG] __main__: Monitor: pos_ms=10064, cursor=45/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 10091}
+2025-12-20 02:39:18,428 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=11025, cursor=56/6580, status=playing
+2025-12-20 02:39:18,472 [DEBUG] __main__: Monitor: pos_ms=11069, cursor=56/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 11097}
+2025-12-20 02:39:19,433 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=12030, cursor=67/6580, status=playing
+2025-12-20 02:39:19,478 [DEBUG] __main__: Monitor: pos_ms=12076, cursor=67/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 12103}
+2025-12-20 02:39:20,436 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=13033, cursor=68/6580, status=playing
+2025-12-20 02:39:20,486 [DEBUG] __main__: Monitor: pos_ms=13084, cursor=68/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 13111}
+2025-12-20 02:39:21,437 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=14034, cursor=68/6580, status=playing
+2025-12-20 02:39:21,492 [DEBUG] __main__: Monitor: pos_ms=14090, cursor=68/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 14118}
+2025-12-20 02:39:22,438 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=15035, cursor=77/6580, status=playing
+2025-12-20 02:39:22,500 [DEBUG] __main__: Monitor: pos_ms=15098, cursor=77/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 15124}
+2025-12-20 02:39:23,443 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=16040, cursor=80/6580, status=playing
+2025-12-20 02:39:23,507 [DEBUG] __main__: Monitor: pos_ms=16104, cursor=82/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 16130}
+2025-12-20 02:39:24,448 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=17045, cursor=89/6580, status=playing
+2025-12-20 02:39:24,513 [DEBUG] __main__: Monitor: pos_ms=17111, cursor=89/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 17138}
+2025-12-20 02:39:25,450 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=18047, cursor=95/6580, status=playing
+2025-12-20 02:39:25,519 [DEBUG] __main__: Monitor: pos_ms=18116, cursor=97/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 18141}
+2025-12-20 02:39:26,455 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=19052, cursor=108/6580, status=playing
+2025-12-20 02:39:26,525 [DEBUG] __main__: Monitor: pos_ms=19122, cursor=108/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 19147}
+2025-12-20 02:39:27,457 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=20054, cursor=112/6580, status=playing
+2025-12-20 02:39:27,531 [DEBUG] __main__: Monitor: pos_ms=20129, cursor=114/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 20152}
+2025-12-20 02:39:28,459 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=21056, cursor=127/6580, status=playing
+2025-12-20 02:39:28,537 [DEBUG] __main__: Monitor: pos_ms=21135, cursor=127/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 21158}
+2025-12-20 02:39:29,462 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=22058, cursor=138/6580, status=playing
+2025-12-20 02:39:29,544 [DEBUG] __main__: Monitor: pos_ms=22142, cursor=138/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 22166}
+2025-12-20 02:39:30,462 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=23059, cursor=144/6580, status=playing
+2025-12-20 02:39:30,551 [DEBUG] __main__: Monitor: pos_ms=23149, cursor=144/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 23171}
+2025-12-20 02:39:31,463 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=24060, cursor=157/6580, status=playing
+2025-12-20 02:39:31,558 [DEBUG] __main__: Monitor: pos_ms=24156, cursor=159/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 24178}
+2025-12-20 02:39:32,465 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=25062, cursor=170/6580, status=playing
+2025-12-20 02:39:32,563 [DEBUG] __main__: Monitor: pos_ms=25161, cursor=170/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 25184}
+2025-12-20 02:39:33,469 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=26066, cursor=170/6580, status=playing
+2025-12-20 02:39:33,572 [DEBUG] __main__: Monitor: pos_ms=26169, cursor=170/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 26190}
+2025-12-20 02:39:34,471 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=27068, cursor=178/6580, status=playing
+2025-12-20 02:39:34,579 [DEBUG] __main__: Monitor: pos_ms=27176, cursor=178/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 27197}
+2025-12-20 02:39:35,475 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=28072, cursor=193/6580, status=playing
+2025-12-20 02:39:35,586 [DEBUG] __main__: Monitor: pos_ms=28183, cursor=193/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 28204}
+2025-12-20 02:39:36,480 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=29077, cursor=222/6580, status=playing
+2025-12-20 02:39:36,593 [DEBUG] __main__: Monitor: pos_ms=29190, cursor=223/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 29211}
+2025-12-20 02:39:37,484 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=30081, cursor=248/6580, status=playing
+2025-12-20 02:39:37,599 [DEBUG] __main__: Monitor: pos_ms=30196, cursor=250/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 30215}
+2025-12-20 02:39:38,489 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=31086, cursor=279/6580, status=playing
+2025-12-20 02:39:38,606 [DEBUG] __main__: Monitor: pos_ms=31203, cursor=279/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 31222}
+2025-12-20 02:39:39,489 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=32086, cursor=291/6580, status=playing
+2025-12-20 02:39:39,613 [DEBUG] __main__: Monitor: pos_ms=32211, cursor=291/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 32230}
+2025-12-20 02:39:40,491 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=33088, cursor=304/6580, status=playing
+2025-12-20 02:39:40,619 [DEBUG] __main__: Monitor: pos_ms=33216, cursor=305/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 33244}
+2025-12-20 02:39:41,494 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=34091, cursor=328/6580, status=playing
+2025-12-20 02:39:41,625 [DEBUG] __main__: Monitor: pos_ms=34222, cursor=331/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 34249}
+2025-12-20 02:39:42,499 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=35096, cursor=358/6580, status=playing
+2025-12-20 02:39:42,631 [DEBUG] __main__: Monitor: pos_ms=35228, cursor=359/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 35255}
+2025-12-20 02:39:43,500 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=36096, cursor=383/6580, status=playing
+2025-12-20 02:39:43,638 [DEBUG] __main__: Monitor: pos_ms=36235, cursor=384/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 36262}
+2025-12-20 02:39:44,500 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=37096, cursor=413/6580, status=playing
+2025-12-20 02:39:44,644 [DEBUG] __main__: Monitor: pos_ms=37242, cursor=413/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 37270}
+2025-12-20 02:39:45,502 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=38099, cursor=424/6580, status=playing
+2025-12-20 02:39:45,650 [DEBUG] __main__: Monitor: pos_ms=38247, cursor=424/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 38273}
+2025-12-20 02:39:46,504 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=39101, cursor=438/6580, status=playing
+2025-12-20 02:39:46,655 [DEBUG] __main__: Monitor: pos_ms=39253, cursor=439/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 39279}
+2025-12-20 02:39:47,504 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=40101, cursor=459/6580, status=playing
+2025-12-20 02:39:47,661 [DEBUG] __main__: Monitor: pos_ms=40258, cursor=459/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 40283}
+2025-12-20 02:39:48,505 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=41102, cursor=484/6580, status=playing
+2025-12-20 02:39:48,668 [DEBUG] __main__: Monitor: pos_ms=41265, cursor=484/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 41290}
+2025-12-20 02:39:49,507 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=42104, cursor=515/6580, status=playing
+2025-12-20 02:39:49,674 [DEBUG] __main__: Monitor: pos_ms=42272, cursor=515/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 42298}
+2025-12-20 02:39:50,510 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=43107, cursor=537/6580, status=playing
+2025-12-20 02:39:50,681 [DEBUG] __main__: Monitor: pos_ms=43278, cursor=537/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 43301}
+2025-12-20 02:39:51,514 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=44110, cursor=559/6580, status=playing
+2025-12-20 02:39:51,688 [DEBUG] __main__: Monitor: pos_ms=44285, cursor=559/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 44309}
+2025-12-20 02:39:52,514 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=45111, cursor=593/6580, status=playing
+2025-12-20 02:39:52,694 [DEBUG] __main__: Monitor: pos_ms=45292, cursor=593/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 45315}
+2025-12-20 02:39:53,515 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=46112, cursor=619/6580, status=playing
+2025-12-20 02:39:53,701 [DEBUG] __main__: Monitor: pos_ms=46299, cursor=619/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 46322}
+2025-12-20 02:39:54,516 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=47113, cursor=644/6580, status=playing
+2025-12-20 02:39:54,707 [DEBUG] __main__: Monitor: pos_ms=47304, cursor=644/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 47326}
+2025-12-20 02:39:55,521 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=48118, cursor=671/6580, status=playing
+2025-12-20 02:39:55,714 [DEBUG] __main__: Monitor: pos_ms=48311, cursor=671/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 48333}
+2025-12-20 02:39:56,525 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=49122, cursor=693/6580, status=playing
+2025-12-20 02:39:56,720 [DEBUG] __main__: Monitor: pos_ms=49317, cursor=693/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 49338}
+2025-12-20 02:39:57,527 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=50124, cursor=714/6580, status=playing
+2025-12-20 02:39:57,727 [DEBUG] __main__: Monitor: pos_ms=50324, cursor=727/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 50345}
+2025-12-20 02:39:58,528 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=51125, cursor=787/6580, status=playing
+2025-12-20 02:39:58,732 [DEBUG] __main__: Monitor: pos_ms=51330, cursor=800/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 51351}
+2025-12-20 02:39:59,533 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=52130, cursor=839/6580, status=playing
+2025-12-20 02:39:59,739 [DEBUG] __main__: Monitor: pos_ms=52337, cursor=839/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 52356}
+2025-12-20 02:40:00,534 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=53131, cursor=855/6580, status=playing
+2025-12-20 02:40:00,745 [DEBUG] __main__: Monitor: pos_ms=53343, cursor=861/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 53363}
+2025-12-20 02:40:01,536 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=54132, cursor=879/6580, status=playing
+2025-12-20 02:40:01,752 [DEBUG] __main__: Monitor: pos_ms=54350, cursor=883/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 54369}
+2025-12-20 02:40:02,536 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=55133, cursor=895/6580, status=playing
+2025-12-20 02:40:02,759 [DEBUG] __main__: Monitor: pos_ms=55357, cursor=895/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 55383}
+2025-12-20 02:40:03,537 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=56134, cursor=911/6580, status=playing
+2025-12-20 02:40:03,765 [DEBUG] __main__: Monitor: pos_ms=56362, cursor=920/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 56390}
+2025-12-20 02:40:04,537 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=57134, cursor=935/6580, status=playing
+2025-12-20 02:40:04,771 [DEBUG] __main__: Monitor: pos_ms=57368, cursor=942/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 57397}
+2025-12-20 02:40:05,540 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=58137, cursor=951/6580, status=playing
+2025-12-20 02:40:05,776 [DEBUG] __main__: Monitor: pos_ms=58373, cursor=957/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 58401}
+2025-12-20 02:40:06,542 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=59139, cursor=979/6580, status=playing
+2025-12-20 02:40:06,782 [DEBUG] __main__: Monitor: pos_ms=59380, cursor=983/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 59409}
+2025-12-20 02:40:07,547 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=60144, cursor=1011/6580, status=playing
+2025-12-20 02:40:07,788 [DEBUG] __main__: Monitor: pos_ms=60385, cursor=1018/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 60411}
+2025-12-20 02:40:08,548 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=61145, cursor=1041/6580, status=playing
+2025-12-20 02:40:08,793 [DEBUG] __main__: Monitor: pos_ms=61391, cursor=1045/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 61417}
+2025-12-20 02:40:09,552 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=62149, cursor=1067/6580, status=playing
+2025-12-20 02:40:09,800 [DEBUG] __main__: Monitor: pos_ms=62398, cursor=1074/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 62423}
+2025-12-20 02:40:10,555 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=63152, cursor=1099/6580, status=playing
+2025-12-20 02:40:10,806 [DEBUG] __main__: Monitor: pos_ms=63404, cursor=1107/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 63428}
+2025-12-20 02:40:11,558 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=64155, cursor=1128/6580, status=playing
+2025-12-20 02:40:11,814 [DEBUG] __main__: Monitor: pos_ms=64411, cursor=1142/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 64436}
+2025-12-20 02:40:12,560 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=65157, cursor=1165/6580, status=playing
+2025-12-20 02:40:12,820 [DEBUG] __main__: Monitor: pos_ms=65417, cursor=1169/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 65440}
+2025-12-20 02:40:13,565 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=66162, cursor=1187/6580, status=playing
+2025-12-20 02:40:13,826 [DEBUG] __main__: Monitor: pos_ms=66423, cursor=1191/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 66447}
+2025-12-20 02:40:14,568 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=67165, cursor=1215/6580, status=playing
+2025-12-20 02:40:14,833 [DEBUG] __main__: Monitor: pos_ms=67430, cursor=1219/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 67453}
+2025-12-20 02:40:15,570 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=68167, cursor=1246/6580, status=playing
+2025-12-20 02:40:15,838 [DEBUG] __main__: Monitor: pos_ms=68435, cursor=1256/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 68458}
+2025-12-20 02:40:16,573 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=69170, cursor=1296/6580, status=playing
+2025-12-20 02:40:16,846 [DEBUG] __main__: Monitor: pos_ms=69443, cursor=1313/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 69466}
+2025-12-20 02:40:17,578 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=70175, cursor=1360/6580, status=playing
+2025-12-20 02:40:17,852 [DEBUG] __main__: Monitor: pos_ms=70449, cursor=1378/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 70470}
+2025-12-20 02:40:18,580 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=71177, cursor=1411/6580, status=playing
+2025-12-20 02:40:18,858 [DEBUG] __main__: Monitor: pos_ms=71455, cursor=1418/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 71477}
+2025-12-20 02:40:19,580 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=72177, cursor=1433/6580, status=playing
+2025-12-20 02:40:19,864 [DEBUG] __main__: Monitor: pos_ms=72461, cursor=1438/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 72483}
+2025-12-20 02:40:20,581 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=73178, cursor=1459/6580, status=playing
+2025-12-20 02:40:20,871 [DEBUG] __main__: Monitor: pos_ms=73469, cursor=1466/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 73488}
+2025-12-20 02:40:21,585 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=74182, cursor=1481/6580, status=playing
+2025-12-20 02:40:21,877 [DEBUG] __main__: Monitor: pos_ms=74474, cursor=1486/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 74493}
+2025-12-20 02:40:22,588 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=75185, cursor=1504/6580, status=playing
+2025-12-20 02:40:22,884 [DEBUG] __main__: Monitor: pos_ms=75481, cursor=1511/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 75501}
+2025-12-20 02:40:23,592 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=76189, cursor=1527/6580, status=playing
+2025-12-20 02:40:23,892 [DEBUG] __main__: Monitor: pos_ms=76490, cursor=1537/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 76518}
+2025-12-20 02:40:24,597 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=77194, cursor=1553/6580, status=playing
+2025-12-20 02:40:24,898 [DEBUG] __main__: Monitor: pos_ms=77496, cursor=1561/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 77525}
+2025-12-20 02:40:25,601 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=78198, cursor=1575/6580, status=playing
+2025-12-20 02:40:25,905 [DEBUG] __main__: Monitor: pos_ms=78503, cursor=1580/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 78532}
+2025-12-20 02:40:26,604 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=79200, cursor=1598/6580, status=playing
+2025-12-20 02:40:26,912 [DEBUG] __main__: Monitor: pos_ms=79509, cursor=1606/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 79538}
+2025-12-20 02:40:27,606 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=80203, cursor=1621/6580, status=playing
+2025-12-20 02:40:27,919 [DEBUG] __main__: Monitor: pos_ms=80516, cursor=1629/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 80543}
+2025-12-20 02:40:28,607 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=81203, cursor=1647/6580, status=playing
+2025-12-20 02:40:28,924 [DEBUG] __main__: Monitor: pos_ms=81522, cursor=1655/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 81548}
+2025-12-20 02:40:29,611 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=82208, cursor=1669/6580, status=playing
+2025-12-20 02:40:29,930 [DEBUG] __main__: Monitor: pos_ms=82527, cursor=1676/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 82553}
+2025-12-20 02:40:30,614 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=83211, cursor=1698/6580, status=playing
+2025-12-20 02:40:30,935 [DEBUG] __main__: Monitor: pos_ms=83533, cursor=1708/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 83559}
+2025-12-20 02:40:31,619 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=84216, cursor=1726/6580, status=playing
+2025-12-20 02:40:31,942 [DEBUG] __main__: Monitor: pos_ms=84540, cursor=1736/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 84565}
+2025-12-20 02:40:32,623 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=85220, cursor=1759/6580, status=playing
+2025-12-20 02:40:32,950 [DEBUG] __main__: Monitor: pos_ms=85548, cursor=1766/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 85574}
+2025-12-20 02:40:33,623 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=86220, cursor=1784/6580, status=playing
+2025-12-20 02:40:33,957 [DEBUG] __main__: Monitor: pos_ms=86554, cursor=1794/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 86579}
+2025-12-20 02:40:34,624 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=87221, cursor=1811/6580, status=playing
+2025-12-20 02:40:34,962 [DEBUG] __main__: Monitor: pos_ms=87560, cursor=1817/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 87586}
+2025-12-20 02:40:35,625 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=88222, cursor=1830/6580, status=playing
+2025-12-20 02:40:35,970 [DEBUG] __main__: Monitor: pos_ms=88567, cursor=1841/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 88592}
+2025-12-20 02:40:36,629 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=89226, cursor=1859/6580, status=playing
+2025-12-20 02:40:36,977 [DEBUG] __main__: Monitor: pos_ms=89574, cursor=1866/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 89598}
+2025-12-20 02:40:37,632 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=90229, cursor=1877/6580, status=playing
+2025-12-20 02:40:37,983 [DEBUG] __main__: Monitor: pos_ms=90581, cursor=1888/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 90606}
+2025-12-20 02:40:38,633 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=91230, cursor=1909/6580, status=playing
+2025-12-20 02:40:38,989 [DEBUG] __main__: Monitor: pos_ms=91586, cursor=1916/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 91608}
+2025-12-20 02:40:39,635 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=92232, cursor=1927/6580, status=playing
+2025-12-20 02:40:39,995 [DEBUG] __main__: Monitor: pos_ms=92593, cursor=1934/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 92615}
+2025-12-20 02:40:40,639 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=93236, cursor=1954/6580, status=playing
+2025-12-20 02:40:41,002 [DEBUG] __main__: Monitor: pos_ms=93600, cursor=1959/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 93623}
+2025-12-20 02:40:41,643 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=94240, cursor=1970/6580, status=playing
+2025-12-20 02:40:42,007 [DEBUG] __main__: Monitor: pos_ms=94605, cursor=1976/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 94627}
+2025-12-20 02:40:42,643 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=95240, cursor=1994/6580, status=playing
+2025-12-20 02:40:43,013 [DEBUG] __main__: Monitor: pos_ms=95610, cursor=2001/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 95631}
+2025-12-20 02:40:43,645 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=96242, cursor=2005/6580, status=playing
+2025-12-20 02:40:44,018 [DEBUG] __main__: Monitor: pos_ms=96616, cursor=2017/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 96635}
+2025-12-20 02:40:44,646 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=97243, cursor=2032/6580, status=playing
+2025-12-20 02:40:45,024 [DEBUG] __main__: Monitor: pos_ms=97622, cursor=2041/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 97642}
+2025-12-20 02:40:45,649 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=98246, cursor=2052/6580, status=playing
+2025-12-20 02:40:46,030 [DEBUG] __main__: Monitor: pos_ms=98628, cursor=2059/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 98657}
+2025-12-20 02:40:46,650 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=99247, cursor=2081/6580, status=playing
+2025-12-20 02:40:47,037 [DEBUG] __main__: Monitor: pos_ms=99635, cursor=2091/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 99653}
+2025-12-20 02:40:47,651 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=100248, cursor=2095/6580, status=playing
+2025-12-20 02:40:48,044 [DEBUG] __main__: Monitor: pos_ms=100641, cursor=2103/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 100660}
+2025-12-20 02:40:48,656 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=101253, cursor=2124/6580, status=playing
+2025-12-20 02:40:49,050 [DEBUG] __main__: Monitor: pos_ms=101647, cursor=2134/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 101673}
+2025-12-20 02:40:49,656 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=102253, cursor=2141/6580, status=playing
+2025-12-20 02:40:50,056 [DEBUG] __main__: Monitor: pos_ms=102653, cursor=2150/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 102680}
+2025-12-20 02:40:50,660 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=103256, cursor=2166/6580, status=playing
+2025-12-20 02:40:51,062 [DEBUG] __main__: Monitor: pos_ms=103659, cursor=2175/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 103686}
+2025-12-20 02:40:51,660 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=104257, cursor=2180/6580, status=playing
+2025-12-20 02:40:52,069 [DEBUG] __main__: Monitor: pos_ms=104666, cursor=2195/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 104694}
+2025-12-20 02:40:52,663 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=105260, cursor=2213/6580, status=playing
+2025-12-20 02:40:53,076 [DEBUG] __main__: Monitor: pos_ms=105674, cursor=2222/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 105702}
+2025-12-20 02:40:53,668 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=106265, cursor=2227/6580, status=playing
+2025-12-20 02:40:54,085 [DEBUG] __main__: Monitor: pos_ms=106682, cursor=2242/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 106710}
+2025-12-20 02:40:54,670 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=107267, cursor=2261/6580, status=playing
+2025-12-20 02:40:55,090 [DEBUG] __main__: Monitor: pos_ms=107688, cursor=2270/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 107714}
+2025-12-20 02:40:55,673 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=108270, cursor=2277/6580, status=playing
+2025-12-20 02:40:56,096 [DEBUG] __main__: Monitor: pos_ms=108693, cursor=2288/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 108718}
+2025-12-20 02:40:56,678 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=109275, cursor=2304/6580, status=playing
+2025-12-20 02:40:57,101 [DEBUG] __main__: Monitor: pos_ms=109699, cursor=2313/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 109724}
+2025-12-20 02:40:57,681 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=110278, cursor=2326/6580, status=playing
+2025-12-20 02:40:58,108 [DEBUG] __main__: Monitor: pos_ms=110706, cursor=2336/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 110731}
+2025-12-20 02:40:58,685 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=111282, cursor=2352/6580, status=playing
+2025-12-20 02:40:59,115 [DEBUG] __main__: Monitor: pos_ms=111713, cursor=2361/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 111738}
+2025-12-20 02:40:59,689 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=112286, cursor=2366/6580, status=playing
+2025-12-20 02:41:00,121 [DEBUG] __main__: Monitor: pos_ms=112718, cursor=2384/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 112740}
+2025-12-20 02:41:00,690 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=113287, cursor=2401/6580, status=playing
+2025-12-20 02:41:01,125 [DEBUG] __main__: Monitor: pos_ms=113723, cursor=2410/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 113746}
+2025-12-20 02:41:01,693 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=114290, cursor=2421/6580, status=playing
+2025-12-20 02:41:02,133 [DEBUG] __main__: Monitor: pos_ms=114730, cursor=2436/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 114753}
+2025-12-20 02:41:02,698 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=115295, cursor=2462/6580, status=playing
+2025-12-20 02:41:03,138 [DEBUG] __main__: Monitor: pos_ms=115735, cursor=2479/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 115756}
+2025-12-20 02:41:03,700 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=116297, cursor=2486/6580, status=playing
+2025-12-20 02:41:04,145 [DEBUG] __main__: Monitor: pos_ms=116742, cursor=2496/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 116764}
+2025-12-20 02:41:04,701 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=117297, cursor=2517/6580, status=playing
+2025-12-20 02:41:05,152 [DEBUG] __main__: Monitor: pos_ms=117749, cursor=2529/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 117770}
+2025-12-20 02:41:05,701 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=118298, cursor=2536/6580, status=playing
+2025-12-20 02:41:06,159 [DEBUG] __main__: Monitor: pos_ms=118757, cursor=2550/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 118778}
+2025-12-20 02:41:06,704 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=119301, cursor=2575/6580, status=playing
+2025-12-20 02:41:07,166 [DEBUG] __main__: Monitor: pos_ms=119763, cursor=2588/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 119783}
+2025-12-20 02:41:07,708 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=120305, cursor=2600/6580, status=playing
+2025-12-20 02:41:08,173 [DEBUG] __main__: Monitor: pos_ms=120770, cursor=2614/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 120790}
+2025-12-20 02:41:08,710 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=121307, cursor=2630/6580, status=playing
+2025-12-20 02:41:09,181 [DEBUG] __main__: Monitor: pos_ms=121778, cursor=2643/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 121796}
+2025-12-20 02:41:09,714 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=122311, cursor=2658/6580, status=playing
+2025-12-20 02:41:10,187 [DEBUG] __main__: Monitor: pos_ms=122784, cursor=2678/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 122803}
+2025-12-20 02:41:10,716 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=123313, cursor=2688/6580, status=playing
+2025-12-20 02:41:11,194 [DEBUG] __main__: Monitor: pos_ms=123791, cursor=2695/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 123809}
+2025-12-20 02:41:11,722 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=124319, cursor=2703/6580, status=playing
+2025-12-20 02:41:12,200 [DEBUG] __main__: Monitor: pos_ms=124798, cursor=2709/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 124826}
+2025-12-20 02:41:12,726 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=125323, cursor=2717/6580, status=playing
+2025-12-20 02:41:13,207 [DEBUG] __main__: Monitor: pos_ms=125804, cursor=2723/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 125832}
+2025-12-20 02:41:13,727 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=126324, cursor=2731/6580, status=playing
+2025-12-20 02:41:14,212 [DEBUG] __main__: Monitor: pos_ms=126810, cursor=2740/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 126837}
+2025-12-20 02:41:14,728 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=127325, cursor=2747/6580, status=playing
+2025-12-20 02:41:15,218 [DEBUG] __main__: Monitor: pos_ms=127816, cursor=2753/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 127843}
+2025-12-20 02:41:15,730 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=128327, cursor=2757/6580, status=playing
+2025-12-20 02:41:16,224 [DEBUG] __main__: Monitor: pos_ms=128822, cursor=2769/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 128850}
+2025-12-20 02:41:16,732 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=129329, cursor=2779/6580, status=playing
+2025-12-20 02:41:17,231 [DEBUG] __main__: Monitor: pos_ms=129828, cursor=2786/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 129853}
+2025-12-20 02:41:17,735 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=130332, cursor=2792/6580, status=playing
+2025-12-20 02:41:18,237 [DEBUG] __main__: Monitor: pos_ms=130835, cursor=2802/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 130861}
+2025-12-20 02:41:18,738 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=131335, cursor=2811/6580, status=playing
+2025-12-20 02:41:19,244 [DEBUG] __main__: Monitor: pos_ms=131841, cursor=2819/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 131868}
+2025-12-20 02:41:19,742 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=132339, cursor=2827/6580, status=playing
+2025-12-20 02:41:20,250 [DEBUG] __main__: Monitor: pos_ms=132848, cursor=2836/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 132873}
+2025-12-20 02:41:20,744 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=133341, cursor=2854/6580, status=playing
+2025-12-20 02:41:21,257 [DEBUG] __main__: Monitor: pos_ms=133854, cursor=2868/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 133878}
+2025-12-20 02:41:21,746 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=134343, cursor=2887/6580, status=playing
+2025-12-20 02:41:22,265 [DEBUG] __main__: Monitor: pos_ms=134862, cursor=2910/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 134887}
+2025-12-20 02:41:22,749 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=135346, cursor=2916/6580, status=playing
+2025-12-20 02:41:23,272 [DEBUG] __main__: Monitor: pos_ms=135869, cursor=2934/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 135893}
+2025-12-20 02:41:23,751 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=136348, cursor=2942/6580, status=playing
+2025-12-20 02:41:24,278 [DEBUG] __main__: Monitor: pos_ms=136875, cursor=2963/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 136899}
+2025-12-20 02:41:24,752 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=137348, cursor=2969/6580, status=playing
+2025-12-20 02:41:25,284 [DEBUG] __main__: Monitor: pos_ms=137881, cursor=2994/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 137905}
+2025-12-20 02:41:25,752 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=138349, cursor=2999/6580, status=playing
+2025-12-20 02:41:26,291 [DEBUG] __main__: Monitor: pos_ms=138888, cursor=3020/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 138910}
+2025-12-20 02:41:26,753 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=139349, cursor=3026/6580, status=playing
+2025-12-20 02:41:27,298 [DEBUG] __main__: Monitor: pos_ms=139895, cursor=3043/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 139917}
+2025-12-20 02:41:27,753 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=140350, cursor=3052/6580, status=playing
+2025-12-20 02:41:28,304 [DEBUG] __main__: Monitor: pos_ms=140902, cursor=3072/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 140924}
+2025-12-20 02:41:28,754 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=141350, cursor=3083/6580, status=playing
+2025-12-20 02:41:29,311 [DEBUG] __main__: Monitor: pos_ms=141908, cursor=3101/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 141928}
+2025-12-20 02:41:29,755 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=142352, cursor=3119/6580, status=playing
+2025-12-20 02:41:30,318 [DEBUG] __main__: Monitor: pos_ms=142915, cursor=3142/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 142935}
+2025-12-20 02:41:30,758 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=143355, cursor=3153/6580, status=playing
+2025-12-20 02:41:31,324 [DEBUG] __main__: Monitor: pos_ms=143921, cursor=3172/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 143942}
+2025-12-20 02:41:31,761 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=144358, cursor=3192/6580, status=playing
+2025-12-20 02:41:32,330 [DEBUG] __main__: Monitor: pos_ms=144928, cursor=3209/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 144946}
+2025-12-20 02:41:32,761 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=145358, cursor=3224/6580, status=playing
+2025-12-20 02:41:33,338 [DEBUG] __main__: Monitor: pos_ms=145935, cursor=3245/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 145955}
+2025-12-20 02:41:33,763 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=146360, cursor=3265/6580, status=playing
+2025-12-20 02:41:34,344 [DEBUG] __main__: Monitor: pos_ms=146941, cursor=3290/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 146961}
+2025-12-20 02:41:34,764 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=147361, cursor=3301/6580, status=playing
+2025-12-20 02:41:35,350 [DEBUG] __main__: Monitor: pos_ms=147948, cursor=3328/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 147975}
+2025-12-20 02:41:35,766 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=148363, cursor=3342/6580, status=playing
+2025-12-20 02:41:36,356 [DEBUG] __main__: Monitor: pos_ms=148954, cursor=3362/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 148982}
+2025-12-20 02:41:36,770 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=149366, cursor=3372/6580, status=playing
+2025-12-20 02:41:37,362 [DEBUG] __main__: Monitor: pos_ms=149959, cursor=3392/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 149986}
+2025-12-20 02:41:37,770 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=150366, cursor=3416/6580, status=playing
+2025-12-20 02:41:38,368 [DEBUG] __main__: Monitor: pos_ms=150965, cursor=3436/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 150992}
+2025-12-20 02:41:38,772 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=151369, cursor=3447/6580, status=playing
+2025-12-20 02:41:39,374 [DEBUG] __main__: Monitor: pos_ms=151971, cursor=3464/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 151998}
+2025-12-20 02:41:39,777 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=152374, cursor=3476/6580, status=playing
+2025-12-20 02:41:40,380 [DEBUG] __main__: Monitor: pos_ms=152978, cursor=3497/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 153004}
+2025-12-20 02:41:40,782 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=153379, cursor=3504/6580, status=playing
+2025-12-20 02:41:41,388 [DEBUG] __main__: Monitor: pos_ms=153985, cursor=3523/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 154011}
+2025-12-20 02:41:41,784 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=154381, cursor=3529/6580, status=playing
+2025-12-20 02:41:42,395 [DEBUG] __main__: Monitor: pos_ms=154992, cursor=3541/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 155018}
+2025-12-20 02:41:42,786 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=155383, cursor=3548/6580, status=playing
+2025-12-20 02:41:43,400 [DEBUG] __main__: Monitor: pos_ms=155997, cursor=3565/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 156021}
+2025-12-20 02:41:43,789 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=156386, cursor=3574/6580, status=playing
+2025-12-20 02:41:44,407 [DEBUG] __main__: Monitor: pos_ms=157004, cursor=3591/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 157029}
+2025-12-20 02:41:44,794 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=157391, cursor=3598/6580, status=playing
+2025-12-20 02:41:45,414 [DEBUG] __main__: Monitor: pos_ms=158011, cursor=3614/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 158036}
+2025-12-20 02:41:45,797 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=158394, cursor=3624/6580, status=playing
+2025-12-20 02:41:46,420 [DEBUG] __main__: Monitor: pos_ms=159017, cursor=3641/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 159040}
+2025-12-20 02:41:46,799 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=159396, cursor=3648/6580, status=playing
+2025-12-20 02:41:47,427 [DEBUG] __main__: Monitor: pos_ms=160024, cursor=3665/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 160048}
+2025-12-20 02:41:47,802 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=160399, cursor=3670/6580, status=playing
+2025-12-20 02:41:48,434 [DEBUG] __main__: Monitor: pos_ms=161032, cursor=3687/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 161056}
+2025-12-20 02:41:48,806 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=161403, cursor=3692/6580, status=playing
+2025-12-20 02:41:49,440 [DEBUG] __main__: Monitor: pos_ms=162037, cursor=3709/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 162059}
+2025-12-20 02:41:49,810 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=162407, cursor=3715/6580, status=playing
+2025-12-20 02:41:50,447 [DEBUG] __main__: Monitor: pos_ms=163044, cursor=3731/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 163067}
+2025-12-20 02:41:50,814 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=163411, cursor=3738/6580, status=playing
+2025-12-20 02:41:51,453 [DEBUG] __main__: Monitor: pos_ms=164051, cursor=3754/6580, status=playing, audio={'backend': 'MixerAudioOutput', 'closed': False, 'init_ok': True, 'busy': True, 'pos_ms': 164074}
+2025-12-20 02:41:51,561 [INFO] __main__: Interrupted; stopping playback.
+2025-12-20 02:41:51,561 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-20 02:41:51,564 [INFO] __main__: Track finished: midi/tracks/natlan.mid
+2025-12-20 02:41:51,727 [INFO] __main__: Starting track: midi/tracks/Inazuma.mid
+2025-12-20 02:41:51,727 [INFO] audio.midi_manager: Parsing MIDI file: midi/tracks/Inazuma.mid
+2025-12-20 02:41:51,769 [INFO] audio.midi_manager: Parsed 6371 events (duration=340502 ms, tempo events=30)
+2025-12-20 02:41:51,770 [DEBUG] audio.midi_manager: Loading timeline with 6371 events
+2025-12-20 02:41:51,770 [INFO] audio.midi_manager: Initialized playback state (duration=340502 ms, tempo events=30)
+2025-12-20 02:41:51,771 [ERROR] audio.audio_output: pyfluidsynth backend failed (pyfluidsynth not installed; pip install pyfluidsynth); falling back to mixer.
+2025-12-20 02:41:51,810 [INFO] audio.audio_output: MixerAudioOutput initialized
+2025-12-20 02:41:51,810 [INFO] audio.audio_output: Audio backend: mixer
+2025-12-20 02:41:51,810 [INFO] __main__: Using audio backend: MixerAudioOutput
+2025-12-20 02:41:51,887 [INFO] audio.audio_output: Mixer playback started for midi/tracks/Inazuma.mid
+2025-12-20 02:41:51,888 [INFO] audio.midi_manager: Playback started
+2025-12-20 02:41:51,888 [DEBUG] audio.midi_manager: Scheduler heartbeat: now_ms=0, cursor=3/6371, status=playing
+2025-12-20 02:41:52,056 [INFO] __main__: Interrupted; stopping playback.
+2025-12-20 02:41:52,057 [INFO] audio.midi_manager: Playback stopped and reset
+2025-12-20 02:41:52,057 [INFO] __main__: Track finished: midi/tracks/Inazuma.mid
+2025-12-20 02:41:52,215 [INFO] __main__: Starting track: midi/tracks/Moon in one's cup.mid
+2025-12-20 02:41:52,216 [INFO] audio.midi_manager: Parsing MIDI file: midi/tracks/Moon in one's cup.mid
+2025-12-20 02:41:52,227 [INFO] audio.midi_manager: Parsed 1877 events (duration=118076 ms, tempo events=27)
+2025-12-20 02:41:52,228 [DEBUG] audio.midi_manager: Loading timeline with 1877 events
+2025-12-20 02:41:52,228 [INFO] audio.midi_manager: Initialized playback state (duration=118076 ms, tempo events=27)
+2025-12-20 02:41:52,228 [ERROR] audio.audio_output: pyfluidsynth backend failed (pyfluidsynth not installed; pip install pyfluidsynth); falling back to mixer.
+2025-12-20 02:41:52,263 [INFO] audio.audio_output: MixerAudioOutput initialized
+2025-12-20 02:41:52,264 [INFO] audio.audio_output: Audio backend: mixer
+2025-12-20 02:41:52,264 [INFO] __main__: Using audio backend: MixerAudioOutput
+2025-12-20 02:41:52,344 [INFO] __main__: Interrupted; stopping playback.
+2025-12-20 02:41:52,344 [INFO] audio.midi_manager: Playback stopped and reset
