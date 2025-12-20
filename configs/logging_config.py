@@ -14,9 +14,13 @@ def _resolve_level(level_name: Optional[str]) -> int:
     return getattr(logging, level_name.upper(), logging.INFO)
 
 
-def configure_logging(level: Optional[str] = None, log_file: Optional[str] = None) -> logging.Logger:
+def configure_logging(
+    level: Optional[str] = None,
+    log_file: Optional[str] = None,
+    console: Optional[bool] = None,
+) -> logging.Logger:
     """
-    Configure root logger once with console (and optional file) output.
+    Configure root logger once with optional console and file output.
     Subsequent calls are no-ops if handlers already exist.
     """
     root = logging.getLogger()
@@ -28,9 +32,11 @@ def configure_logging(level: Optional[str] = None, log_file: Optional[str] = Non
 
     formatter = logging.Formatter(LOG_FORMAT)
 
-    stream_handler = logging.StreamHandler(sys.stdout)
-    stream_handler.setFormatter(formatter)
-    root.addHandler(stream_handler)
+    use_console = config.LOG_CONSOLE if console is None else console
+    if use_console:
+        stream_handler = logging.StreamHandler(sys.stdout)
+        stream_handler.setFormatter(formatter)
+        root.addHandler(stream_handler)
 
     target_file = log_file if log_file is not None else config.LOG_FILE
     if target_file:

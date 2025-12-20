@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\kurop\PycharmProjects\Computer-Graphics-Final-Project\main.py", line 223, in <module>
+    sys.exit(run_cli())
+             ~~~~~~~^^
+  File "C:\Users\kurop\PycharmProjects\Computer-Graphics-Final-Project\main.py", line 138, in run_cli
+    args = shlex.split(line)
+  File "C:\Users\kurop\AppData\Local\Programs\Python\Python313\Lib\shlex.py", line 313, in split
+    return list(lex)
+  File "C:\Users\kurop\AppData\Local\Programs\Python\Python313\Lib\shlex.py", line 300, in __next__
+    token = self.get_token()
+  File "C:\Users\kurop\AppData\Local\Programs\Python\Python313\Lib\shlex.py", line 109, in get_token
+    raw = self.read_token()
+  File "C:\Users\kurop\AppData\Local\Programs\Python\Python313\Lib\shlex.py", line 191, in read_token
+    raise ValueError("No closing quotation")
+ValueError: No closing quotation
+cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> 

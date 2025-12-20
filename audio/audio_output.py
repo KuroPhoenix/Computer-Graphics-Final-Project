@@ -1,4 +1,6 @@
 import logging
+import os
+from pathlib import Path
 from typing import Optional
 
 import pygame
@@ -32,6 +34,14 @@ class BaseAudioOutput:
         """Return backend-specific status for monitoring."""
         return {"backend": self.__class__.__name__}
 
+    def latency_ms(self) -> float:
+        """Estimated output latency in milliseconds."""
+        return 0.0
+
+    def apply_profile(self, profile: dict) -> None:
+        """Apply per-track playback profile (optional)."""
+        return
+
 
 class MidiAudioOutput(BaseAudioOutput):
     """
@@ -46,6 +56,7 @@ class MidiAudioOutput(BaseAudioOutput):
             raise RuntimeError("No default MIDI output device found. Configure a synth backend.")
         self._output = pygame.midi.Output(self._device_id)
         self._closed = False
+        self._latency_ms = float(getattr(config, "MIDI_LATENCY_MS", 0.0))
         log.info("MidiAudioOutput initialized (device_id=%s)", self._device_id)
 
     def handle_event(self, event: dict) -> None:
@@ -54,6 +65,20 @@ class MidiAudioOutput(BaseAudioOutput):
             self._start_note(event["note"], event.get("velocity", 64), event.get("channel", 0))
         elif etype == "off":
             self._stop_note(event["note"], event.get("channel", 0))
+        elif etype == "program_change":
+            self._program_change(event.get("program", 0), event.get("channel", 0))
+        elif etype == "control_change":
+            self._control_change(event.get("control", 0), event.get("value", 0), event.get("channel", 0))
+        elif etype == "pitchwheel":
+            self._pitch_bend(event.get("pitch", 0), event.get("channel", 0))
+        elif etype == "channel_pressure":
+            self._channel_pressure(event.get("pressure", 0), event.get("channel", 0))
+        elif etype == "poly_aftertouch":
+            self._poly_aftertouch(
+                event.get("note", 0),
+                event.get("pressure", 0),
+                event.get("channel", 0),
+            )
 
     def _start_note(self, note: int, velocity: int, channel: int = 0) -> None:
         if self._closed:
@@ -70,6 +95,49 @@ class MidiAudioOutput(BaseAudioOutput):
             self._output.note_off(note, 0, channel)
         except Exception as exc:
             log.error("Failed to stop note %s: %s", note, exc)
+
+    def _program_change(self, program: int, channel: int = 0) -> None:
+        if self._closed:
+            return
+        try:
+            self._output.set_instrument(program, channel)
+        except Exception as exc:
+            log.error("Failed to send program change %s: %s", program, exc)
+
+    def _control_change(self, control: int, value: int, channel: int = 0) -> None:
+        if self._closed:
+            return
+        try:
+            self._output.write_short(0xB0 + channel, control & 0x7F, value & 0x7F)
+        except Exception as exc:
+            log.error("Failed to send control change %s=%s: %s", control, value, exc)
+
+    def _pitch_bend(self, pitch: int, channel: int = 0) -> None:
+        if self._closed:
+            return
+        bend = max(0, min(16383, pitch + 8192))
+        lsb = bend & 0x7F
+        msb = (bend >> 7) & 0x7F
+        try:
+            self._output.write_short(0xE0 + channel, lsb, msb)
+        except Exception as exc:
+            log.error("Failed to send pitch bend %s: %s", pitch, exc)
+
+    def _channel_pressure(self, pressure: int, channel: int = 0) -> None:
+        if self._closed:
+            return
+        try:
+            self._output.write_short(0xD0 + channel, pressure & 0x7F, 0)
+        except Exception as exc:
+            log.error("Failed to send channel pressure %s: %s", pressure, exc)
+
+    def _poly_aftertouch(self, note: int, pressure: int, channel: int = 0) -> None:
+        if self._closed:
+            return
+        try:
+            self._output.write_short(0xA0 + channel, note & 0x7F, pressure & 0x7F)
+        except Exception as exc:
+            log.error("Failed to send poly aftertouch note=%s: %s", note, exc)
 
     def panic(self) -> None:
         if self._closed:
@@ -90,7 +158,15 @@ class MidiAudioOutput(BaseAudioOutput):
             pygame.midi.quit()
 
     def status(self) -> dict:
-        return {"backend": "MidiAudioOutput", "closed": self._closed, "device_id": self._device_id}
+        return {
+            "backend": "MidiAudioOutput",
+            "closed": self._closed,
+            "device_id": self._device_id,
+            "latency_ms": self._latency_ms,
+        }
+
+    def latency_ms(self) -> float:
+        return self._latency_ms
 
 
 class PyFluidSynthOutput(BaseAudioOutput):
@@ -99,60 +175,132 @@ class PyFluidSynthOutput(BaseAudioOutput):
     """
 
     def __init__(self, sound_font: str, gain: float = 0.8):
+        dll_hint = getattr(config, "FLUIDSYNTH_DLL_PATH", "") or ""
+        driver_cfg = getattr(config, "FLUID_DRIVER", "auto").lower()
+        # Allow adding an explicit DLL search path before importing pyfluidsynth (Windows)
+        if dll_hint:
+            dll_path = Path(dll_hint)
+            if dll_path.exists():
+                try:
+                    os.add_dll_directory(str(dll_path))
+                    os.environ["PATH"] = f"{dll_path};{os.environ.get('PATH','')}"
+                    log.info("Added FluidSynth DLL path: %s", dll_path)
+                except Exception as exc:  # pragma: no cover - platform-specific
+                    log.warning("Failed to add DLL path %s: %s", dll_path, exc)
         try:
             import fluidsynth  # type: ignore
-        except ImportError as exc:
-            raise RuntimeError("pyfluidsynth not installed; pip install pyfluidsynth") from exc
+        except Exception as exc:
+            raise RuntimeError(
+                "pyfluidsynth import failed; install pyfluidsynth and ensure FluidSynth DLLs are discoverable "
+                "(set config.FLUIDSYNTH_DLL_PATH to your FluidSynth \\bin folder on Windows)."
+            ) from exc
+        if getattr(config, "FLUID_SUPPRESS_LOGS", False):
+            self._suppress_fluidsynth_logs(fluidsynth)
 
         self._fs = fluidsynth.Synth()
-        # Try to configure audio settings even without Settings API.
-        driver = "pulseaudio"
+        self._gain = gain
+        # Choose driver candidates
+        if driver_cfg == "auto":
+            if os.name == "nt":
+                driver_candidates = ["wasapi", "dsound", "sdl2", "portaudio"]
+            else:
+                driver_candidates = ["pulseaudio", "alsa", "jack", "portaudio"]
+        else:
+            driver_candidates = [driver_cfg]
+        sample_rate = getattr(config, "FLUID_SAMPLE_RATE", 44100.0)
+        period_size = getattr(config, "FLUID_PERIOD_SIZE", 256)
+        periods = getattr(config, "FLUID_PERIODS", 4)
+        interp = getattr(config, "FLUID_INTERP", None)
+        reverb = getattr(config, "FLUID_REVERB", None)
+        chorus = getattr(config, "FLUID_CHORUS", None)
+        polyphony = getattr(config, "FLUID_POLYPHONY", None)
+        latency_override = getattr(config, "FLUID_LATENCY_MS", None)
+        if latency_override is None:
+            self._latency_ms = (period_size * periods / float(sample_rate)) * 1000.0
+        else:
+            self._latency_ms = float(latency_override)
+        pulse_latency = getattr(config, "PULSE_LATENCY_MSEC", None)
         opts = {
-            "audio.driver": driver,
-            "synth.sample-rate": 44100.0,
-            "audio.period-size": 256,
-            "audio.periods": 4,
+            "synth.sample-rate": sample_rate,
+            "audio.period-size": period_size,
+            "audio.periods": periods,
             "synth.gain": gain,
         }
+        midi_driver = getattr(config, "FLUID_MIDI_DRIVER", None)
+        if midi_driver:
+            opts["midi.driver"] = midi_driver
+        if interp is not None:
+            opts["synth.interpolation"] = int(interp)
+        if reverb is not None:
+            opts["synth.reverb.active"] = int(bool(reverb))
+        if chorus is not None:
+            opts["synth.chorus.active"] = int(bool(chorus))
+        if polyphony is not None:
+            opts["synth.polyphony"] = int(polyphony)
         for key, val in opts.items():
             try:
                 self._fs.setting(key, val)
             except Exception as exc:
                 log.debug("PyFluidSynthOutput could not set %s=%s (%s)", key, val, exc)
 
-        try:
-            self._fs.start(driver=driver)
-            log.info(
-                "PyFluidSynthOutput using driver=%s sample_rate=%.1f period_size=%s periods=%s gain=%.2f",
-                driver,
-                opts["synth.sample-rate"],
-                opts["audio.period-size"],
-                opts["audio.periods"],
-                gain,
-            )
-            self._driver = driver
-        except Exception as exc:
-            log.warning("PyFluidSynthOutput pulseaudio driver failed (%s); trying portaudio", exc)
+        started = False
+        for driver in driver_candidates:
             try:
-                driver = "portaudio"
+                if driver == "pulseaudio" and pulse_latency is not None and pulse_latency > 0:
+                    os.environ.setdefault("PULSE_LATENCY_MSEC", str(int(pulse_latency)))
                 self._fs.setting("audio.driver", driver)
                 self._fs.start(driver=driver)
                 self._driver = driver
-                log.info("PyFluidSynthOutput using driver=%s (fallback)", driver)
-            except Exception as exc2:
-                log.warning("PyFluidSynthOutput portaudio driver failed (%s); using default", exc2)
-                self._fs.start()
-                self._driver = "default"
+                started = True
+                log.info(
+                    "PyFluidSynthOutput using driver=%s sample_rate=%.1f period_size=%s periods=%s gain=%.2f",
+                    driver,
+                    sample_rate,
+                    period_size,
+                    periods,
+                    gain,
+                )
+                break
+            except Exception as exc:
+                log.warning("PyFluidSynthOutput driver '%s' failed (%s)", driver, exc)
+        if not started:
+            self._fs.start()
+            self._driver = "default"
+            log.info("PyFluidSynthOutput using driver=default")
 
         try:
             self._sfid = self._fs.sfload(sound_font)
         except Exception as exc:
             log.error("Failed to load soundfont %s: %s", sound_font, exc)
             raise
-        # Set a default program on all channels; program changes will override per channel.
-        for ch in range(16):
-            self._fs.program_select(ch, self._sfid, 0, 0)
 
+        self._force_program = getattr(config, "FORCE_PROGRAM", False)
+        self._force_bank = getattr(config, "FORCE_PROGRAM_BANK", 0)
+        self._force_preset = getattr(config, "FORCE_PROGRAM_PRESET", 0)
+        self._bank_msb = [0] * 16
+        self._bank_lsb = [0] * 16
+        self._invalid_presets = set()
+        # Set a default program on all channels; optionally force preset for consistency.
+        if self._force_program:
+            bank_msb = (self._force_bank >> 7) & 0x7F
+            bank_lsb = self._force_bank & 0x7F
+            for ch in range(16):
+                self._bank_msb[ch] = bank_msb
+                self._bank_lsb[ch] = bank_lsb
+                if not self._program_select(ch, self._force_bank, self._force_preset, context="force"):
+                    self._program_select(ch, 0, 0, context="force-fallback")
+        else:
+            enable_drums = bool(getattr(config, "ENABLE_GM_DRUMS", True))
+            for ch in range(16):
+                bank = 128 if enable_drums and ch == 9 else 0
+                self._bank_msb[ch] = (bank >> 7) & 0x7F
+                self._bank_lsb[ch] = bank & 0x7F
+                if not self._program_select(ch, bank, 0, context="init") and bank != 0:
+                    self._bank_msb[ch] = 0
+                    self._bank_lsb[ch] = 0
+                    self._program_select(ch, 0, 0, context="init-fallback")
+
+        self._events_handled = 0
         self._closed = False
         log.info("PyFluidSynthOutput initialized with %s", sound_font)
 
@@ -160,12 +308,100 @@ class PyFluidSynthOutput(BaseAudioOutput):
         etype = event.get("type")
         if etype == "on":
             self._fs.noteon(event.get("channel", 0), event["note"], event.get("velocity", 64))
+            self._events_handled += 1
         elif etype == "off":
             self._fs.noteoff(event.get("channel", 0), event["note"])
-        elif etype == "program_change":
-            program = event.get("program", 0)
+            self._events_handled += 1
+        elif etype == "control_change":
             ch = event.get("channel", 0)
-            self._fs.program_select(ch, self._sfid, 0, program)
+            ctrl = event.get("control", 0)
+            val = event.get("value", 0)
+            val = max(0, min(127, val))
+            if ctrl == 0:
+                self._bank_msb[ch] = val
+            elif ctrl == 32:
+                self._bank_lsb[ch] = val
+            self._fs.cc(ch, ctrl, val)
+            self._events_handled += 1
+        elif etype == "pitchwheel":
+            bend = event.get("pitch", 0) + 8192
+            bend = max(0, min(16383, bend))
+            self._fs.pitch_bend(event.get("channel", 0), bend)
+            self._events_handled += 1
+        elif etype == "channel_pressure":
+            if hasattr(self._fs, "channel_pressure"):
+                self._fs.channel_pressure(event.get("channel", 0), event.get("pressure", 0))
+            self._events_handled += 1
+        elif etype == "poly_aftertouch":
+            # PyFluidSynth doesn't expose poly aftertouch; ignore gracefully.
+            self._events_handled += 1
+        elif etype == "program_change":
+            if not self._force_program:
+                program = event.get("program", 0)
+                ch = event.get("channel", 0)
+                bank = (self._bank_msb[ch] << 7) + self._bank_lsb[ch]
+                if not self._program_select(ch, bank, program, context="event"):
+                    if bank != 0 or program != 0:
+                        self._program_select(ch, 0, 0, context="event-fallback")
+            self._events_handled += 1
+
+    @staticmethod
+    def _suppress_fluidsynth_logs(fluidsynth_module) -> None:
+        def _noop(*_args, **_kwargs) -> None:
+            return
+
+        levels = []
+        for name in ("FLUID_PANIC", "FLUID_ERR", "FLUID_WARN", "FLUID_INFO", "FLUID_DBG"):
+            level = getattr(fluidsynth_module, name, None)
+            if isinstance(level, int):
+                levels.append(level)
+        if not levels:
+            levels = [0, 1, 2, 3, 4]
+
+        for fn_name in ("set_log_function", "fluid_set_log_function"):
+            fn = getattr(fluidsynth_module, fn_name, None)
+            if not callable(fn):
+                continue
+            for level in levels:
+                try:
+                    fn(level, _noop)
+                except TypeError:
+                    try:
+                        fn(level, _noop, None)
+                    except Exception:
+                        continue
+                except Exception:
+                    continue
+
+    def _program_select(self, channel: int, bank: int, preset: int, context: str = "") -> bool:
+        try:
+            result = self._fs.program_select(channel, self._sfid, bank, preset)
+        except Exception as exc:
+            key = (bank, preset)
+            if key not in self._invalid_presets:
+                log.warning(
+                    "Program select failed (bank=%d preset=%d ch=%d ctx=%s): %s",
+                    bank,
+                    preset,
+                    channel,
+                    context,
+                    exc,
+                )
+                self._invalid_presets.add(key)
+            return False
+        if result not in (None, 0):
+            key = (bank, preset)
+            if key not in self._invalid_presets:
+                log.warning(
+                    "Program select rejected (bank=%d preset=%d ch=%d ctx=%s)",
+                    bank,
+                    preset,
+                    channel,
+                    context,
+                )
+                self._invalid_presets.add(key)
+            return False
+        return True
 
     def panic(self) -> None:
         if self._closed:
@@ -181,7 +417,31 @@ class PyFluidSynthOutput(BaseAudioOutput):
             self._closed = True
 
     def status(self) -> dict:
-        return {"backend": "PyFluidSynthOutput", "closed": self._closed, "driver": getattr(self, "_driver", "unknown")}
+        return {
+            "backend": "PyFluidSynthOutput",
+            "closed": self._closed,
+            "driver": getattr(self, "_driver", "unknown"),
+            "latency_ms": self._latency_ms,
+            "gain": getattr(self, "_gain", None),
+        }
+
+    def latency_ms(self) -> float:
+        return self._latency_ms
+
+    def apply_profile(self, profile: dict) -> None:
+        gain = profile.get("gain")
+        if gain is None:
+            return
+        self._gain = float(gain)
+        if self._closed:
+            return
+        try:
+            if hasattr(self._fs, "set_gain"):
+                self._fs.set_gain(self._gain)
+            else:
+                self._fs.setting("synth.gain", self._gain)
+        except Exception:
+            return
 
 
 class MixerAudioOutput(BaseAudioOutput):
@@ -249,6 +509,9 @@ class MixerAudioOutput(BaseAudioOutput):
             "pos_ms": pos_ms,
         }
 
+    def latency_ms(self) -> float:
+        return 0.0
+
 
 class NoAudioOutput(BaseAudioOutput):
     """No-op backend when audio is disabled."""
@@ -257,11 +520,11 @@ class NoAudioOutput(BaseAudioOutput):
         log.warning("No audio backend configured; running silent.")
 
 
-def create_audio_output() -> BaseAudioOutput:
+def create_audio_output(sound_font_override: Optional[str] = None) -> BaseAudioOutput:
     """Factory to create the configured audio backend."""
     backend = getattr(config, "AUDIO_BACKEND", "midi").lower()
     device_id = getattr(config, "AUDIO_MIDI_DEVICE_ID", None)
-    sf_path = getattr(config, "SOUND_FONT_PATH", "")
+    sf_path = sound_font_override or getattr(config, "SOUND_FONT_PATH", "")
     gain = getattr(config, "FLUID_GAIN", 0.8)
 
     if backend == "pyfluidsynth":
