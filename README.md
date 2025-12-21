@@ -6,8 +6,15 @@ time-ordered event stream, schedules playback with sub-millisecond precision, an
 to both audio output and optional visual handlers (virtual piano, FX, etc).
 
 ## Quick start
-1) `python -m main`
-2) Use the CLI menu to select and play tracks.
+Visualization demo (auto-plays Fontaine):
+```bash
+python -m main
+```
+
+CLI player:
+```bash
+python -m audio_cli
+```
 
 The CLI auto-scans the `midi/` folder for `.mid`/`.midi` files and presents indexed menus.
 
@@ -36,9 +43,14 @@ FluidSynth (for `pyfluidsynth` backend):
 - If needed, set `FLUIDSYNTH_DLL_PATH` in `configs/config.py` to the FluidSynth `bin` folder.
 - Ensure a soundfont is available (defaults to `midi/soundfonts/salamander.sf2`).
 
-Run the CLI:
+Run the visual demo:
 ```bash
 python -m main
+```
+
+Run the CLI:
+```bash
+python -m audio_cli
 ```
 
 ## CLI usage
@@ -52,10 +64,10 @@ Key commands:
 - `soundfonts`, `soundfont <index|path>`
 - `analyze <index|folder:index>`: show per-track stats
 
-## AudioHandler (planned single entry point)
-Status: **planned** (not implemented yet). The goal is for all GUI code to call only
-`AudioHandler`. No other module should touch `PlaybackController` directly. This isolates
-timing, scanning, backend configuration, and note dispatch behind a single API.
+## AudioHandler (single entry point)
+`AudioHandler` (implemented in `audio/audio_handler.py`) is the single entry point for GUI
+and CLI playback operations. Other modules should not touch `PlaybackController` directly.
+This isolates timing, scanning, backend configuration, and note dispatch behind a single API.
 
 ### What AudioHandler owns
 - **Song library:** scans `midi/` (and subfolders) and returns a stable, indexed menu.
@@ -73,7 +85,7 @@ MIDI file -> MidiManager -> event timeline -> PlaybackController -> Audio backen
                                                   +-> NoteCaptureSink (Report_Note)
 ```
 
-### Planned API (single entry point)
+### API (single entry point)
 ```python
 from audio.audio_handler import AudioHandler
 
@@ -113,7 +125,8 @@ handler.Play_Song(selection={"folder_index": 0, "track_index": 1})
 If no selection is provided, the handler plays the current song (or the first in the folder).
 
 ### Report_Note() return shape
-`Report_Note()` returns the latest note event (or `None` if idle).
+`Report_Note()` returns the latest note event (or `None` if idle). Use
+`Report_Note(drain=True)` to retrieve all pending note events since the last call.
 ```python
 {
   "type": "on",
@@ -124,6 +137,28 @@ If no selection is provided, the handler plays the current song (or the first in
   "playback_time_ms": 1238.4
 }
 ```
+
+```python
+[
+  {"type": "on", "note": 60, "velocity": 96, "channel": 0, "time_ms": 1234.0},
+  {"type": "off", "note": 60, "velocity": 0, "channel": 0, "time_ms": 1370.0},
+]
+```
+
+time_ms is the MIDI timeline timestamp of the event (absolute time since track start, set during parsing). 
+
+playback_time_ms is the actual playback clock position when the event is dispatched to the sink, so it reflects pauses/seeks and real-time scheduling (and can drift slightly due to dispatch timing). 
+
+See audio/midi_manager.py for time_ms creation and audio/playback_controller.py for playback_time_ms capture.                                                                                                                                                                              
+
+• Example: the MIDI event is scheduled at 1000 ms from the start of the song, but you paused for 250 ms before it fired.
+                                                                                                                                                                                                         
+  Timeline                                                                                                                                                                                               
+                                                                                                                                                                                                         
+  - T=0: play                                                                                                                                                                                            
+  - T=800: pause for 250 ms                                                                                                                                                                              
+  - T=1050: resume                                                                                                                                                                                       
+  - Event originally at time_ms=1000 fires at playback_time_ms=1250
 
 ### Piano renderer integration
 The renderer should consume note events from a thread-safe queue so it never blocks
@@ -156,5 +191,5 @@ for event, t in piano_sink.pop_events():
 
 ### Threading and timing notes
 - The scheduler runs in a background thread; GUI code must never block it.
-- `Report_Note()` should be a lock-protected read of the latest event.
+- `Report_Note()` is thread-safe; prefer `Report_Note(drain=True)` when driving rendering.
 - Renderers should drain event queues every frame to stay in sync with audio.

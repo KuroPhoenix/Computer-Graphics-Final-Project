@@ -15,4 +15,5 @@ Traceback (most recent call last):
   File "C:\Users\kurop\AppData\Local\Programs\Python\Python313\Lib\shlex.py", line 191, in read_token
     raise ValueError("No closing quotation")
 ValueError: No closing quotation
-cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> 
+cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> cg> C:\Users\kurop\AppData\Local\Programs\Python\Python313\python.exe: Error while finding module specification for 'main.py' (ModuleNotFoundError: __path__ attribute not found on 'main' while trying to find 'main.py'). Try using 'main' instead of 'main.py' as the module name.
+cg> cg> cg> cg> cg> cg> cg> 
