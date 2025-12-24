@@ -144,7 +144,7 @@ class PlaybackController:
             self._paused_time_ms = now_ms
             self._mm.pause(self._state)
             if self._audio:
-                self._audio.panic()
+                self._audio.pause()
             self._emit_note_offs(self._paused_notes, now_ms)
 
     def resume(self) -> None:
@@ -154,6 +154,8 @@ class PlaybackController:
             if self._state.status != "paused":
                 return
             self._mm.resume(self._state)
+            if self._audio:
+                self._audio.resume()
             if self._paused_notes and self._paused_time_ms is not None:
                 self._retrigger_notes(self._paused_notes, self._paused_time_ms)
             self._paused_notes = {}

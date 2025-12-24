@@ -26,6 +26,14 @@ class BaseAudioOutput:
         """Stop all sound."""
         return
 
+    def pause(self) -> None:
+        """Pause playback when supported; defaults to panic."""
+        self.panic()
+
+    def resume(self) -> None:
+        """Resume playback when supported."""
+        return
+
     def close(self) -> None:
         """Release resources."""
         return
@@ -408,6 +416,16 @@ class PyFluidSynthOutput(BaseAudioOutput):
             return
         self._fs.system_reset()
 
+    def pause(self) -> None:
+        if self._closed:
+            return
+        for ch in range(16):
+            try:
+                self._fs.cc(ch, 120, 0)  # all sound off
+                self._fs.cc(ch, 123, 0)  # all notes off
+            except Exception:
+                continue
+
     def close(self) -> None:
         if self._closed:
             return
@@ -475,6 +493,18 @@ class MixerAudioOutput(BaseAudioOutput):
     def handle_event(self, event: dict) -> None:
         # Mixer backend does not handle per-note events; audio is handled by mixer.music
         return
+
+    def pause(self) -> None:
+        if not getattr(self, "_init_ok", False) or self._closed:
+            return
+        if self._started:
+            pygame.mixer.music.pause()
+
+    def resume(self) -> None:
+        if not getattr(self, "_init_ok", False) or self._closed:
+            return
+        if self._started:
+            pygame.mixer.music.unpause()
 
     def panic(self) -> None:
         if not getattr(self, "_init_ok", False) or self._closed:
